@@ -2751,7 +2751,7 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
   if (self.hasFoo3) {
     hashCode = hashCode * 31 + [[NSNumber numberWithInteger:self.foo3] hash];
   }
-  [self.foo4Array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+  [self.foo4Array enumerateObjectsUsingBlock:^(NSNumber *obj, NSUInteger idx, BOOL *stop) {
     hashCode = hashCode * 31 + [obj longValue];
   }];
   hashCode = hashCode * 31 + [self hashExtensionsFrom:100 to:536870912];

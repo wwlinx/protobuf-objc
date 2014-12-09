@@ -543,8 +543,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) PBArray * repeatedFloat;
 @property (readonly, strong) PBArray * repeatedDouble;
 @property (readonly, strong) PBArray * repeatedBool;
-@property (readonly, strong) PBArray * repeatedString;
-@property (readonly, strong) PBArray * repeatedBytes;
+@property (readonly, strong) NSArray * repeatedString;
+@property (readonly, strong) NSArray * repeatedBytes;
 @property (readonly, strong) NSArray * repeatedGroup;
 @property (readonly, strong) NSArray * repeatedNestedMessage;
 @property (readonly, strong) NSArray * repeatedForeignMessage;
@@ -552,8 +552,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) PBArray * repeatedNestedEnum;
 @property (readonly, strong) PBArray * repeatedForeignEnum;
 @property (readonly, strong) PBArray * repeatedImportEnum;
-@property (readonly, strong) PBArray * repeatedStringPiece;
-@property (readonly, strong) PBArray * repeatedCord;
+@property (readonly, strong) NSArray * repeatedStringPiece;
+@property (readonly, strong) NSArray * repeatedCord;
 @property (readonly, strong) NSArray * repeatedLazyMessage;
 @property (readonly) SInt32 defaultInt32;
 @property (readonly) SInt64 defaultInt64;
@@ -2781,11 +2781,11 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NSString* stringPieceField;
 @property (readonly, strong) NSString* cordField;
 @property (readonly, strong) PBArray * repeatedPrimitiveField;
-@property (readonly, strong) PBArray * repeatedStringField;
+@property (readonly, strong) NSArray * repeatedStringField;
 @property (readonly, strong) PBArray * repeatedEnumField;
 @property (readonly, strong) NSArray * repeatedMessageField;
-@property (readonly, strong) PBArray * repeatedStringPieceField;
-@property (readonly, strong) PBArray * repeatedCordField;
+@property (readonly, strong) NSArray * repeatedStringPieceField;
+@property (readonly, strong) NSArray * repeatedCordField;
 - (SInt32)repeatedPrimitiveFieldAtIndex:(NSUInteger)index;
 - (NSString*)repeatedStringFieldAtIndex:(NSUInteger)index;
 - (ForeignEnum)repeatedEnumFieldAtIndex:(NSUInteger)index;
@@ -3351,7 +3351,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
   NSMutableArray * dataArray;
 }
-@property (readonly, strong) PBArray * data;
+@property (readonly, strong) NSArray * data;
 - (NSString*)dataAtIndex:(NSUInteger)index;
 
 + (MoreString*) defaultInstance;
@@ -3449,7 +3449,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
   NSMutableArray * dataArray;
 }
-@property (readonly, strong) PBArray * data;
+@property (readonly, strong) NSArray * data;
 - (NSData*)dataAtIndex:(NSUInteger)index;
 
 + (MoreBytes*) defaultInstance;
@@ -4929,7 +4929,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) TestDynamicExtensionsDynamicEnumType dynamicEnumExtension;
 @property (readonly, strong) ForeignMessage* messageExtension;
 @property (readonly, strong) TestDynamicExtensionsDynamicMessageType* dynamicMessageExtension;
-@property (readonly, strong) PBArray * repeatedExtension;
+@property (readonly, strong) NSArray * repeatedExtension;
 @property (readonly, strong) PBArray * packedExtension;
 - (NSString*)repeatedExtensionAtIndex:(NSUInteger)index;
 - (SInt32)packedExtensionAtIndex:(NSUInteger)index;
