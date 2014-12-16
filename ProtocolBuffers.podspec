@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ProtocolBuffers"
-  s.version      = "1.9.2"
+  s.version      = "1.9.3"
   s.summary      = "Protocol Buffers for Objective-C"
   s.description  = <<-DESC
                       An implementation of Protocol Buffers 2.6 in Objective C.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                       Buffers from Google.
 
                       DESC
-  s.homepage     = "http://protobuf.axo.io#objc"
+  s.homepage     = "http://protobuf.io#objc"
   s.license      = "Apache 2.0"
 
   s.license      = { :type => 'Apache License, Version 2.0', :text =>
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   s.authors      = {  "Alexey Khokhlov" => "alexeyxo@gmail.com" }
 
   s.source       = {
-    :git => "https://github.com/alexeyxo/protobuf-objc.git", :tag => "1.9.2"
+    :git => "https://github.com/alexeyxo/protobuf-objc.git", :tag => "1.9.3"
   }
   s.header_dir = "ProtocolBuffers"
   s.source_files = 'src/runtime/Classes/*.{h,m}'
