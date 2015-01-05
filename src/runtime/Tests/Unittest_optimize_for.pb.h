@@ -194,8 +194,8 @@
 @property (readonly) SInt32 integerField;
 @property (readonly, strong) NSString* stringField;
 
-+ (TestOptimizedForSize*) defaultInstance;
-- (TestOptimizedForSize*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) testExtension;
 + (id<PBExtensionField>) testExtension2;
@@ -262,8 +262,8 @@
 - (BOOL) hasX;
 @property (readonly) SInt32 x;
 
-+ (TestRequiredOptimizedForSize*) defaultInstance;
-- (TestRequiredOptimizedForSize*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -311,8 +311,8 @@
 - (BOOL) hasO;
 @property (readonly, strong) TestRequiredOptimizedForSize* o;
 
-+ (TestOptionalOptimizedForSize*) defaultInstance;
-- (TestOptionalOptimizedForSize*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

@@ -1861,10 +1861,10 @@ static TestAllTypesLite* defaultTestAllTypesLiteInstance = nil;
     defaultTestAllTypesLiteInstance = [[TestAllTypesLite alloc] init];
   }
 }
-+ (TestAllTypesLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesLiteInstance;
 }
-- (TestAllTypesLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesLiteInstance;
 }
 - (PBArray *)repeatedInt32 {
@@ -3354,10 +3354,10 @@ static TestAllTypesLiteNestedMessage* defaultTestAllTypesLiteNestedMessageInstan
     defaultTestAllTypesLiteNestedMessageInstance = [[TestAllTypesLiteNestedMessage alloc] init];
   }
 }
-+ (TestAllTypesLiteNestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesLiteNestedMessageInstance;
 }
-- (TestAllTypesLiteNestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesLiteNestedMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -3554,10 +3554,10 @@ static TestAllTypesLiteOptionalGroup* defaultTestAllTypesLiteOptionalGroupInstan
     defaultTestAllTypesLiteOptionalGroupInstance = [[TestAllTypesLiteOptionalGroup alloc] init];
   }
 }
-+ (TestAllTypesLiteOptionalGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesLiteOptionalGroupInstance;
 }
-- (TestAllTypesLiteOptionalGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesLiteOptionalGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -3754,10 +3754,10 @@ static TestAllTypesLiteRepeatedGroup* defaultTestAllTypesLiteRepeatedGroupInstan
     defaultTestAllTypesLiteRepeatedGroupInstance = [[TestAllTypesLiteRepeatedGroup alloc] init];
   }
 }
-+ (TestAllTypesLiteRepeatedGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesLiteRepeatedGroupInstance;
 }
-- (TestAllTypesLiteRepeatedGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesLiteRepeatedGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -6220,10 +6220,10 @@ static ForeignMessageLite* defaultForeignMessageLiteInstance = nil;
     defaultForeignMessageLiteInstance = [[ForeignMessageLite alloc] init];
   }
 }
-+ (ForeignMessageLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultForeignMessageLiteInstance;
 }
-- (ForeignMessageLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultForeignMessageLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -6453,10 +6453,10 @@ static TestPackedTypesLite* defaultTestPackedTypesLiteInstance = nil;
     defaultTestPackedTypesLiteInstance = [[TestPackedTypesLite alloc] init];
   }
 }
-+ (TestPackedTypesLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestPackedTypesLiteInstance;
 }
-- (TestPackedTypesLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestPackedTypesLiteInstance;
 }
 - (PBArray *)packedInt32 {
@@ -7708,10 +7708,10 @@ static TestAllExtensionsLite* defaultTestAllExtensionsLiteInstance = nil;
     defaultTestAllExtensionsLiteInstance = [[TestAllExtensionsLite alloc] init];
   }
 }
-+ (TestAllExtensionsLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllExtensionsLiteInstance;
 }
-- (TestAllExtensionsLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllExtensionsLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -7886,10 +7886,10 @@ static OptionalGroup_extension_lite* defaultOptionalGroup_extension_liteInstance
     defaultOptionalGroup_extension_liteInstance = [[OptionalGroup_extension_lite alloc] init];
   }
 }
-+ (OptionalGroup_extension_lite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultOptionalGroup_extension_liteInstance;
 }
-- (OptionalGroup_extension_lite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultOptionalGroup_extension_liteInstance;
 }
 - (BOOL) isInitialized {
@@ -8086,10 +8086,10 @@ static RepeatedGroup_extension_lite* defaultRepeatedGroup_extension_liteInstance
     defaultRepeatedGroup_extension_liteInstance = [[RepeatedGroup_extension_lite alloc] init];
   }
 }
-+ (RepeatedGroup_extension_lite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultRepeatedGroup_extension_liteInstance;
 }
-- (RepeatedGroup_extension_lite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultRepeatedGroup_extension_liteInstance;
 }
 - (BOOL) isInitialized {
@@ -8277,10 +8277,10 @@ static TestPackedExtensionsLite* defaultTestPackedExtensionsLiteInstance = nil;
     defaultTestPackedExtensionsLiteInstance = [[TestPackedExtensionsLite alloc] init];
   }
 }
-+ (TestPackedExtensionsLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestPackedExtensionsLiteInstance;
 }
-- (TestPackedExtensionsLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestPackedExtensionsLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -8449,10 +8449,10 @@ static TestNestedExtensionLite* defaultTestNestedExtensionLiteInstance = nil;
     defaultTestNestedExtensionLiteInstance = [[TestNestedExtensionLite alloc] init];
   }
 }
-+ (TestNestedExtensionLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestNestedExtensionLiteInstance;
 }
-- (TestNestedExtensionLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestNestedExtensionLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -8612,10 +8612,10 @@ static TestDeprecatedLite* defaultTestDeprecatedLiteInstance = nil;
     defaultTestDeprecatedLiteInstance = [[TestDeprecatedLite alloc] init];
   }
 }
-+ (TestDeprecatedLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDeprecatedLiteInstance;
 }
-- (TestDeprecatedLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDeprecatedLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -8842,10 +8842,10 @@ static TestParsingMergeLite* defaultTestParsingMergeLiteInstance = nil;
     defaultTestParsingMergeLiteInstance = [[TestParsingMergeLite alloc] init];
   }
 }
-+ (TestParsingMergeLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteInstance;
 }
-- (TestParsingMergeLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteInstance;
 }
 - (NSArray *)repeatedAllTypes {
@@ -9065,10 +9065,10 @@ static TestParsingMergeLiteRepeatedFieldsGenerator* defaultTestParsingMergeLiteR
     defaultTestParsingMergeLiteRepeatedFieldsGeneratorInstance = [[TestParsingMergeLiteRepeatedFieldsGenerator alloc] init];
   }
 }
-+ (TestParsingMergeLiteRepeatedFieldsGenerator*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorInstance;
 }
-- (TestParsingMergeLiteRepeatedFieldsGenerator*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorInstance;
 }
 - (NSArray *)field1 {
@@ -9318,10 +9318,10 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup1* defaultTestParsingMerg
     defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup1Instance = [[TestParsingMergeLiteRepeatedFieldsGeneratorGroup1 alloc] init];
   }
 }
-+ (TestParsingMergeLiteRepeatedFieldsGeneratorGroup1*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup1Instance;
 }
-- (TestParsingMergeLiteRepeatedFieldsGeneratorGroup1*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup1Instance;
 }
 - (BOOL) isInitialized {
@@ -9540,10 +9540,10 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* defaultTestParsingMerg
     defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup2Instance = [[TestParsingMergeLiteRepeatedFieldsGeneratorGroup2 alloc] init];
   }
 }
-+ (TestParsingMergeLiteRepeatedFieldsGeneratorGroup2*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup2Instance;
 }
-- (TestParsingMergeLiteRepeatedFieldsGeneratorGroup2*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedFieldsGeneratorGroup2Instance;
 }
 - (BOOL) isInitialized {
@@ -10064,10 +10064,10 @@ static TestParsingMergeLiteOptionalGroup* defaultTestParsingMergeLiteOptionalGro
     defaultTestParsingMergeLiteOptionalGroupInstance = [[TestParsingMergeLiteOptionalGroup alloc] init];
   }
 }
-+ (TestParsingMergeLiteOptionalGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteOptionalGroupInstance;
 }
-- (TestParsingMergeLiteOptionalGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteOptionalGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -10286,10 +10286,10 @@ static TestParsingMergeLiteRepeatedGroup* defaultTestParsingMergeLiteRepeatedGro
     defaultTestParsingMergeLiteRepeatedGroupInstance = [[TestParsingMergeLiteRepeatedGroup alloc] init];
   }
 }
-+ (TestParsingMergeLiteRepeatedGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedGroupInstance;
 }
-- (TestParsingMergeLiteRepeatedGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeLiteRepeatedGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -10758,10 +10758,10 @@ static TestEmptyMessageLite* defaultTestEmptyMessageLiteInstance = nil;
     defaultTestEmptyMessageLiteInstance = [[TestEmptyMessageLite alloc] init];
   }
 }
-+ (TestEmptyMessageLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEmptyMessageLiteInstance;
 }
-- (TestEmptyMessageLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEmptyMessageLiteInstance;
 }
 - (BOOL) isInitialized {
@@ -10912,10 +10912,10 @@ static TestEmptyMessageWithExtensionsLite* defaultTestEmptyMessageWithExtensions
     defaultTestEmptyMessageWithExtensionsLiteInstance = [[TestEmptyMessageWithExtensionsLite alloc] init];
   }
 }
-+ (TestEmptyMessageWithExtensionsLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEmptyMessageWithExtensionsLiteInstance;
 }
-- (TestEmptyMessageWithExtensionsLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEmptyMessageWithExtensionsLiteInstance;
 }
 - (BOOL) isInitialized {

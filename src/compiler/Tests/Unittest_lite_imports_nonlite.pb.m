@@ -46,10 +46,10 @@ static TestLiteImportsNonlite* defaultTestLiteImportsNonliteInstance = nil;
     defaultTestLiteImportsNonliteInstance = [[TestLiteImportsNonlite alloc] init];
   }
 }
-+ (TestLiteImportsNonlite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestLiteImportsNonliteInstance;
 }
-- (TestLiteImportsNonlite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestLiteImportsNonliteInstance;
 }
 - (BOOL) isInitialized {

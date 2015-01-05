@@ -4029,8 +4029,8 @@
 @property (readonly, strong) NSString* longFieldNameIsLooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong999;
 @property (readonly, strong) NSString* longFieldNameIsLooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong1000;
 
-+ (TestEnormousDescriptor*) defaultInstance;
-- (TestEnormousDescriptor*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

@@ -58,10 +58,10 @@ static TestMessageSet* defaultTestMessageSetInstance = nil;
     defaultTestMessageSetInstance = [[TestMessageSet alloc] init];
   }
 }
-+ (TestMessageSet*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageSetInstance;
 }
-- (TestMessageSet*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageSetInstance;
 }
 - (BOOL) isInitialized {
@@ -236,10 +236,10 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
     defaultTestMessageSetContainerInstance = [[TestMessageSetContainer alloc] init];
   }
 }
-+ (TestMessageSetContainer*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageSetContainerInstance;
 }
-- (TestMessageSetContainer*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageSetContainerInstance;
 }
 - (BOOL) isInitialized {
@@ -466,10 +466,10 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
     defaultTestMessageSetExtension1Instance = [[TestMessageSetExtension1 alloc] init];
   }
 }
-+ (TestMessageSetExtension1*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageSetExtension1Instance;
 }
-- (TestMessageSetExtension1*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageSetExtension1Instance;
 }
 - (BOOL) isInitialized {
@@ -669,10 +669,10 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
     defaultTestMessageSetExtension2Instance = [[TestMessageSetExtension2 alloc] init];
   }
 }
-+ (TestMessageSetExtension2*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageSetExtension2Instance;
 }
-- (TestMessageSetExtension2*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageSetExtension2Instance;
 }
 - (BOOL) isInitialized {
@@ -863,10 +863,10 @@ static RawMessageSet* defaultRawMessageSetInstance = nil;
     defaultRawMessageSetInstance = [[RawMessageSet alloc] init];
   }
 }
-+ (RawMessageSet*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultRawMessageSetInstance;
 }
-- (RawMessageSet*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultRawMessageSetInstance;
 }
 - (NSArray *)item {
@@ -1001,10 +1001,10 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
     defaultRawMessageSetItemInstance = [[RawMessageSetItem alloc] init];
   }
 }
-+ (RawMessageSetItem*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultRawMessageSetItemInstance;
 }
-- (RawMessageSetItem*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultRawMessageSetItemInstance;
 }
 - (BOOL) isInitialized {

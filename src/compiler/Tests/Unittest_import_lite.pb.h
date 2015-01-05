@@ -44,8 +44,8 @@ BOOL ImportEnumLiteIsValidValue(ImportEnumLite value);
 - (BOOL) hasD;
 @property (readonly) SInt32 d;
 
-+ (ImportMessageLite*) defaultInstance;
-- (ImportMessageLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

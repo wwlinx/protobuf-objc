@@ -101,10 +101,10 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
     defaultTestOptimizedForSizeInstance = [[TestOptimizedForSize alloc] init];
   }
 }
-+ (TestOptimizedForSize*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOptimizedForSizeInstance;
 }
-- (TestOptimizedForSize*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOptimizedForSizeInstance;
 }
 - (BOOL) isInitialized {
@@ -449,10 +449,10 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
     defaultTestRequiredOptimizedForSizeInstance = [[TestRequiredOptimizedForSize alloc] init];
   }
 }
-+ (TestRequiredOptimizedForSize*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRequiredOptimizedForSizeInstance;
 }
-- (TestRequiredOptimizedForSize*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRequiredOptimizedForSizeInstance;
 }
 - (BOOL) isInitialized {
@@ -652,10 +652,10 @@ static TestOptionalOptimizedForSize* defaultTestOptionalOptimizedForSizeInstance
     defaultTestOptionalOptimizedForSizeInstance = [[TestOptionalOptimizedForSize alloc] init];
   }
 }
-+ (TestOptionalOptimizedForSize*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOptionalOptimizedForSizeInstance;
 }
-- (TestOptionalOptimizedForSize*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOptionalOptimizedForSizeInstance;
 }
 - (BOOL) isInitialized {

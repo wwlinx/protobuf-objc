@@ -39,8 +39,8 @@
 @private
 }
 
-+ (TestMessageSet*) defaultInstance;
-- (TestMessageSet*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -83,8 +83,8 @@
 - (BOOL) hasMessageSet;
 @property (readonly, strong) TestMessageSet* messageSet;
 
-+ (TestMessageSetContainer*) defaultInstance;
-- (TestMessageSetContainer*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -134,8 +134,8 @@
 - (BOOL) hasI;
 @property (readonly) SInt32 i;
 
-+ (TestMessageSetExtension1*) defaultInstance;
-- (TestMessageSetExtension1*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) messageSetExtension;
 - (BOOL) isInitialized;
@@ -184,8 +184,8 @@
 - (BOOL) hasStr;
 @property (readonly, strong) NSString* str;
 
-+ (TestMessageSetExtension2*) defaultInstance;
-- (TestMessageSetExtension2*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) messageSetExtension;
 - (BOOL) isInitialized;
@@ -233,8 +233,8 @@
 @property (readonly, strong) NSArray * item;
 - (RawMessageSetItem*)itemAtIndex:(NSUInteger)index;
 
-+ (RawMessageSet*) defaultInstance;
-- (RawMessageSet*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -263,8 +263,8 @@
 @property (readonly) SInt32 typeId;
 @property (readonly, strong) NSData* message;
 
-+ (RawMessageSetItem*) defaultInstance;
-- (RawMessageSetItem*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

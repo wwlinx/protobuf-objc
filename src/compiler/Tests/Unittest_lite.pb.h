@@ -452,8 +452,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (NSString*)repeatedCordAtIndex:(NSUInteger)index;
 - (TestAllTypesLiteNestedMessage*)repeatedLazyMessageAtIndex:(NSUInteger)index;
 
-+ (TestAllTypesLite*) defaultInstance;
-- (TestAllTypesLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -478,8 +478,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasBb;
 @property (readonly) SInt32 bb;
 
-+ (TestAllTypesLiteNestedMessage*) defaultInstance;
-- (TestAllTypesLiteNestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -527,8 +527,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestAllTypesLiteOptionalGroup*) defaultInstance;
-- (TestAllTypesLiteOptionalGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -576,8 +576,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestAllTypesLiteRepeatedGroup*) defaultInstance;
-- (TestAllTypesLiteRepeatedGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1073,8 +1073,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasC;
 @property (readonly) SInt32 c;
 
-+ (ForeignMessageLite*) defaultInstance;
-- (ForeignMessageLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1174,8 +1174,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL)packedBoolAtIndex:(NSUInteger)index;
 - (ForeignEnumLite)packedEnumAtIndex:(NSUInteger)index;
 
-+ (TestPackedTypesLite*) defaultInstance;
-- (TestPackedTypesLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1312,8 +1312,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 @private
 }
 
-+ (TestAllExtensionsLite*) defaultInstance;
-- (TestAllExtensionsLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1356,8 +1356,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (OptionalGroup_extension_lite*) defaultInstance;
-- (OptionalGroup_extension_lite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1405,8 +1405,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (RepeatedGroup_extension_lite*) defaultInstance;
-- (RepeatedGroup_extension_lite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1450,8 +1450,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 @private
 }
 
-+ (TestPackedExtensionsLite*) defaultInstance;
-- (TestPackedExtensionsLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1490,8 +1490,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 @private
 }
 
-+ (TestNestedExtensionLite*) defaultInstance;
-- (TestNestedExtensionLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) nestedExtension;
 - (BOOL) isInitialized;
@@ -1535,8 +1535,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasDeprecatedField;
 @property (readonly) SInt32 deprecatedField;
 
-+ (TestDeprecatedLite*) defaultInstance;
-- (TestDeprecatedLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1598,8 +1598,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (TestAllTypesLite*)repeatedAllTypesAtIndex:(NSUInteger)index;
 - (TestParsingMergeLiteRepeatedGroup*)repeatedGroupAtIndex:(NSUInteger)index;
 
-+ (TestParsingMergeLite*) defaultInstance;
-- (TestParsingMergeLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) optionalExt;
 + (id<PBExtensionField>) repeatedExt;
@@ -1643,8 +1643,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (TestAllTypesLite*)ext1AtIndex:(NSUInteger)index;
 - (TestAllTypesLite*)ext2AtIndex:(NSUInteger)index;
 
-+ (TestParsingMergeLiteRepeatedFieldsGenerator*) defaultInstance;
-- (TestParsingMergeLiteRepeatedFieldsGenerator*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1669,8 +1669,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasField1;
 @property (readonly, strong) TestAllTypesLite* field1;
 
-+ (TestParsingMergeLiteRepeatedFieldsGeneratorGroup1*) defaultInstance;
-- (TestParsingMergeLiteRepeatedFieldsGeneratorGroup1*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1720,8 +1720,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasField1;
 @property (readonly, strong) TestAllTypesLite* field1;
 
-+ (TestParsingMergeLiteRepeatedFieldsGeneratorGroup2*) defaultInstance;
-- (TestParsingMergeLiteRepeatedFieldsGeneratorGroup2*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1831,8 +1831,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasOptionalGroupAllTypes;
 @property (readonly, strong) TestAllTypesLite* optionalGroupAllTypes;
 
-+ (TestParsingMergeLiteOptionalGroup*) defaultInstance;
-- (TestParsingMergeLiteOptionalGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1882,8 +1882,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 - (BOOL) hasRepeatedGroupAllTypes;
 @property (readonly, strong) TestAllTypesLite* repeatedGroupAllTypes;
 
-+ (TestParsingMergeLiteRepeatedGroup*) defaultInstance;
-- (TestParsingMergeLiteRepeatedGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1980,8 +1980,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 @private
 }
 
-+ (TestEmptyMessageLite*) defaultInstance;
-- (TestEmptyMessageLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2020,8 +2020,8 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 @private
 }
 
-+ (TestEmptyMessageWithExtensionsLite*) defaultInstance;
-- (TestEmptyMessageWithExtensionsLite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

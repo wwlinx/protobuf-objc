@@ -667,10 +667,10 @@ static TestMessageWithCustomOptions* defaultTestMessageWithCustomOptionsInstance
     defaultTestMessageWithCustomOptionsInstance = [[TestMessageWithCustomOptions alloc] init];
   }
 }
-+ (TestMessageWithCustomOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageWithCustomOptionsInstance;
 }
-- (TestMessageWithCustomOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageWithCustomOptionsInstance;
 }
 - (BOOL) isInitialized {
@@ -867,10 +867,10 @@ static CustomOptionFooRequest* defaultCustomOptionFooRequestInstance = nil;
     defaultCustomOptionFooRequestInstance = [[CustomOptionFooRequest alloc] init];
   }
 }
-+ (CustomOptionFooRequest*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionFooRequestInstance;
 }
-- (CustomOptionFooRequest*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionFooRequestInstance;
 }
 - (BOOL) isInitialized {
@@ -1021,10 +1021,10 @@ static CustomOptionFooResponse* defaultCustomOptionFooResponseInstance = nil;
     defaultCustomOptionFooResponseInstance = [[CustomOptionFooResponse alloc] init];
   }
 }
-+ (CustomOptionFooResponse*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionFooResponseInstance;
 }
-- (CustomOptionFooResponse*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionFooResponseInstance;
 }
 - (BOOL) isInitialized {
@@ -1175,10 +1175,10 @@ static CustomOptionFooClientMessage* defaultCustomOptionFooClientMessageInstance
     defaultCustomOptionFooClientMessageInstance = [[CustomOptionFooClientMessage alloc] init];
   }
 }
-+ (CustomOptionFooClientMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionFooClientMessageInstance;
 }
-- (CustomOptionFooClientMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionFooClientMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -1329,10 +1329,10 @@ static CustomOptionFooServerMessage* defaultCustomOptionFooServerMessageInstance
     defaultCustomOptionFooServerMessageInstance = [[CustomOptionFooServerMessage alloc] init];
   }
 }
-+ (CustomOptionFooServerMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionFooServerMessageInstance;
 }
-- (CustomOptionFooServerMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionFooServerMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -1483,10 +1483,10 @@ static DummyMessageContainingEnum* defaultDummyMessageContainingEnumInstance = n
     defaultDummyMessageContainingEnumInstance = [[DummyMessageContainingEnum alloc] init];
   }
 }
-+ (DummyMessageContainingEnum*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultDummyMessageContainingEnumInstance;
 }
-- (DummyMessageContainingEnum*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultDummyMessageContainingEnumInstance;
 }
 - (BOOL) isInitialized {
@@ -1646,10 +1646,10 @@ static DummyMessageInvalidAsOptionType* defaultDummyMessageInvalidAsOptionTypeIn
     defaultDummyMessageInvalidAsOptionTypeInstance = [[DummyMessageInvalidAsOptionType alloc] init];
   }
 }
-+ (DummyMessageInvalidAsOptionType*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultDummyMessageInvalidAsOptionTypeInstance;
 }
-- (DummyMessageInvalidAsOptionType*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultDummyMessageInvalidAsOptionTypeInstance;
 }
 - (BOOL) isInitialized {
@@ -1800,10 +1800,10 @@ static CustomOptionMinIntegerValues* defaultCustomOptionMinIntegerValuesInstance
     defaultCustomOptionMinIntegerValuesInstance = [[CustomOptionMinIntegerValues alloc] init];
   }
 }
-+ (CustomOptionMinIntegerValues*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionMinIntegerValuesInstance;
 }
-- (CustomOptionMinIntegerValues*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionMinIntegerValuesInstance;
 }
 - (BOOL) isInitialized {
@@ -1954,10 +1954,10 @@ static CustomOptionMaxIntegerValues* defaultCustomOptionMaxIntegerValuesInstance
     defaultCustomOptionMaxIntegerValuesInstance = [[CustomOptionMaxIntegerValues alloc] init];
   }
 }
-+ (CustomOptionMaxIntegerValues*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionMaxIntegerValuesInstance;
 }
-- (CustomOptionMaxIntegerValues*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionMaxIntegerValuesInstance;
 }
 - (BOOL) isInitialized {
@@ -2108,10 +2108,10 @@ static CustomOptionOtherValues* defaultCustomOptionOtherValuesInstance = nil;
     defaultCustomOptionOtherValuesInstance = [[CustomOptionOtherValues alloc] init];
   }
 }
-+ (CustomOptionOtherValues*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultCustomOptionOtherValuesInstance;
 }
-- (CustomOptionOtherValues*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultCustomOptionOtherValuesInstance;
 }
 - (BOOL) isInitialized {
@@ -2262,10 +2262,10 @@ static SettingRealsFromPositiveInts* defaultSettingRealsFromPositiveIntsInstance
     defaultSettingRealsFromPositiveIntsInstance = [[SettingRealsFromPositiveInts alloc] init];
   }
 }
-+ (SettingRealsFromPositiveInts*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultSettingRealsFromPositiveIntsInstance;
 }
-- (SettingRealsFromPositiveInts*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultSettingRealsFromPositiveIntsInstance;
 }
 - (BOOL) isInitialized {
@@ -2416,10 +2416,10 @@ static SettingRealsFromNegativeInts* defaultSettingRealsFromNegativeIntsInstance
     defaultSettingRealsFromNegativeIntsInstance = [[SettingRealsFromNegativeInts alloc] init];
   }
 }
-+ (SettingRealsFromNegativeInts*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultSettingRealsFromNegativeIntsInstance;
 }
-- (SettingRealsFromNegativeInts*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultSettingRealsFromNegativeIntsInstance;
 }
 - (BOOL) isInitialized {
@@ -2600,10 +2600,10 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
     defaultComplexOptionType1Instance = [[ComplexOptionType1 alloc] init];
   }
 }
-+ (ComplexOptionType1*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOptionType1Instance;
 }
-- (ComplexOptionType1*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOptionType1Instance;
 }
 - (PBArray *)foo4 {
@@ -2976,10 +2976,10 @@ static ComplexOptionType2* defaultComplexOptionType2Instance = nil;
     defaultComplexOptionType2Instance = [[ComplexOptionType2 alloc] init];
   }
 }
-+ (ComplexOptionType2*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOptionType2Instance;
 }
-- (ComplexOptionType2*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOptionType2Instance;
 }
 - (NSArray *)barney {
@@ -3167,10 +3167,10 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
     defaultComplexOptionType2ComplexOptionType4Instance = [[ComplexOptionType2ComplexOptionType4 alloc] init];
   }
 }
-+ (ComplexOptionType2ComplexOptionType4*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOptionType2ComplexOptionType4Instance;
 }
-- (ComplexOptionType2ComplexOptionType4*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOptionType2ComplexOptionType4Instance;
 }
 - (BOOL) isInitialized {
@@ -3582,10 +3582,10 @@ static ComplexOptionType3* defaultComplexOptionType3Instance = nil;
     defaultComplexOptionType3Instance = [[ComplexOptionType3 alloc] init];
   }
 }
-+ (ComplexOptionType3*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOptionType3Instance;
 }
-- (ComplexOptionType3*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOptionType3Instance;
 }
 - (BOOL) isInitialized {
@@ -3712,10 +3712,10 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
     defaultComplexOptionType3ComplexOptionType5Instance = [[ComplexOptionType3ComplexOptionType5 alloc] init];
   }
 }
-+ (ComplexOptionType3ComplexOptionType5*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOptionType3ComplexOptionType5Instance;
 }
-- (ComplexOptionType3ComplexOptionType5*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOptionType3ComplexOptionType5Instance;
 }
 - (BOOL) isInitialized {
@@ -4041,10 +4041,10 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
     defaultComplexOpt6Instance = [[ComplexOpt6 alloc] init];
   }
 }
-+ (ComplexOpt6*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultComplexOpt6Instance;
 }
-- (ComplexOpt6*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultComplexOpt6Instance;
 }
 - (BOOL) isInitialized {
@@ -4232,10 +4232,10 @@ static VariousComplexOptions* defaultVariousComplexOptionsInstance = nil;
     defaultVariousComplexOptionsInstance = [[VariousComplexOptions alloc] init];
   }
 }
-+ (VariousComplexOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultVariousComplexOptionsInstance;
 }
-- (VariousComplexOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultVariousComplexOptionsInstance;
 }
 - (BOOL) isInitialized {
@@ -4386,10 +4386,10 @@ static AggregateMessageSet* defaultAggregateMessageSetInstance = nil;
     defaultAggregateMessageSetInstance = [[AggregateMessageSet alloc] init];
   }
 }
-+ (AggregateMessageSet*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultAggregateMessageSetInstance;
 }
-- (AggregateMessageSet*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultAggregateMessageSetInstance;
 }
 - (BOOL) isInitialized {
@@ -4567,10 +4567,10 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
     defaultAggregateMessageSetElementInstance = [[AggregateMessageSetElement alloc] init];
   }
 }
-+ (AggregateMessageSetElement*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultAggregateMessageSetElementInstance;
 }
-- (AggregateMessageSetElement*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultAggregateMessageSetElementInstance;
 }
 - (BOOL) isInitialized {
@@ -4806,10 +4806,10 @@ static Aggregate* defaultAggregateInstance = nil;
     defaultAggregateInstance = [[Aggregate alloc] init];
   }
 }
-+ (Aggregate*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultAggregateInstance;
 }
-- (Aggregate*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultAggregateInstance;
 }
 - (BOOL) isInitialized {
@@ -5235,10 +5235,10 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
     defaultAggregateMessageInstance = [[AggregateMessage alloc] init];
   }
 }
-+ (AggregateMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultAggregateMessageInstance;
 }
-- (AggregateMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultAggregateMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -5429,10 +5429,10 @@ static NestedOptionType* defaultNestedOptionTypeInstance = nil;
     defaultNestedOptionTypeInstance = [[NestedOptionType alloc] init];
   }
 }
-+ (NestedOptionType*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultNestedOptionTypeInstance;
 }
-- (NestedOptionType*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultNestedOptionTypeInstance;
 }
 - (BOOL) isInitialized {
@@ -5536,10 +5536,10 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
     defaultNestedOptionTypeNestedMessageInstance = [[NestedOptionTypeNestedMessage alloc] init];
   }
 }
-+ (NestedOptionTypeNestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultNestedOptionTypeNestedMessageInstance;
 }
-- (NestedOptionTypeNestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultNestedOptionTypeNestedMessageInstance;
 }
 - (BOOL) isInitialized {

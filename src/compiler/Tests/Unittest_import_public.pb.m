@@ -45,10 +45,10 @@ static PublicImportMessage* defaultPublicImportMessageInstance = nil;
     defaultPublicImportMessageInstance = [[PublicImportMessage alloc] init];
   }
 }
-+ (PublicImportMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPublicImportMessageInstance;
 }
-- (PublicImportMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPublicImportMessageInstance;
 }
 - (BOOL) isInitialized {

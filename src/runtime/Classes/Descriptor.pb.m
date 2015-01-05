@@ -39,10 +39,10 @@ static PBFileDescriptorSet* defaultPBFileDescriptorSetInstance = nil;
     defaultPBFileDescriptorSetInstance = [[PBFileDescriptorSet alloc] init];
   }
 }
-+ (PBFileDescriptorSet*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBFileDescriptorSetInstance;
 }
-- (PBFileDescriptorSet*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBFileDescriptorSetInstance;
 }
 - (NSArray *)file {
@@ -314,10 +314,10 @@ static PBFileDescriptorProto* defaultPBFileDescriptorProtoInstance = nil;
     defaultPBFileDescriptorProtoInstance = [[PBFileDescriptorProto alloc] init];
   }
 }
-+ (PBFileDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBFileDescriptorProtoInstance;
 }
-- (PBFileDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBFileDescriptorProtoInstance;
 }
 - (NSArray *)dependency {
@@ -1146,10 +1146,10 @@ static PBDescriptorProto* defaultPBDescriptorProtoInstance = nil;
     defaultPBDescriptorProtoInstance = [[PBDescriptorProto alloc] init];
   }
 }
-+ (PBDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBDescriptorProtoInstance;
 }
-- (PBDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBDescriptorProtoInstance;
 }
 - (NSArray *)field {
@@ -1454,10 +1454,10 @@ static PBDescriptorProtoExtensionRange* defaultPBDescriptorProtoExtensionRangeIn
     defaultPBDescriptorProtoExtensionRangeInstance = [[PBDescriptorProtoExtensionRange alloc] init];
   }
 }
-+ (PBDescriptorProtoExtensionRange*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBDescriptorProtoExtensionRangeInstance;
 }
-- (PBDescriptorProtoExtensionRange*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBDescriptorProtoExtensionRangeInstance;
 }
 - (BOOL) isInitialized {
@@ -2096,10 +2096,10 @@ static PBFieldDescriptorProto* defaultPBFieldDescriptorProtoInstance = nil;
     defaultPBFieldDescriptorProtoInstance = [[PBFieldDescriptorProto alloc] init];
   }
 }
-+ (PBFieldDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBFieldDescriptorProtoInstance;
 }
-- (PBFieldDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBFieldDescriptorProtoInstance;
 }
 - (BOOL) isInitialized {
@@ -2664,10 +2664,10 @@ static PBOneofDescriptorProto* defaultPBOneofDescriptorProtoInstance = nil;
     defaultPBOneofDescriptorProtoInstance = [[PBOneofDescriptorProto alloc] init];
   }
 }
-+ (PBOneofDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBOneofDescriptorProtoInstance;
 }
-- (PBOneofDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBOneofDescriptorProtoInstance;
 }
 - (BOOL) isInitialized {
@@ -2876,10 +2876,10 @@ static PBEnumDescriptorProto* defaultPBEnumDescriptorProtoInstance = nil;
     defaultPBEnumDescriptorProtoInstance = [[PBEnumDescriptorProto alloc] init];
   }
 }
-+ (PBEnumDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBEnumDescriptorProtoInstance;
 }
-- (PBEnumDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBEnumDescriptorProtoInstance;
 }
 - (NSArray *)value {
@@ -3222,10 +3222,10 @@ static PBEnumValueDescriptorProto* defaultPBEnumValueDescriptorProtoInstance = n
     defaultPBEnumValueDescriptorProtoInstance = [[PBEnumValueDescriptorProto alloc] init];
   }
 }
-+ (PBEnumValueDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBEnumValueDescriptorProtoInstance;
 }
-- (PBEnumValueDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBEnumValueDescriptorProtoInstance;
 }
 - (BOOL) isInitialized {
@@ -3535,10 +3535,10 @@ static PBServiceDescriptorProto* defaultPBServiceDescriptorProtoInstance = nil;
     defaultPBServiceDescriptorProtoInstance = [[PBServiceDescriptorProto alloc] init];
   }
 }
-+ (PBServiceDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBServiceDescriptorProtoInstance;
 }
-- (PBServiceDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBServiceDescriptorProtoInstance;
 }
 - (NSArray *)method {
@@ -3890,10 +3890,10 @@ static PBMethodDescriptorProto* defaultPBMethodDescriptorProtoInstance = nil;
     defaultPBMethodDescriptorProtoInstance = [[PBMethodDescriptorProto alloc] init];
   }
 }
-+ (PBMethodDescriptorProto*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBMethodDescriptorProtoInstance;
 }
-- (PBMethodDescriptorProto*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBMethodDescriptorProtoInstance;
 }
 - (BOOL) isInitialized {
@@ -4356,10 +4356,10 @@ static PBFileOptions* defaultPBFileOptionsInstance = nil;
     defaultPBFileOptionsInstance = [[PBFileOptions alloc] init];
   }
 }
-+ (PBFileOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBFileOptionsInstance;
 }
-- (PBFileOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBFileOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -5056,10 +5056,10 @@ static PBMessageOptions* defaultPBMessageOptionsInstance = nil;
     defaultPBMessageOptionsInstance = [[PBMessageOptions alloc] init];
   }
 }
-+ (PBMessageOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBMessageOptionsInstance;
 }
-- (PBMessageOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBMessageOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -5477,10 +5477,10 @@ static PBFieldOptions* defaultPBFieldOptionsInstance = nil;
     defaultPBFieldOptionsInstance = [[PBFieldOptions alloc] init];
   }
 }
-+ (PBFieldOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBFieldOptionsInstance;
 }
-- (PBFieldOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBFieldOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -5978,10 +5978,10 @@ static PBEnumOptions* defaultPBEnumOptionsInstance = nil;
     defaultPBEnumOptionsInstance = [[PBEnumOptions alloc] init];
   }
 }
-+ (PBEnumOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBEnumOptionsInstance;
 }
-- (PBEnumOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBEnumOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -6302,10 +6302,10 @@ static PBEnumValueOptions* defaultPBEnumValueOptionsInstance = nil;
     defaultPBEnumValueOptionsInstance = [[PBEnumValueOptions alloc] init];
   }
 }
-+ (PBEnumValueOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBEnumValueOptionsInstance;
 }
-- (PBEnumValueOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBEnumValueOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -6589,10 +6589,10 @@ static PBServiceOptions* defaultPBServiceOptionsInstance = nil;
     defaultPBServiceOptionsInstance = [[PBServiceOptions alloc] init];
   }
 }
-+ (PBServiceOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBServiceOptionsInstance;
 }
-- (PBServiceOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBServiceOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -6876,10 +6876,10 @@ static PBMethodOptions* defaultPBMethodOptionsInstance = nil;
     defaultPBMethodOptionsInstance = [[PBMethodOptions alloc] init];
   }
 }
-+ (PBMethodOptions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBMethodOptionsInstance;
 }
-- (PBMethodOptions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBMethodOptionsInstance;
 }
 - (NSArray *)uninterpretedOption {
@@ -7203,10 +7203,10 @@ static PBUninterpretedOption* defaultPBUninterpretedOptionInstance = nil;
     defaultPBUninterpretedOptionInstance = [[PBUninterpretedOption alloc] init];
   }
 }
-+ (PBUninterpretedOption*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBUninterpretedOptionInstance;
 }
-- (PBUninterpretedOption*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBUninterpretedOptionInstance;
 }
 - (NSArray *)name {
@@ -7430,10 +7430,10 @@ static PBUninterpretedOptionNamePart* defaultPBUninterpretedOptionNamePartInstan
     defaultPBUninterpretedOptionNamePartInstance = [[PBUninterpretedOptionNamePart alloc] init];
   }
 }
-+ (PBUninterpretedOptionNamePart*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBUninterpretedOptionNamePartInstance;
 }
-- (PBUninterpretedOptionNamePart*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBUninterpretedOptionNamePartInstance;
 }
 - (BOOL) isInitialized {
@@ -7903,10 +7903,10 @@ static PBSourceCodeInfo* defaultPBSourceCodeInfoInstance = nil;
     defaultPBSourceCodeInfoInstance = [[PBSourceCodeInfo alloc] init];
   }
 }
-+ (PBSourceCodeInfo*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBSourceCodeInfoInstance;
 }
-- (PBSourceCodeInfo*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBSourceCodeInfoInstance;
 }
 - (NSArray *)location {
@@ -8039,10 +8039,10 @@ static PBSourceCodeInfoLocation* defaultPBSourceCodeInfoLocationInstance = nil;
     defaultPBSourceCodeInfoLocationInstance = [[PBSourceCodeInfoLocation alloc] init];
   }
 }
-+ (PBSourceCodeInfoLocation*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultPBSourceCodeInfoLocationInstance;
 }
-- (PBSourceCodeInfoLocation*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultPBSourceCodeInfoLocationInstance;
 }
 - (PBArray *)path {

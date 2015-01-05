@@ -67,10 +67,10 @@ static TestMessage* defaultTestMessageInstance = nil;
     defaultTestMessageInstance = [[TestMessage alloc] init];
   }
 }
-+ (TestMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMessageInstance;
 }
-- (TestMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMessageInstance;
 }
 - (BOOL) isInitialized {

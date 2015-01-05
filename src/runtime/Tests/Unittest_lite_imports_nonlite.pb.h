@@ -178,8 +178,8 @@
 - (BOOL) hasMessage;
 @property (readonly, strong) TestAllTypes* message;
 
-+ (TestLiteImportsNonlite*) defaultInstance;
-- (TestLiteImportsNonlite*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

@@ -2142,10 +2142,10 @@ static TestAllTypes* defaultTestAllTypesInstance = nil;
     defaultTestAllTypesInstance = [[TestAllTypes alloc] init];
   }
 }
-+ (TestAllTypes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesInstance;
 }
-- (TestAllTypes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesInstance;
 }
 - (PBArray *)repeatedInt32 {
@@ -3636,10 +3636,10 @@ static TestAllTypesNestedMessage* defaultTestAllTypesNestedMessageInstance = nil
     defaultTestAllTypesNestedMessageInstance = [[TestAllTypesNestedMessage alloc] init];
   }
 }
-+ (TestAllTypesNestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesNestedMessageInstance;
 }
-- (TestAllTypesNestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesNestedMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -3836,10 +3836,10 @@ static TestAllTypesOptionalGroup* defaultTestAllTypesOptionalGroupInstance = nil
     defaultTestAllTypesOptionalGroupInstance = [[TestAllTypesOptionalGroup alloc] init];
   }
 }
-+ (TestAllTypesOptionalGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesOptionalGroupInstance;
 }
-- (TestAllTypesOptionalGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesOptionalGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -4036,10 +4036,10 @@ static TestAllTypesRepeatedGroup* defaultTestAllTypesRepeatedGroupInstance = nil
     defaultTestAllTypesRepeatedGroupInstance = [[TestAllTypesRepeatedGroup alloc] init];
   }
 }
-+ (TestAllTypesRepeatedGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllTypesRepeatedGroupInstance;
 }
-- (TestAllTypesRepeatedGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllTypesRepeatedGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -6511,10 +6511,10 @@ static NestedTestAllTypes* defaultNestedTestAllTypesInstance = nil;
     defaultNestedTestAllTypesInstance = [[NestedTestAllTypes alloc] init];
   }
 }
-+ (NestedTestAllTypes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultNestedTestAllTypesInstance;
 }
-- (NestedTestAllTypes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultNestedTestAllTypesInstance;
 }
 - (BOOL) isInitialized {
@@ -6792,10 +6792,10 @@ static TestDeprecatedFields* defaultTestDeprecatedFieldsInstance = nil;
     defaultTestDeprecatedFieldsInstance = [[TestDeprecatedFields alloc] init];
   }
 }
-+ (TestDeprecatedFields*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDeprecatedFieldsInstance;
 }
-- (TestDeprecatedFields*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDeprecatedFieldsInstance;
 }
 - (BOOL) isInitialized {
@@ -6992,10 +6992,10 @@ static ForeignMessage* defaultForeignMessageInstance = nil;
     defaultForeignMessageInstance = [[ForeignMessage alloc] init];
   }
 }
-+ (ForeignMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultForeignMessageInstance;
 }
-- (ForeignMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultForeignMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -7183,10 +7183,10 @@ static TestAllExtensions* defaultTestAllExtensionsInstance = nil;
     defaultTestAllExtensionsInstance = [[TestAllExtensions alloc] init];
   }
 }
-+ (TestAllExtensions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestAllExtensionsInstance;
 }
-- (TestAllExtensions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestAllExtensionsInstance;
 }
 - (BOOL) isInitialized {
@@ -7361,10 +7361,10 @@ static OptionalGroup_extension* defaultOptionalGroup_extensionInstance = nil;
     defaultOptionalGroup_extensionInstance = [[OptionalGroup_extension alloc] init];
   }
 }
-+ (OptionalGroup_extension*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultOptionalGroup_extensionInstance;
 }
-- (OptionalGroup_extension*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultOptionalGroup_extensionInstance;
 }
 - (BOOL) isInitialized {
@@ -7561,10 +7561,10 @@ static RepeatedGroup_extension* defaultRepeatedGroup_extensionInstance = nil;
     defaultRepeatedGroup_extensionInstance = [[RepeatedGroup_extension alloc] init];
   }
 }
-+ (RepeatedGroup_extension*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultRepeatedGroup_extensionInstance;
 }
-- (RepeatedGroup_extension*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultRepeatedGroup_extensionInstance;
 }
 - (BOOL) isInitialized {
@@ -7758,10 +7758,10 @@ static TestNestedExtension* defaultTestNestedExtensionInstance = nil;
     defaultTestNestedExtensionInstance = [[TestNestedExtension alloc] init];
   }
 }
-+ (TestNestedExtension*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestNestedExtensionInstance;
 }
-- (TestNestedExtension*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestNestedExtensionInstance;
 }
 - (BOOL) isInitialized {
@@ -8215,10 +8215,10 @@ static TestRequired* defaultTestRequiredInstance = nil;
     defaultTestRequiredInstance = [[TestRequired alloc] init];
   }
 }
-+ (TestRequired*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRequiredInstance;
 }
-- (TestRequired*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRequiredInstance;
 }
 - (BOOL) isInitialized {
@@ -9620,10 +9620,10 @@ static TestRequiredForeign* defaultTestRequiredForeignInstance = nil;
     defaultTestRequiredForeignInstance = [[TestRequiredForeign alloc] init];
   }
 }
-+ (TestRequiredForeign*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRequiredForeignInstance;
 }
-- (TestRequiredForeign*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRequiredForeignInstance;
 }
 - (NSArray *)repeatedMessage {
@@ -9948,10 +9948,10 @@ static TestForeignNested* defaultTestForeignNestedInstance = nil;
     defaultTestForeignNestedInstance = [[TestForeignNested alloc] init];
   }
 }
-+ (TestForeignNested*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestForeignNestedInstance;
 }
-- (TestForeignNested*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestForeignNestedInstance;
 }
 - (BOOL) isInitialized {
@@ -10161,10 +10161,10 @@ static TestEmptyMessage* defaultTestEmptyMessageInstance = nil;
     defaultTestEmptyMessageInstance = [[TestEmptyMessage alloc] init];
   }
 }
-+ (TestEmptyMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEmptyMessageInstance;
 }
-- (TestEmptyMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEmptyMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -10315,10 +10315,10 @@ static TestEmptyMessageWithExtensions* defaultTestEmptyMessageWithExtensionsInst
     defaultTestEmptyMessageWithExtensionsInstance = [[TestEmptyMessageWithExtensions alloc] init];
   }
 }
-+ (TestEmptyMessageWithExtensions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEmptyMessageWithExtensionsInstance;
 }
-- (TestEmptyMessageWithExtensions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEmptyMessageWithExtensionsInstance;
 }
 - (BOOL) isInitialized {
@@ -10484,10 +10484,10 @@ static TestMultipleExtensionRanges* defaultTestMultipleExtensionRangesInstance =
     defaultTestMultipleExtensionRangesInstance = [[TestMultipleExtensionRanges alloc] init];
   }
 }
-+ (TestMultipleExtensionRanges*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMultipleExtensionRangesInstance;
 }
-- (TestMultipleExtensionRanges*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMultipleExtensionRangesInstance;
 }
 - (BOOL) isInitialized {
@@ -10691,10 +10691,10 @@ static TestReallyLargeTagNumber* defaultTestReallyLargeTagNumberInstance = nil;
     defaultTestReallyLargeTagNumberInstance = [[TestReallyLargeTagNumber alloc] init];
   }
 }
-+ (TestReallyLargeTagNumber*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestReallyLargeTagNumberInstance;
 }
-- (TestReallyLargeTagNumber*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestReallyLargeTagNumberInstance;
 }
 - (BOOL) isInitialized {
@@ -10937,10 +10937,10 @@ static TestRecursiveMessage* defaultTestRecursiveMessageInstance = nil;
     defaultTestRecursiveMessageInstance = [[TestRecursiveMessage alloc] init];
   }
 }
-+ (TestRecursiveMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRecursiveMessageInstance;
 }
-- (TestRecursiveMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRecursiveMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -11196,10 +11196,10 @@ static TestMutualRecursionA* defaultTestMutualRecursionAInstance = nil;
     defaultTestMutualRecursionAInstance = [[TestMutualRecursionA alloc] init];
   }
 }
-+ (TestMutualRecursionA*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMutualRecursionAInstance;
 }
-- (TestMutualRecursionA*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMutualRecursionAInstance;
 }
 - (BOOL) isInitialized {
@@ -11427,10 +11427,10 @@ static TestMutualRecursionB* defaultTestMutualRecursionBInstance = nil;
     defaultTestMutualRecursionBInstance = [[TestMutualRecursionB alloc] init];
   }
 }
-+ (TestMutualRecursionB*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestMutualRecursionBInstance;
 }
-- (TestMutualRecursionB*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestMutualRecursionBInstance;
 }
 - (BOOL) isInitialized {
@@ -11704,10 +11704,10 @@ static TestDupFieldNumber* defaultTestDupFieldNumberInstance = nil;
     defaultTestDupFieldNumberInstance = [[TestDupFieldNumber alloc] init];
   }
 }
-+ (TestDupFieldNumber*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDupFieldNumberInstance;
 }
-- (TestDupFieldNumber*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDupFieldNumberInstance;
 }
 - (BOOL) isInitialized {
@@ -11851,10 +11851,10 @@ static TestDupFieldNumberFoo* defaultTestDupFieldNumberFooInstance = nil;
     defaultTestDupFieldNumberFooInstance = [[TestDupFieldNumberFoo alloc] init];
   }
 }
-+ (TestDupFieldNumberFoo*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDupFieldNumberFooInstance;
 }
-- (TestDupFieldNumberFoo*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDupFieldNumberFooInstance;
 }
 - (BOOL) isInitialized {
@@ -12051,10 +12051,10 @@ static TestDupFieldNumberBar* defaultTestDupFieldNumberBarInstance = nil;
     defaultTestDupFieldNumberBarInstance = [[TestDupFieldNumberBar alloc] init];
   }
 }
-+ (TestDupFieldNumberBar*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDupFieldNumberBarInstance;
 }
-- (TestDupFieldNumberBar*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDupFieldNumberBarInstance;
 }
 - (BOOL) isInitialized {
@@ -12422,10 +12422,10 @@ static TestEagerMessage* defaultTestEagerMessageInstance = nil;
     defaultTestEagerMessageInstance = [[TestEagerMessage alloc] init];
   }
 }
-+ (TestEagerMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEagerMessageInstance;
 }
-- (TestEagerMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEagerMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -12644,10 +12644,10 @@ static TestLazyMessage* defaultTestLazyMessageInstance = nil;
     defaultTestLazyMessageInstance = [[TestLazyMessage alloc] init];
   }
 }
-+ (TestLazyMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestLazyMessageInstance;
 }
-- (TestLazyMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestLazyMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -12866,10 +12866,10 @@ static TestNestedMessageHasBits* defaultTestNestedMessageHasBitsInstance = nil;
     defaultTestNestedMessageHasBitsInstance = [[TestNestedMessageHasBits alloc] init];
   }
 }
-+ (TestNestedMessageHasBits*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestNestedMessageHasBitsInstance;
 }
-- (TestNestedMessageHasBits*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestNestedMessageHasBitsInstance;
 }
 - (BOOL) isInitialized {
@@ -12979,10 +12979,10 @@ static TestNestedMessageHasBitsNestedMessage* defaultTestNestedMessageHasBitsNes
     defaultTestNestedMessageHasBitsNestedMessageInstance = [[TestNestedMessageHasBitsNestedMessage alloc] init];
   }
 }
-+ (TestNestedMessageHasBitsNestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestNestedMessageHasBitsNestedMessageInstance;
 }
-- (TestNestedMessageHasBitsNestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestNestedMessageHasBitsNestedMessageInstance;
 }
 - (PBArray *)nestedmessageRepeatedInt32 {
@@ -13433,10 +13433,10 @@ static TestCamelCaseFieldNames* defaultTestCamelCaseFieldNamesInstance = nil;
     defaultTestCamelCaseFieldNamesInstance = [[TestCamelCaseFieldNames alloc] init];
   }
 }
-+ (TestCamelCaseFieldNames*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestCamelCaseFieldNamesInstance;
 }
-- (TestCamelCaseFieldNames*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestCamelCaseFieldNamesInstance;
 }
 - (PBArray *)repeatedPrimitiveField {
@@ -14225,10 +14225,10 @@ static TestFieldOrderings* defaultTestFieldOrderingsInstance = nil;
     defaultTestFieldOrderingsInstance = [[TestFieldOrderings alloc] init];
   }
 }
-+ (TestFieldOrderings*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestFieldOrderingsInstance;
 }
-- (TestFieldOrderings*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestFieldOrderingsInstance;
 }
 - (BOOL) isInitialized {
@@ -14758,10 +14758,10 @@ static TestExtremeDefaultValues* defaultTestExtremeDefaultValuesInstance = nil;
     defaultTestExtremeDefaultValuesInstance = [[TestExtremeDefaultValues alloc] init];
   }
 }
-+ (TestExtremeDefaultValues*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestExtremeDefaultValuesInstance;
 }
-- (TestExtremeDefaultValues*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestExtremeDefaultValuesInstance;
 }
 - (BOOL) isInitialized {
@@ -15920,10 +15920,10 @@ static SparseEnumMessage* defaultSparseEnumMessageInstance = nil;
     defaultSparseEnumMessageInstance = [[SparseEnumMessage alloc] init];
   }
 }
-+ (SparseEnumMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultSparseEnumMessageInstance;
 }
-- (SparseEnumMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultSparseEnumMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -16125,10 +16125,10 @@ static OneString* defaultOneStringInstance = nil;
     defaultOneStringInstance = [[OneString alloc] init];
   }
 }
-+ (OneString*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultOneStringInstance;
 }
-- (OneString*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultOneStringInstance;
 }
 - (BOOL) isInitialized {
@@ -16319,10 +16319,10 @@ static MoreString* defaultMoreStringInstance = nil;
     defaultMoreStringInstance = [[MoreString alloc] init];
   }
 }
-+ (MoreString*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultMoreStringInstance;
 }
-- (MoreString*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultMoreStringInstance;
 }
 - (NSArray *)data {
@@ -16539,10 +16539,10 @@ static OneBytes* defaultOneBytesInstance = nil;
     defaultOneBytesInstance = [[OneBytes alloc] init];
   }
 }
-+ (OneBytes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultOneBytesInstance;
 }
-- (OneBytes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultOneBytesInstance;
 }
 - (BOOL) isInitialized {
@@ -16733,10 +16733,10 @@ static MoreBytes* defaultMoreBytesInstance = nil;
     defaultMoreBytesInstance = [[MoreBytes alloc] init];
   }
 }
-+ (MoreBytes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultMoreBytesInstance;
 }
-- (MoreBytes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultMoreBytesInstance;
 }
 - (NSArray *)data {
@@ -16953,10 +16953,10 @@ static Int32Message* defaultInt32MessageInstance = nil;
     defaultInt32MessageInstance = [[Int32Message alloc] init];
   }
 }
-+ (Int32Message*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultInt32MessageInstance;
 }
-- (Int32Message*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultInt32MessageInstance;
 }
 - (BOOL) isInitialized {
@@ -17153,10 +17153,10 @@ static Uint32Message* defaultUint32MessageInstance = nil;
     defaultUint32MessageInstance = [[Uint32Message alloc] init];
   }
 }
-+ (Uint32Message*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultUint32MessageInstance;
 }
-- (Uint32Message*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultUint32MessageInstance;
 }
 - (BOOL) isInitialized {
@@ -17353,10 +17353,10 @@ static Int64Message* defaultInt64MessageInstance = nil;
     defaultInt64MessageInstance = [[Int64Message alloc] init];
   }
 }
-+ (Int64Message*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultInt64MessageInstance;
 }
-- (Int64Message*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultInt64MessageInstance;
 }
 - (BOOL) isInitialized {
@@ -17553,10 +17553,10 @@ static Uint64Message* defaultUint64MessageInstance = nil;
     defaultUint64MessageInstance = [[Uint64Message alloc] init];
   }
 }
-+ (Uint64Message*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultUint64MessageInstance;
 }
-- (Uint64Message*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultUint64MessageInstance;
 }
 - (BOOL) isInitialized {
@@ -17758,10 +17758,10 @@ static BoolMessage* defaultBoolMessageInstance = nil;
     defaultBoolMessageInstance = [[BoolMessage alloc] init];
   }
 }
-+ (BoolMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultBoolMessageInstance;
 }
-- (BoolMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultBoolMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -17985,10 +17985,10 @@ static TestOneof* defaultTestOneofInstance = nil;
     defaultTestOneofInstance = [[TestOneof alloc] init];
   }
 }
-+ (TestOneof*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneofInstance;
 }
-- (TestOneof*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneofInstance;
 }
 - (BOOL) isInitialized {
@@ -18155,10 +18155,10 @@ static TestOneofFooGroup* defaultTestOneofFooGroupInstance = nil;
     defaultTestOneofFooGroupInstance = [[TestOneofFooGroup alloc] init];
   }
 }
-+ (TestOneofFooGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneofFooGroupInstance;
 }
-- (TestOneofFooGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneofFooGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -18613,10 +18613,10 @@ static TestOneofBackwardsCompatible* defaultTestOneofBackwardsCompatibleInstance
     defaultTestOneofBackwardsCompatibleInstance = [[TestOneofBackwardsCompatible alloc] init];
   }
 }
-+ (TestOneofBackwardsCompatible*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneofBackwardsCompatibleInstance;
 }
-- (TestOneofBackwardsCompatible*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneofBackwardsCompatibleInstance;
 }
 - (BOOL) isInitialized {
@@ -18783,10 +18783,10 @@ static TestOneofBackwardsCompatibleFooGroup* defaultTestOneofBackwardsCompatible
     defaultTestOneofBackwardsCompatibleFooGroupInstance = [[TestOneofBackwardsCompatibleFooGroup alloc] init];
   }
 }
-+ (TestOneofBackwardsCompatibleFooGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneofBackwardsCompatibleFooGroupInstance;
 }
-- (TestOneofBackwardsCompatibleFooGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneofBackwardsCompatibleFooGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -19358,10 +19358,10 @@ static TestOneof2* defaultTestOneof2Instance = nil;
     defaultTestOneof2Instance = [[TestOneof2 alloc] init];
   }
 }
-+ (TestOneof2*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneof2Instance;
 }
-- (TestOneof2*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneof2Instance;
 }
 - (BOOL) isInitialized {
@@ -19723,10 +19723,10 @@ static TestOneof2FooGroup* defaultTestOneof2FooGroupInstance = nil;
     defaultTestOneof2FooGroupInstance = [[TestOneof2FooGroup alloc] init];
   }
 }
-+ (TestOneof2FooGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneof2FooGroupInstance;
 }
-- (TestOneof2FooGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneof2FooGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -19963,10 +19963,10 @@ static TestOneof2NestedMessage* defaultTestOneof2NestedMessageInstance = nil;
     defaultTestOneof2NestedMessageInstance = [[TestOneof2NestedMessage alloc] init];
   }
 }
-+ (TestOneof2NestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestOneof2NestedMessageInstance;
 }
-- (TestOneof2NestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestOneof2NestedMessageInstance;
 }
 - (PBArray *)corgeInt {
@@ -20769,10 +20769,10 @@ static TestRequiredOneof* defaultTestRequiredOneofInstance = nil;
     defaultTestRequiredOneofInstance = [[TestRequiredOneof alloc] init];
   }
 }
-+ (TestRequiredOneof*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRequiredOneofInstance;
 }
-- (TestRequiredOneof*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRequiredOneofInstance;
 }
 - (BOOL) isInitialized {
@@ -20918,10 +20918,10 @@ static TestRequiredOneofNestedMessage* defaultTestRequiredOneofNestedMessageInst
     defaultTestRequiredOneofNestedMessageInstance = [[TestRequiredOneofNestedMessage alloc] init];
   }
 }
-+ (TestRequiredOneofNestedMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRequiredOneofNestedMessageInstance;
 }
-- (TestRequiredOneofNestedMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRequiredOneofNestedMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -21306,10 +21306,10 @@ static TestPackedTypes* defaultTestPackedTypesInstance = nil;
     defaultTestPackedTypesInstance = [[TestPackedTypes alloc] init];
   }
 }
-+ (TestPackedTypes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestPackedTypesInstance;
 }
-- (TestPackedTypes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestPackedTypesInstance;
 }
 - (PBArray *)packedInt32 {
@@ -22603,10 +22603,10 @@ static TestUnpackedTypes* defaultTestUnpackedTypesInstance = nil;
     defaultTestUnpackedTypesInstance = [[TestUnpackedTypes alloc] init];
   }
 }
-+ (TestUnpackedTypes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestUnpackedTypesInstance;
 }
-- (TestUnpackedTypes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestUnpackedTypesInstance;
 }
 - (PBArray *)unpackedInt32 {
@@ -23663,10 +23663,10 @@ static TestPackedExtensions* defaultTestPackedExtensionsInstance = nil;
     defaultTestPackedExtensionsInstance = [[TestPackedExtensions alloc] init];
   }
 }
-+ (TestPackedExtensions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestPackedExtensionsInstance;
 }
-- (TestPackedExtensions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestPackedExtensionsInstance;
 }
 - (BOOL) isInitialized {
@@ -23832,10 +23832,10 @@ static TestUnpackedExtensions* defaultTestUnpackedExtensionsInstance = nil;
     defaultTestUnpackedExtensionsInstance = [[TestUnpackedExtensions alloc] init];
   }
 }
-+ (TestUnpackedExtensions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestUnpackedExtensionsInstance;
 }
-- (TestUnpackedExtensions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestUnpackedExtensionsInstance;
 }
 - (BOOL) isInitialized {
@@ -24052,10 +24052,10 @@ static TestDynamicExtensions* defaultTestDynamicExtensionsInstance = nil;
     defaultTestDynamicExtensionsInstance = [[TestDynamicExtensions alloc] init];
   }
 }
-+ (TestDynamicExtensions*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDynamicExtensionsInstance;
 }
-- (TestDynamicExtensions*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDynamicExtensionsInstance;
 }
 - (NSArray *)repeatedExtension {
@@ -24298,10 +24298,10 @@ static TestDynamicExtensionsDynamicMessageType* defaultTestDynamicExtensionsDyna
     defaultTestDynamicExtensionsDynamicMessageTypeInstance = [[TestDynamicExtensionsDynamicMessageType alloc] init];
   }
 }
-+ (TestDynamicExtensionsDynamicMessageType*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestDynamicExtensionsDynamicMessageTypeInstance;
 }
-- (TestDynamicExtensionsDynamicMessageType*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestDynamicExtensionsDynamicMessageTypeInstance;
 }
 - (BOOL) isInitialized {
@@ -24810,10 +24810,10 @@ static TestRepeatedScalarDifferentTagSizes* defaultTestRepeatedScalarDifferentTa
     defaultTestRepeatedScalarDifferentTagSizesInstance = [[TestRepeatedScalarDifferentTagSizes alloc] init];
   }
 }
-+ (TestRepeatedScalarDifferentTagSizes*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestRepeatedScalarDifferentTagSizesInstance;
 }
-- (TestRepeatedScalarDifferentTagSizes*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestRepeatedScalarDifferentTagSizesInstance;
 }
 - (PBArray *)repeatedFixed32 {
@@ -25390,10 +25390,10 @@ static TestParsingMerge* defaultTestParsingMergeInstance = nil;
     defaultTestParsingMergeInstance = [[TestParsingMerge alloc] init];
   }
 }
-+ (TestParsingMerge*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeInstance;
 }
-- (TestParsingMerge*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeInstance;
 }
 - (NSArray *)repeatedAllTypes {
@@ -25613,10 +25613,10 @@ static TestParsingMergeRepeatedFieldsGenerator* defaultTestParsingMergeRepeatedF
     defaultTestParsingMergeRepeatedFieldsGeneratorInstance = [[TestParsingMergeRepeatedFieldsGenerator alloc] init];
   }
 }
-+ (TestParsingMergeRepeatedFieldsGenerator*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorInstance;
 }
-- (TestParsingMergeRepeatedFieldsGenerator*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorInstance;
 }
 - (NSArray *)field1 {
@@ -25866,10 +25866,10 @@ static TestParsingMergeRepeatedFieldsGeneratorGroup1* defaultTestParsingMergeRep
     defaultTestParsingMergeRepeatedFieldsGeneratorGroup1Instance = [[TestParsingMergeRepeatedFieldsGeneratorGroup1 alloc] init];
   }
 }
-+ (TestParsingMergeRepeatedFieldsGeneratorGroup1*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorGroup1Instance;
 }
-- (TestParsingMergeRepeatedFieldsGeneratorGroup1*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorGroup1Instance;
 }
 - (BOOL) isInitialized {
@@ -26088,10 +26088,10 @@ static TestParsingMergeRepeatedFieldsGeneratorGroup2* defaultTestParsingMergeRep
     defaultTestParsingMergeRepeatedFieldsGeneratorGroup2Instance = [[TestParsingMergeRepeatedFieldsGeneratorGroup2 alloc] init];
   }
 }
-+ (TestParsingMergeRepeatedFieldsGeneratorGroup2*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorGroup2Instance;
 }
-- (TestParsingMergeRepeatedFieldsGeneratorGroup2*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedFieldsGeneratorGroup2Instance;
 }
 - (BOOL) isInitialized {
@@ -26612,10 +26612,10 @@ static TestParsingMergeOptionalGroup* defaultTestParsingMergeOptionalGroupInstan
     defaultTestParsingMergeOptionalGroupInstance = [[TestParsingMergeOptionalGroup alloc] init];
   }
 }
-+ (TestParsingMergeOptionalGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeOptionalGroupInstance;
 }
-- (TestParsingMergeOptionalGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeOptionalGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -26834,10 +26834,10 @@ static TestParsingMergeRepeatedGroup* defaultTestParsingMergeRepeatedGroupInstan
     defaultTestParsingMergeRepeatedGroupInstance = [[TestParsingMergeRepeatedGroup alloc] init];
   }
 }
-+ (TestParsingMergeRepeatedGroup*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedGroupInstance;
 }
-- (TestParsingMergeRepeatedGroup*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestParsingMergeRepeatedGroupInstance;
 }
 - (BOOL) isInitialized {
@@ -27315,10 +27315,10 @@ static TestCommentInjectionMessage* defaultTestCommentInjectionMessageInstance =
     defaultTestCommentInjectionMessageInstance = [[TestCommentInjectionMessage alloc] init];
   }
 }
-+ (TestCommentInjectionMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestCommentInjectionMessageInstance;
 }
-- (TestCommentInjectionMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestCommentInjectionMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -27506,10 +27506,10 @@ static FooRequest* defaultFooRequestInstance = nil;
     defaultFooRequestInstance = [[FooRequest alloc] init];
   }
 }
-+ (FooRequest*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultFooRequestInstance;
 }
-- (FooRequest*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultFooRequestInstance;
 }
 - (BOOL) isInitialized {
@@ -27660,10 +27660,10 @@ static FooResponse* defaultFooResponseInstance = nil;
     defaultFooResponseInstance = [[FooResponse alloc] init];
   }
 }
-+ (FooResponse*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultFooResponseInstance;
 }
-- (FooResponse*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultFooResponseInstance;
 }
 - (BOOL) isInitialized {
@@ -27814,10 +27814,10 @@ static FooClientMessage* defaultFooClientMessageInstance = nil;
     defaultFooClientMessageInstance = [[FooClientMessage alloc] init];
   }
 }
-+ (FooClientMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultFooClientMessageInstance;
 }
-- (FooClientMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultFooClientMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -27968,10 +27968,10 @@ static FooServerMessage* defaultFooServerMessageInstance = nil;
     defaultFooServerMessageInstance = [[FooServerMessage alloc] init];
   }
 }
-+ (FooServerMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultFooServerMessageInstance;
 }
-- (FooServerMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultFooServerMessageInstance;
 }
 - (BOOL) isInitialized {
@@ -28122,10 +28122,10 @@ static BarRequest* defaultBarRequestInstance = nil;
     defaultBarRequestInstance = [[BarRequest alloc] init];
   }
 }
-+ (BarRequest*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultBarRequestInstance;
 }
-- (BarRequest*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultBarRequestInstance;
 }
 - (BOOL) isInitialized {
@@ -28276,10 +28276,10 @@ static BarResponse* defaultBarResponseInstance = nil;
     defaultBarResponseInstance = [[BarResponse alloc] init];
   }
 }
-+ (BarResponse*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultBarResponseInstance;
 }
-- (BarResponse*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultBarResponseInstance;
 }
 - (BOOL) isInitialized {

@@ -187,8 +187,8 @@
 @property (readonly, strong) NSArray * repeatedMessage;
 - (TestOptimizedForSize*)repeatedMessageAtIndex:(NSUInteger)index;
 
-+ (TestEmbedOptimizedForSize*) defaultInstance;
-- (TestEmbedOptimizedForSize*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

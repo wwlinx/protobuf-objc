@@ -56,10 +56,10 @@ static ImportMessage* defaultImportMessageInstance = nil;
     defaultImportMessageInstance = [[ImportMessage alloc] init];
   }
 }
-+ (ImportMessage*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultImportMessageInstance;
 }
-- (ImportMessage*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultImportMessageInstance;
 }
 - (BOOL) isInitialized {

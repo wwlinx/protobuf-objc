@@ -197,8 +197,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasField1;
 @property (readonly, strong) NSString* field1;
 
-+ (TestMessageWithCustomOptions*) defaultInstance;
-- (TestMessageWithCustomOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -242,8 +242,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionFooRequest*) defaultInstance;
-- (CustomOptionFooRequest*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -282,8 +282,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionFooResponse*) defaultInstance;
-- (CustomOptionFooResponse*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -322,8 +322,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionFooClientMessage*) defaultInstance;
-- (CustomOptionFooClientMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -362,8 +362,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionFooServerMessage*) defaultInstance;
-- (CustomOptionFooServerMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -402,8 +402,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (DummyMessageContainingEnum*) defaultInstance;
-- (DummyMessageContainingEnum*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -442,8 +442,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (DummyMessageInvalidAsOptionType*) defaultInstance;
-- (DummyMessageInvalidAsOptionType*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -482,8 +482,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionMinIntegerValues*) defaultInstance;
-- (CustomOptionMinIntegerValues*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -522,8 +522,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionMaxIntegerValues*) defaultInstance;
-- (CustomOptionMaxIntegerValues*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -562,8 +562,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (CustomOptionOtherValues*) defaultInstance;
-- (CustomOptionOtherValues*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -602,8 +602,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (SettingRealsFromPositiveInts*) defaultInstance;
-- (SettingRealsFromPositiveInts*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -642,8 +642,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (SettingRealsFromNegativeInts*) defaultInstance;
-- (SettingRealsFromNegativeInts*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -697,8 +697,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @property (readonly, strong) PBArray * foo4;
 - (SInt32)foo4AtIndex:(NSUInteger)index;
 
-+ (ComplexOptionType1*) defaultInstance;
-- (ComplexOptionType1*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -774,8 +774,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @property (readonly, strong) NSArray * barney;
 - (ComplexOptionType2ComplexOptionType4*)barneyAtIndex:(NSUInteger)index;
 
-+ (ComplexOptionType2*) defaultInstance;
-- (ComplexOptionType2*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -800,8 +800,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasWaldo;
 @property (readonly) SInt32 waldo;
 
-+ (ComplexOptionType2ComplexOptionType4*) defaultInstance;
-- (ComplexOptionType2ComplexOptionType4*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) complexOpt4;
 - (BOOL) isInitialized;
@@ -897,8 +897,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @property (readonly) SInt32 qux;
 @property (readonly, strong) ComplexOptionType3ComplexOptionType5* complexOptionType5;
 
-+ (ComplexOptionType3*) defaultInstance;
-- (ComplexOptionType3*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -923,8 +923,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasPlugh;
 @property (readonly) SInt32 plugh;
 
-+ (ComplexOptionType3ComplexOptionType5*) defaultInstance;
-- (ComplexOptionType3ComplexOptionType5*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1002,8 +1002,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasXyzzy;
 @property (readonly) SInt32 xyzzy;
 
-+ (ComplexOpt6*) defaultInstance;
-- (ComplexOpt6*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1047,8 +1047,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (VariousComplexOptions*) defaultInstance;
-- (VariousComplexOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1087,8 +1087,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (AggregateMessageSet*) defaultInstance;
-- (AggregateMessageSet*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1131,8 +1131,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasS;
 @property (readonly, strong) NSString* s;
 
-+ (AggregateMessageSetElement*) defaultInstance;
-- (AggregateMessageSetElement*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) messageSetExtension;
 - (BOOL) isInitialized;
@@ -1197,8 +1197,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @property (readonly, strong) PBFileOptions* file;
 @property (readonly, strong) AggregateMessageSet* mset;
 
-+ (Aggregate*) defaultInstance;
-- (Aggregate*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) nested;
 - (BOOL) isInitialized;
@@ -1273,8 +1273,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasFieldname;
 @property (readonly) SInt32 fieldname;
 
-+ (AggregateMessage*) defaultInstance;
-- (AggregateMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1318,8 +1318,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 @private
 }
 
-+ (NestedOptionType*) defaultInstance;
-- (NestedOptionType*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) nestedExtension;
 - (BOOL) isInitialized;
@@ -1345,8 +1345,8 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 - (BOOL) hasNestedField;
 @property (readonly) SInt32 nestedField;
 
-+ (NestedOptionTypeNestedMessage*) defaultInstance;
-- (NestedOptionTypeNestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

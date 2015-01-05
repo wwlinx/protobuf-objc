@@ -284,8 +284,8 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         
         printer->Print(
                        "\n"
-                       "+ ($classname$*) defaultInstance;\n"
-                       "- ($classname$*) defaultInstance;\n",
+                       "+ (instancetype) defaultInstance;\n"
+                       "- (instancetype) defaultInstance;\n",
                        "classname", ClassName(descriptor_));
         printer->Print(
                        "\n",
@@ -363,10 +363,10 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         printer->Print(
                        "  }\n"
                        "}\n"
-                       "+ ($classname$*) defaultInstance {\n"
+                       "+ (instancetype) defaultInstance {\n"
                        "  return default$classname$Instance;\n"
                        "}\n"
-                       "- ($classname$*) defaultInstance {\n"
+                       "- (instancetype) defaultInstance {\n"
                        "  return default$classname$Instance;\n"
                        "}\n",
                        "classname", ClassName(descriptor_));

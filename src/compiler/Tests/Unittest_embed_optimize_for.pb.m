@@ -49,10 +49,10 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
     defaultTestEmbedOptimizedForSizeInstance = [[TestEmbedOptimizedForSize alloc] init];
   }
 }
-+ (TestEmbedOptimizedForSize*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultTestEmbedOptimizedForSizeInstance;
 }
-- (TestEmbedOptimizedForSize*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultTestEmbedOptimizedForSizeInstance;
 }
 - (NSArray *)repeatedMessage {

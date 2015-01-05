@@ -40,8 +40,8 @@ BOOL TestEnumIsValidValue(TestEnum value);
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestMessage*) defaultInstance;
-- (TestMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

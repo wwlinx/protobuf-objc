@@ -605,8 +605,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (NSString*)repeatedCordAtIndex:(NSUInteger)index;
 - (TestAllTypesNestedMessage*)repeatedLazyMessageAtIndex:(NSUInteger)index;
 
-+ (TestAllTypes*) defaultInstance;
-- (TestAllTypes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -631,8 +631,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasBb;
 @property (readonly) SInt32 bb;
 
-+ (TestAllTypesNestedMessage*) defaultInstance;
-- (TestAllTypesNestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -680,8 +680,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestAllTypesOptionalGroup*) defaultInstance;
-- (TestAllTypesOptionalGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -729,8 +729,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestAllTypesRepeatedGroup*) defaultInstance;
-- (TestAllTypesRepeatedGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1230,8 +1230,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NestedTestAllTypes* child;
 @property (readonly, strong) TestAllTypes* payload;
 
-+ (NestedTestAllTypes*) defaultInstance;
-- (NestedTestAllTypes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1288,8 +1288,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasDeprecatedInt32;
 @property (readonly) SInt32 deprecatedInt32;
 
-+ (TestDeprecatedFields*) defaultInstance;
-- (TestDeprecatedFields*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1337,8 +1337,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasC;
 @property (readonly) SInt32 c;
 
-+ (ForeignMessage*) defaultInstance;
-- (ForeignMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1382,8 +1382,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestAllExtensions*) defaultInstance;
-- (TestAllExtensions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1426,8 +1426,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (OptionalGroup_extension*) defaultInstance;
-- (OptionalGroup_extension*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1475,8 +1475,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (RepeatedGroup_extension*) defaultInstance;
-- (RepeatedGroup_extension*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1520,8 +1520,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestNestedExtension*) defaultInstance;
-- (TestNestedExtension*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) test;
 + (id<PBExtensionField>) nestedStringExtension;
@@ -1694,8 +1694,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 dummy32;
 @property (readonly) SInt32 c;
 
-+ (TestRequired*) defaultInstance;
-- (TestRequired*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) single;
 + (id<PBExtensionField>) multi;
@@ -1912,8 +1912,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 dummy;
 - (TestRequired*)repeatedMessageAtIndex:(NSUInteger)index;
 
-+ (TestRequiredForeign*) defaultInstance;
-- (TestRequiredForeign*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1974,8 +1974,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasForeignNested;
 @property (readonly, strong) TestAllTypesNestedMessage* foreignNested;
 
-+ (TestForeignNested*) defaultInstance;
-- (TestForeignNested*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2021,8 +2021,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestEmptyMessage*) defaultInstance;
-- (TestEmptyMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2061,8 +2061,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestEmptyMessageWithExtensions*) defaultInstance;
-- (TestEmptyMessageWithExtensions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2101,8 +2101,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestMultipleExtensionRanges*) defaultInstance;
-- (TestMultipleExtensionRanges*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2149,8 +2149,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 a;
 @property (readonly) SInt32 bb;
 
-+ (TestReallyLargeTagNumber*) defaultInstance;
-- (TestReallyLargeTagNumber*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2207,8 +2207,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) TestRecursiveMessage* a;
 @property (readonly) SInt32 i;
 
-+ (TestRecursiveMessage*) defaultInstance;
-- (TestRecursiveMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2263,8 +2263,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasBb;
 @property (readonly, strong) TestMutualRecursionB* bb;
 
-+ (TestMutualRecursionA*) defaultInstance;
-- (TestMutualRecursionA*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2318,8 +2318,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) TestMutualRecursionA* a;
 @property (readonly) SInt32 optionalInt32;
 
-+ (TestMutualRecursionB*) defaultInstance;
-- (TestMutualRecursionB*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2382,8 +2382,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) TestDupFieldNumberFoo* foo;
 @property (readonly, strong) TestDupFieldNumberBar* bar;
 
-+ (TestDupFieldNumber*) defaultInstance;
-- (TestDupFieldNumber*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2408,8 +2408,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestDupFieldNumberFoo*) defaultInstance;
-- (TestDupFieldNumberFoo*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2457,8 +2457,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly) SInt32 a;
 
-+ (TestDupFieldNumberBar*) defaultInstance;
-- (TestDupFieldNumberBar*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2543,8 +2543,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasSubMessage;
 @property (readonly, strong) TestAllTypes* subMessage;
 
-+ (TestEagerMessage*) defaultInstance;
-- (TestEagerMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2594,8 +2594,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasSubMessage;
 @property (readonly, strong) TestAllTypes* subMessage;
 
-+ (TestLazyMessage*) defaultInstance;
-- (TestLazyMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2645,8 +2645,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasOptionalNestedMessage;
 @property (readonly, strong) TestNestedMessageHasBitsNestedMessage* optionalNestedMessage;
 
-+ (TestNestedMessageHasBits*) defaultInstance;
-- (TestNestedMessageHasBits*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2673,8 +2673,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (SInt32)nestedmessageRepeatedInt32AtIndex:(NSUInteger)index;
 - (ForeignMessage*)nestedmessageRepeatedForeignmessageAtIndex:(NSUInteger)index;
 
-+ (TestNestedMessageHasBitsNestedMessage*) defaultInstance;
-- (TestNestedMessageHasBitsNestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2793,8 +2793,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (NSString*)repeatedStringPieceFieldAtIndex:(NSUInteger)index;
 - (NSString*)repeatedCordFieldAtIndex:(NSUInteger)index;
 
-+ (TestCamelCaseFieldNames*) defaultInstance;
-- (TestCamelCaseFieldNames*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -2915,8 +2915,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt64 myInt;
 @property (readonly) Float32 myFloat;
 
-+ (TestFieldOrderings*) defaultInstance;
-- (TestFieldOrderings*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3078,8 +3078,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NSString* cordWithZero;
 @property (readonly, strong) NSString* replacementString;
 
-+ (TestExtremeDefaultValues*) defaultInstance;
-- (TestExtremeDefaultValues*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3257,8 +3257,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasSparseEnum;
 @property (readonly) TestSparseEnum sparseEnum;
 
-+ (SparseEnumMessage*) defaultInstance;
-- (SparseEnumMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3306,8 +3306,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly, strong) NSString* data;
 
-+ (OneString*) defaultInstance;
-- (OneString*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3354,8 +3354,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NSArray * data;
 - (NSString*)dataAtIndex:(NSUInteger)index;
 
-+ (MoreString*) defaultInstance;
-- (MoreString*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3404,8 +3404,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly, strong) NSData* data;
 
-+ (OneBytes*) defaultInstance;
-- (OneBytes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3452,8 +3452,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NSArray * data;
 - (NSData*)dataAtIndex:(NSUInteger)index;
 
-+ (MoreBytes*) defaultInstance;
-- (MoreBytes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3502,8 +3502,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly) SInt32 data;
 
-+ (Int32Message*) defaultInstance;
-- (Int32Message*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3551,8 +3551,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly) UInt32 data;
 
-+ (Uint32Message*) defaultInstance;
-- (Uint32Message*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3600,8 +3600,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly) SInt64 data;
 
-+ (Int64Message*) defaultInstance;
-- (Int64Message*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3649,8 +3649,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 @property (readonly) UInt64 data;
 
-+ (Uint64Message*) defaultInstance;
-- (Uint64Message*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3698,8 +3698,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasData;
 - (BOOL) data;
 
-+ (BoolMessage*) defaultInstance;
-- (BoolMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3759,8 +3759,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) TestAllTypes* fooMessage;
 @property (readonly, strong) TestOneofFooGroup* fooGroup;
 
-+ (TestOneof*) defaultInstance;
-- (TestOneof*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3789,8 +3789,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 a;
 @property (readonly, strong) NSString* b;
 
-+ (TestOneofFooGroup*) defaultInstance;
-- (TestOneofFooGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3897,8 +3897,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) TestAllTypes* fooMessage;
 @property (readonly, strong) TestOneofBackwardsCompatibleFooGroup* fooGroup;
 
-+ (TestOneofBackwardsCompatible*) defaultInstance;
-- (TestOneofBackwardsCompatible*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -3927,8 +3927,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 a;
 @property (readonly, strong) NSString* b;
 
-+ (TestOneofBackwardsCompatibleFooGroup*) defaultInstance;
-- (TestOneofBackwardsCompatibleFooGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4087,8 +4087,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 bazInt;
 @property (readonly, strong) NSString* bazString;
 
-+ (TestOneof2*) defaultInstance;
-- (TestOneof2*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4117,8 +4117,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly) SInt32 a;
 @property (readonly, strong) NSString* b;
 
-+ (TestOneof2FooGroup*) defaultInstance;
-- (TestOneof2FooGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4174,8 +4174,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) PBArray * corgeInt;
 - (SInt32)corgeIntAtIndex:(NSUInteger)index;
 
-+ (TestOneof2NestedMessage*) defaultInstance;
-- (TestOneof2NestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4347,8 +4347,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @property (readonly, strong) NSString* fooString;
 @property (readonly, strong) TestRequiredOneofNestedMessage* fooMessage;
 
-+ (TestRequiredOneof*) defaultInstance;
-- (TestRequiredOneof*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4373,8 +4373,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasRequiredDouble;
 @property (readonly) Float64 requiredDouble;
 
-+ (TestRequiredOneofNestedMessage*) defaultInstance;
-- (TestRequiredOneofNestedMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4509,8 +4509,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL)packedBoolAtIndex:(NSUInteger)index;
 - (ForeignEnum)packedEnumAtIndex:(NSUInteger)index;
 
-+ (TestPackedTypes*) defaultInstance;
-- (TestPackedTypes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4689,8 +4689,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL)unpackedBoolAtIndex:(NSUInteger)index;
 - (ForeignEnum)unpackedEnumAtIndex:(NSUInteger)index;
 
-+ (TestUnpackedTypes*) defaultInstance;
-- (TestUnpackedTypes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4827,8 +4827,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestPackedExtensions*) defaultInstance;
-- (TestPackedExtensions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4867,8 +4867,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (TestUnpackedExtensions*) defaultInstance;
-- (TestUnpackedExtensions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4934,8 +4934,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (NSString*)repeatedExtensionAtIndex:(NSUInteger)index;
 - (SInt32)packedExtensionAtIndex:(NSUInteger)index;
 
-+ (TestDynamicExtensions*) defaultInstance;
-- (TestDynamicExtensions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -4960,8 +4960,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasDynamicField;
 @property (readonly) SInt32 dynamicField;
 
-+ (TestDynamicExtensionsDynamicMessageType*) defaultInstance;
-- (TestDynamicExtensionsDynamicMessageType*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5083,8 +5083,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (Float32)repeatedFloatAtIndex:(NSUInteger)index;
 - (UInt64)repeatedUint64AtIndex:(NSUInteger)index;
 
-+ (TestRepeatedScalarDifferentTagSizes*) defaultInstance;
-- (TestRepeatedScalarDifferentTagSizes*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5183,8 +5183,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (TestAllTypes*)repeatedAllTypesAtIndex:(NSUInteger)index;
 - (TestParsingMergeRepeatedGroup*)repeatedGroupAtIndex:(NSUInteger)index;
 
-+ (TestParsingMerge*) defaultInstance;
-- (TestParsingMerge*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 + (id<PBExtensionField>) optionalExt;
 + (id<PBExtensionField>) repeatedExt;
@@ -5228,8 +5228,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (TestAllTypes*)ext1AtIndex:(NSUInteger)index;
 - (TestAllTypes*)ext2AtIndex:(NSUInteger)index;
 
-+ (TestParsingMergeRepeatedFieldsGenerator*) defaultInstance;
-- (TestParsingMergeRepeatedFieldsGenerator*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5254,8 +5254,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasField1;
 @property (readonly, strong) TestAllTypes* field1;
 
-+ (TestParsingMergeRepeatedFieldsGeneratorGroup1*) defaultInstance;
-- (TestParsingMergeRepeatedFieldsGeneratorGroup1*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5305,8 +5305,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasField1;
 @property (readonly, strong) TestAllTypes* field1;
 
-+ (TestParsingMergeRepeatedFieldsGeneratorGroup2*) defaultInstance;
-- (TestParsingMergeRepeatedFieldsGeneratorGroup2*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5416,8 +5416,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasOptionalGroupAllTypes;
 @property (readonly, strong) TestAllTypes* optionalGroupAllTypes;
 
-+ (TestParsingMergeOptionalGroup*) defaultInstance;
-- (TestParsingMergeOptionalGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5467,8 +5467,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasRepeatedGroupAllTypes;
 @property (readonly, strong) TestAllTypes* repeatedGroupAllTypes;
 
-+ (TestParsingMergeRepeatedGroup*) defaultInstance;
-- (TestParsingMergeRepeatedGroup*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5569,8 +5569,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 - (BOOL) hasA;
 @property (readonly, strong) NSString* a;
 
-+ (TestCommentInjectionMessage*) defaultInstance;
-- (TestCommentInjectionMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5614,8 +5614,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (FooRequest*) defaultInstance;
-- (FooRequest*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5654,8 +5654,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (FooResponse*) defaultInstance;
-- (FooResponse*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5694,8 +5694,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (FooClientMessage*) defaultInstance;
-- (FooClientMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5734,8 +5734,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (FooServerMessage*) defaultInstance;
-- (FooServerMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5774,8 +5774,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (BarRequest*) defaultInstance;
-- (BarRequest*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -5814,8 +5814,8 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 @private
 }
 
-+ (BarResponse*) defaultInstance;
-- (BarResponse*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

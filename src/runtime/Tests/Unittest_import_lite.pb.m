@@ -56,10 +56,10 @@ static ImportMessageLite* defaultImportMessageLiteInstance = nil;
     defaultImportMessageLiteInstance = [[ImportMessageLite alloc] init];
   }
 }
-+ (ImportMessageLite*) defaultInstance {
++ (instancetype) defaultInstance {
   return defaultImportMessageLiteInstance;
 }
-- (ImportMessageLite*) defaultInstance {
+- (instancetype) defaultInstance {
   return defaultImportMessageLiteInstance;
 }
 - (BOOL) isInitialized {

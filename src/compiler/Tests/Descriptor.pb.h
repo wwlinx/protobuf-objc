@@ -117,8 +117,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * file;
 - (PBFileDescriptorProto*)fileAtIndex:(NSUInteger)index;
 
-+ (PBFileDescriptorSet*) defaultInstance;
-- (PBFileDescriptorSet*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -200,8 +200,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 - (PBServiceDescriptorProto*)serviceAtIndex:(NSUInteger)index;
 - (PBFieldDescriptorProto*)extensionAtIndex:(NSUInteger)index;
 
-+ (PBFileDescriptorProto*) defaultInstance;
-- (PBFileDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -334,8 +334,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 - (PBDescriptorProtoExtensionRange*)extensionRangeAtIndex:(NSUInteger)index;
 - (PBOneofDescriptorProto*)oneofDeclAtIndex:(NSUInteger)index;
 
-+ (PBDescriptorProto*) defaultInstance;
-- (PBDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -364,8 +364,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly) SInt32 start;
 @property (readonly) SInt32 end;
 
-+ (PBDescriptorProtoExtensionRange*) defaultInstance;
-- (PBDescriptorProtoExtensionRange*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -516,8 +516,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly) SInt32 oneofIndex;
 @property (readonly, strong) PBFieldOptions* options;
 
-+ (PBFieldDescriptorProto*) defaultInstance;
-- (PBFieldDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -607,8 +607,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 - (BOOL) hasName;
 @property (readonly, strong) NSString* name;
 
-+ (PBOneofDescriptorProto*) defaultInstance;
-- (PBOneofDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -663,8 +663,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) PBEnumOptions* options;
 - (PBEnumValueDescriptorProto*)valueAtIndex:(NSUInteger)index;
 
-+ (PBEnumDescriptorProto*) defaultInstance;
-- (PBEnumDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -733,8 +733,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly) SInt32 number;
 @property (readonly, strong) PBEnumValueOptions* options;
 
-+ (PBEnumValueDescriptorProto*) defaultInstance;
-- (PBEnumValueDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -801,8 +801,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) PBServiceOptions* options;
 - (PBMethodDescriptorProto*)methodAtIndex:(NSUInteger)index;
 
-+ (PBServiceDescriptorProto*) defaultInstance;
-- (PBServiceDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -875,8 +875,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSString* outputType;
 @property (readonly, strong) PBMethodOptions* options;
 
-+ (PBMethodDescriptorProto*) defaultInstance;
-- (PBMethodDescriptorProto*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -984,8 +984,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBFileOptions*) defaultInstance;
-- (PBFileOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1100,8 +1100,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBMessageOptions*) defaultInstance;
-- (PBMessageOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1188,8 +1188,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBFieldOptions*) defaultInstance;
-- (PBFieldOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1275,8 +1275,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBEnumOptions*) defaultInstance;
-- (PBEnumOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1338,8 +1338,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBEnumValueOptions*) defaultInstance;
-- (PBEnumValueOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1396,8 +1396,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBServiceOptions*) defaultInstance;
-- (PBServiceOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1454,8 +1454,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * uninterpretedOption;
 - (PBUninterpretedOption*)uninterpretedOptionAtIndex:(NSUInteger)index;
 
-+ (PBMethodOptions*) defaultInstance;
-- (PBMethodOptions*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1532,8 +1532,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSString* aggregateValue;
 - (PBUninterpretedOptionNamePart*)nameAtIndex:(NSUInteger)index;
 
-+ (PBUninterpretedOption*) defaultInstance;
-- (PBUninterpretedOption*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1562,8 +1562,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSString* namePart;
 - (BOOL) isExtension;
 
-+ (PBUninterpretedOptionNamePart*) defaultInstance;
-- (PBUninterpretedOptionNamePart*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1669,8 +1669,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 @property (readonly, strong) NSArray * location;
 - (PBSourceCodeInfoLocation*)locationAtIndex:(NSUInteger)index;
 
-+ (PBSourceCodeInfo*) defaultInstance;
-- (PBSourceCodeInfo*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
@@ -1707,8 +1707,8 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 - (SInt32)pathAtIndex:(NSUInteger)index;
 - (SInt32)spanAtIndex:(NSUInteger)index;
 
-+ (PBSourceCodeInfoLocation*) defaultInstance;
-- (PBSourceCodeInfoLocation*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

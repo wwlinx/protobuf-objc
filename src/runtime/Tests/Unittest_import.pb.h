@@ -44,8 +44,8 @@ BOOL ImportEnumIsValidValue(ImportEnum value);
 - (BOOL) hasD;
 @property (readonly) SInt32 d;
 
-+ (ImportMessage*) defaultInstance;
-- (ImportMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;

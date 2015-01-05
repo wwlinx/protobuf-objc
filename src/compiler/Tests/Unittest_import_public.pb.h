@@ -33,8 +33,8 @@
 - (BOOL) hasE;
 @property (readonly) SInt32 e;
 
-+ (PublicImportMessage*) defaultInstance;
-- (PublicImportMessage*) defaultInstance;
++ (instancetype) defaultInstance;
+- (instancetype) defaultInstance;
 
 - (BOOL) isInitialized;
 - (void) writeToCodedOutputStream:(PBCodedOutputStream*) output;
