@@ -55,7 +55,7 @@ BOOL TestEnumIsValidValue(TestEnum value) {
   hasA_ = !!value_;
 }
 @synthesize a;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.a = 0;
   }
@@ -175,7 +175,7 @@ static TestMessage* defaultTestMessageInstance = nil;
 
 @implementation TestMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessage alloc] init];
   }

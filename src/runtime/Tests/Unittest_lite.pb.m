@@ -1800,7 +1800,7 @@ BOOL ForeignEnumLiteIsValidValue(ForeignEnumLite value) {
   hasOneofBytes_ = !!value_;
 }
 @synthesize oneofBytes;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.optionalInt32 = 0;
     self.optionalInt64 = 0L;
@@ -3342,7 +3342,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value) {
   hasBb_ = !!value_;
 }
 @synthesize bb;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.bb = 0;
   }
@@ -3448,7 +3448,7 @@ static TestAllTypesLiteNestedMessage* defaultTestAllTypesLiteNestedMessageInstan
 
 @implementation TestAllTypesLiteNestedMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestAllTypesLiteNestedMessage alloc] init];
   }
@@ -3542,7 +3542,7 @@ static TestAllTypesLiteNestedMessage* defaultTestAllTypesLiteNestedMessageInstan
   hasA_ = !!value_;
 }
 @synthesize a;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.a = 0;
   }
@@ -3648,7 +3648,7 @@ static TestAllTypesLiteOptionalGroup* defaultTestAllTypesLiteOptionalGroupInstan
 
 @implementation TestAllTypesLiteOptionalGroupBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestAllTypesLiteOptionalGroup alloc] init];
   }
@@ -3742,7 +3742,7 @@ static TestAllTypesLiteOptionalGroup* defaultTestAllTypesLiteOptionalGroupInstan
   hasA_ = !!value_;
 }
 @synthesize a;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.a = 0;
   }
@@ -3848,7 +3848,7 @@ static TestAllTypesLiteRepeatedGroup* defaultTestAllTypesLiteRepeatedGroupInstan
 
 @implementation TestAllTypesLiteRepeatedGroupBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestAllTypesLiteRepeatedGroup alloc] init];
   }
@@ -3935,7 +3935,7 @@ static TestAllTypesLiteRepeatedGroup* defaultTestAllTypesLiteRepeatedGroupInstan
 
 @implementation TestAllTypesLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestAllTypesLite alloc] init];
   }
@@ -6208,7 +6208,7 @@ static TestAllTypesLiteRepeatedGroup* defaultTestAllTypesLiteRepeatedGroupInstan
   hasC_ = !!value_;
 }
 @synthesize c;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.c = 0;
   }
@@ -6314,7 +6314,7 @@ static ForeignMessageLite* defaultForeignMessageLiteInstance = nil;
 
 @implementation ForeignMessageLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ForeignMessageLite alloc] init];
   }
@@ -6442,7 +6442,7 @@ static ForeignMessageLite* defaultForeignMessageLiteInstance = nil;
 @dynamic packedBool;
 @synthesize packedEnumArray;
 @dynamic packedEnum;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -7016,7 +7016,7 @@ static TestPackedTypesLite* defaultTestPackedTypesLiteInstance = nil;
 
 @implementation TestPackedTypesLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestPackedTypesLite alloc] init];
   }
@@ -7697,7 +7697,7 @@ static TestPackedTypesLite* defaultTestPackedTypesLiteInstance = nil;
 
 @implementation TestAllExtensionsLite
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -7802,7 +7802,7 @@ static TestAllExtensionsLite* defaultTestAllExtensionsLiteInstance = nil;
 
 @implementation TestAllExtensionsLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestAllExtensionsLite alloc] init];
   }
@@ -7874,7 +7874,7 @@ static TestAllExtensionsLite* defaultTestAllExtensionsLiteInstance = nil;
   hasA_ = !!value_;
 }
 @synthesize a;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.a = 0;
   }
@@ -7980,7 +7980,7 @@ static OptionalGroup_extension_lite* defaultOptionalGroup_extension_liteInstance
 
 @implementation OptionalGroup_extension_liteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[OptionalGroup_extension_lite alloc] init];
   }
@@ -8074,7 +8074,7 @@ static OptionalGroup_extension_lite* defaultOptionalGroup_extension_liteInstance
   hasA_ = !!value_;
 }
 @synthesize a;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.a = 0;
   }
@@ -8180,7 +8180,7 @@ static RepeatedGroup_extension_lite* defaultRepeatedGroup_extension_liteInstance
 
 @implementation RepeatedGroup_extension_liteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[RepeatedGroup_extension_lite alloc] init];
   }
@@ -8266,7 +8266,7 @@ static RepeatedGroup_extension_lite* defaultRepeatedGroup_extension_liteInstance
 
 @implementation TestPackedExtensionsLite
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -8371,7 +8371,7 @@ static TestPackedExtensionsLite* defaultTestPackedExtensionsLiteInstance = nil;
 
 @implementation TestPackedExtensionsLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestPackedExtensionsLite alloc] init];
   }
@@ -8435,7 +8435,7 @@ static TestPackedExtensionsLite* defaultTestPackedExtensionsLiteInstance = nil;
 
 @implementation TestNestedExtensionLite
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -8529,7 +8529,7 @@ static TestNestedExtensionLite* defaultTestNestedExtensionLiteInstance = nil;
 
 @implementation TestNestedExtensionLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestNestedExtensionLite alloc] init];
   }
@@ -8600,7 +8600,7 @@ static TestNestedExtensionLite* defaultTestNestedExtensionLiteInstance = nil;
   hasDeprecatedField_ = !!value_;
 }
 @synthesize deprecatedField;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.deprecatedField = 0;
   }
@@ -8706,7 +8706,7 @@ static TestDeprecatedLite* defaultTestDeprecatedLiteInstance = nil;
 
 @implementation TestDeprecatedLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestDeprecatedLite alloc] init];
   }
@@ -8822,7 +8822,7 @@ static TestDeprecatedLite* defaultTestDeprecatedLiteInstance = nil;
 @synthesize optionalGroup;
 @synthesize repeatedGroupArray;
 @dynamic repeatedGroup;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.requiredAllTypes = [TestAllTypesLite defaultInstance];
     self.optionalAllTypes = [TestAllTypesLite defaultInstance];
@@ -9054,7 +9054,7 @@ static TestParsingMergeLite* defaultTestParsingMergeLiteInstance = nil;
 @dynamic ext1;
 @synthesize ext2Array;
 @dynamic ext2;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -9306,7 +9306,7 @@ static TestParsingMergeLiteRepeatedFieldsGenerator* defaultTestParsingMergeLiteR
   hasField1_ = !!value_;
 }
 @synthesize field1;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.field1 = [TestAllTypesLite defaultInstance];
   }
@@ -9415,7 +9415,7 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup1* defaultTestParsingMerg
 
 @implementation TestParsingMergeLiteRepeatedFieldsGeneratorGroup1Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLiteRepeatedFieldsGeneratorGroup1 alloc] init];
   }
@@ -9528,7 +9528,7 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup1* defaultTestParsingMerg
   hasField1_ = !!value_;
 }
 @synthesize field1;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.field1 = [TestAllTypesLite defaultInstance];
   }
@@ -9637,7 +9637,7 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* defaultTestParsingMerg
 
 @implementation TestParsingMergeLiteRepeatedFieldsGeneratorGroup2Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLiteRepeatedFieldsGeneratorGroup2 alloc] init];
   }
@@ -9743,7 +9743,7 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* defaultTestParsingMerg
 
 @implementation TestParsingMergeLiteRepeatedFieldsGeneratorBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLiteRepeatedFieldsGenerator alloc] init];
   }
@@ -10052,7 +10052,7 @@ static TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* defaultTestParsingMerg
   hasOptionalGroupAllTypes_ = !!value_;
 }
 @synthesize optionalGroupAllTypes;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.optionalGroupAllTypes = [TestAllTypesLite defaultInstance];
   }
@@ -10161,7 +10161,7 @@ static TestParsingMergeLiteOptionalGroup* defaultTestParsingMergeLiteOptionalGro
 
 @implementation TestParsingMergeLiteOptionalGroupBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLiteOptionalGroup alloc] init];
   }
@@ -10274,7 +10274,7 @@ static TestParsingMergeLiteOptionalGroup* defaultTestParsingMergeLiteOptionalGro
   hasRepeatedGroupAllTypes_ = !!value_;
 }
 @synthesize repeatedGroupAllTypes;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.repeatedGroupAllTypes = [TestAllTypesLite defaultInstance];
   }
@@ -10383,7 +10383,7 @@ static TestParsingMergeLiteRepeatedGroup* defaultTestParsingMergeLiteRepeatedGro
 
 @implementation TestParsingMergeLiteRepeatedGroupBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLiteRepeatedGroup alloc] init];
   }
@@ -10489,7 +10489,7 @@ static TestParsingMergeLiteRepeatedGroup* defaultTestParsingMergeLiteRepeatedGro
 
 @implementation TestParsingMergeLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestParsingMergeLite alloc] init];
   }
@@ -10747,7 +10747,7 @@ static TestParsingMergeLiteRepeatedGroup* defaultTestParsingMergeLiteRepeatedGro
 
 @implementation TestEmptyMessageLite
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -10838,7 +10838,7 @@ static TestEmptyMessageLite* defaultTestEmptyMessageLiteInstance = nil;
 
 @implementation TestEmptyMessageLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestEmptyMessageLite alloc] init];
   }
@@ -10901,7 +10901,7 @@ static TestEmptyMessageLite* defaultTestEmptyMessageLiteInstance = nil;
 
 @implementation TestEmptyMessageWithExtensionsLite
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -11006,7 +11006,7 @@ static TestEmptyMessageWithExtensionsLite* defaultTestEmptyMessageWithExtensions
 
 @implementation TestEmptyMessageWithExtensionsLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestEmptyMessageWithExtensionsLite alloc] init];
   }

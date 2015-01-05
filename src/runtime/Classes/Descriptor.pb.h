@@ -57,7 +57,7 @@
   #endif
 #endif
 
-typedef enum {
+typedef NS_ENUM(SInt32, PBFieldDescriptorProtoType) {
   PBFieldDescriptorProtoTypeTypeDouble = 1,
   PBFieldDescriptorProtoTypeTypeFloat = 2,
   PBFieldDescriptorProtoTypeTypeInt64 = 3,
@@ -76,31 +76,31 @@ typedef enum {
   PBFieldDescriptorProtoTypeTypeSfixed64 = 16,
   PBFieldDescriptorProtoTypeTypeSint32 = 17,
   PBFieldDescriptorProtoTypeTypeSint64 = 18,
-} PBFieldDescriptorProtoType;
+};
 
 BOOL PBFieldDescriptorProtoTypeIsValidValue(PBFieldDescriptorProtoType value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, PBFieldDescriptorProtoLabel) {
   PBFieldDescriptorProtoLabelLabelOptional = 1,
   PBFieldDescriptorProtoLabelLabelRequired = 2,
   PBFieldDescriptorProtoLabelLabelRepeated = 3,
-} PBFieldDescriptorProtoLabel;
+};
 
 BOOL PBFieldDescriptorProtoLabelIsValidValue(PBFieldDescriptorProtoLabel value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, PBFileOptionsOptimizeMode) {
   PBFileOptionsOptimizeModeSpeed = 1,
   PBFileOptionsOptimizeModeCodeSize = 2,
   PBFileOptionsOptimizeModeLiteRuntime = 3,
-} PBFileOptionsOptimizeMode;
+};
 
 BOOL PBFileOptionsOptimizeModeIsValidValue(PBFileOptionsOptimizeMode value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, PBFieldOptionsCType) {
   PBFieldOptionsCTypeString = 0,
   PBFieldOptionsCTypeCord = 1,
   PBFieldOptionsCTypeStringPiece = 2,
-} PBFieldOptionsCType;
+};
 
 BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 
@@ -184,7 +184,7 @@ BOOL PBFieldOptionsCTypeIsValidValue(PBFieldOptionsCType value);
 - (BOOL) hasSourceCodeInfo;
 @property (readonly, strong) NSString* name;
 @property (readonly, strong) NSString* package;
-@property (readonly, strong) PBArray * dependency;
+@property (readonly, strong) NSArray * dependency;
 @property (readonly, strong) PBArray * publicDependency;
 @property (readonly, strong) PBArray * weakDependency;
 @property (readonly, strong) NSArray * messageType;

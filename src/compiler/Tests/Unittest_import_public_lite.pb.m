@@ -33,7 +33,7 @@ static PBExtensionRegistry* extensionRegistry = nil;
   hasE_ = !!value_;
 }
 @synthesize e;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.e = 0;
   }
@@ -139,7 +139,7 @@ static PublicImportMessageLite* defaultPublicImportMessageLiteInstance = nil;
 
 @implementation PublicImportMessageLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[PublicImportMessageLite alloc] init];
   }

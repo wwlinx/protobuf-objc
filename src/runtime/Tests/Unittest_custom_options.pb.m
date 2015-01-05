@@ -655,7 +655,7 @@ BOOL AggregateEnumIsValidValue(AggregateEnum value) {
   hasField1_ = !!value_;
 }
 @synthesize field1;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.field1 = @"";
   }
@@ -770,7 +770,7 @@ BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptions
 
 @implementation TestMessageWithCustomOptionsBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessageWithCustomOptions alloc] init];
   }
@@ -856,7 +856,7 @@ BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptions
 
 @implementation CustomOptionFooRequest
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -947,7 +947,7 @@ static CustomOptionFooRequest* defaultCustomOptionFooRequestInstance = nil;
 
 @implementation CustomOptionFooRequestBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionFooRequest alloc] init];
   }
@@ -1010,7 +1010,7 @@ static CustomOptionFooRequest* defaultCustomOptionFooRequestInstance = nil;
 
 @implementation CustomOptionFooResponse
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1101,7 +1101,7 @@ static CustomOptionFooResponse* defaultCustomOptionFooResponseInstance = nil;
 
 @implementation CustomOptionFooResponseBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionFooResponse alloc] init];
   }
@@ -1164,7 +1164,7 @@ static CustomOptionFooResponse* defaultCustomOptionFooResponseInstance = nil;
 
 @implementation CustomOptionFooClientMessage
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1255,7 +1255,7 @@ static CustomOptionFooClientMessage* defaultCustomOptionFooClientMessageInstance
 
 @implementation CustomOptionFooClientMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionFooClientMessage alloc] init];
   }
@@ -1318,7 +1318,7 @@ static CustomOptionFooClientMessage* defaultCustomOptionFooClientMessageInstance
 
 @implementation CustomOptionFooServerMessage
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1409,7 +1409,7 @@ static CustomOptionFooServerMessage* defaultCustomOptionFooServerMessageInstance
 
 @implementation CustomOptionFooServerMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionFooServerMessage alloc] init];
   }
@@ -1472,7 +1472,7 @@ static CustomOptionFooServerMessage* defaultCustomOptionFooServerMessageInstance
 
 @implementation DummyMessageContainingEnum
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1572,7 +1572,7 @@ BOOL DummyMessageContainingEnumTestEnumTypeIsValidValue(DummyMessageContainingEn
 
 @implementation DummyMessageContainingEnumBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[DummyMessageContainingEnum alloc] init];
   }
@@ -1635,7 +1635,7 @@ BOOL DummyMessageContainingEnumTestEnumTypeIsValidValue(DummyMessageContainingEn
 
 @implementation DummyMessageInvalidAsOptionType
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1726,7 +1726,7 @@ static DummyMessageInvalidAsOptionType* defaultDummyMessageInvalidAsOptionTypeIn
 
 @implementation DummyMessageInvalidAsOptionTypeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[DummyMessageInvalidAsOptionType alloc] init];
   }
@@ -1789,7 +1789,7 @@ static DummyMessageInvalidAsOptionType* defaultDummyMessageInvalidAsOptionTypeIn
 
 @implementation CustomOptionMinIntegerValues
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -1880,7 +1880,7 @@ static CustomOptionMinIntegerValues* defaultCustomOptionMinIntegerValuesInstance
 
 @implementation CustomOptionMinIntegerValuesBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionMinIntegerValues alloc] init];
   }
@@ -1943,7 +1943,7 @@ static CustomOptionMinIntegerValues* defaultCustomOptionMinIntegerValuesInstance
 
 @implementation CustomOptionMaxIntegerValues
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -2034,7 +2034,7 @@ static CustomOptionMaxIntegerValues* defaultCustomOptionMaxIntegerValuesInstance
 
 @implementation CustomOptionMaxIntegerValuesBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionMaxIntegerValues alloc] init];
   }
@@ -2097,7 +2097,7 @@ static CustomOptionMaxIntegerValues* defaultCustomOptionMaxIntegerValuesInstance
 
 @implementation CustomOptionOtherValues
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -2188,7 +2188,7 @@ static CustomOptionOtherValues* defaultCustomOptionOtherValuesInstance = nil;
 
 @implementation CustomOptionOtherValuesBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[CustomOptionOtherValues alloc] init];
   }
@@ -2251,7 +2251,7 @@ static CustomOptionOtherValues* defaultCustomOptionOtherValuesInstance = nil;
 
 @implementation SettingRealsFromPositiveInts
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -2342,7 +2342,7 @@ static SettingRealsFromPositiveInts* defaultSettingRealsFromPositiveIntsInstance
 
 @implementation SettingRealsFromPositiveIntsBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[SettingRealsFromPositiveInts alloc] init];
   }
@@ -2405,7 +2405,7 @@ static SettingRealsFromPositiveInts* defaultSettingRealsFromPositiveIntsInstance
 
 @implementation SettingRealsFromNegativeInts
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -2496,7 +2496,7 @@ static SettingRealsFromNegativeInts* defaultSettingRealsFromNegativeIntsInstance
 
 @implementation SettingRealsFromNegativeIntsBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[SettingRealsFromNegativeInts alloc] init];
   }
@@ -2586,7 +2586,7 @@ static SettingRealsFromNegativeInts* defaultSettingRealsFromNegativeIntsInstance
 @synthesize foo3;
 @synthesize foo4Array;
 @dynamic foo4;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.foo = 0;
     self.foo2 = 0;
@@ -2766,7 +2766,7 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
 
 @implementation ComplexOptionType1Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOptionType1 alloc] init];
   }
@@ -2962,7 +2962,7 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
 @synthesize fred;
 @synthesize barneyArray;
 @dynamic barney;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.bar = [ComplexOptionType1 defaultInstance];
     self.baz = 0;
@@ -3152,7 +3152,7 @@ static ComplexOptionType2* defaultComplexOptionType2Instance = nil;
   hasWaldo_ = !!value_;
 }
 @synthesize waldo;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.waldo = 0;
   }
@@ -3261,7 +3261,7 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
 
 @implementation ComplexOptionType2ComplexOptionType4Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOptionType2ComplexOptionType4 alloc] init];
   }
@@ -3348,7 +3348,7 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
 
 @implementation ComplexOptionType2Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOptionType2 alloc] init];
   }
@@ -3569,7 +3569,7 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
   hasComplexOptionType5_ = !!value_;
 }
 @synthesize complexOptionType5;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.qux = 0;
     self.complexOptionType5 = [ComplexOptionType3ComplexOptionType5 defaultInstance];
@@ -3700,7 +3700,7 @@ static ComplexOptionType3* defaultComplexOptionType3Instance = nil;
   hasPlugh_ = !!value_;
 }
 @synthesize plugh;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.plugh = 0;
   }
@@ -3806,7 +3806,7 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
 
 @implementation ComplexOptionType3ComplexOptionType5Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOptionType3ComplexOptionType5 alloc] init];
   }
@@ -3893,7 +3893,7 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
 
 @implementation ComplexOptionType3Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOptionType3 alloc] init];
   }
@@ -4029,7 +4029,7 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
   hasXyzzy_ = !!value_;
 }
 @synthesize xyzzy;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.xyzzy = 0;
   }
@@ -4135,7 +4135,7 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
 
 @implementation ComplexOpt6Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ComplexOpt6 alloc] init];
   }
@@ -4221,7 +4221,7 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
 
 @implementation VariousComplexOptions
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -4312,7 +4312,7 @@ static VariousComplexOptions* defaultVariousComplexOptionsInstance = nil;
 
 @implementation VariousComplexOptionsBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[VariousComplexOptions alloc] init];
   }
@@ -4375,7 +4375,7 @@ static VariousComplexOptions* defaultVariousComplexOptionsInstance = nil;
 
 @implementation AggregateMessageSet
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -4480,7 +4480,7 @@ static AggregateMessageSet* defaultAggregateMessageSetInstance = nil;
 
 @implementation AggregateMessageSetBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[AggregateMessageSet alloc] init];
   }
@@ -4552,7 +4552,7 @@ static AggregateMessageSet* defaultAggregateMessageSetInstance = nil;
   hasS_ = !!value_;
 }
 @synthesize s;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.s = @"";
   }
@@ -4661,7 +4661,7 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
 
 @implementation AggregateMessageSetElementBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[AggregateMessageSetElement alloc] init];
   }
@@ -4787,7 +4787,7 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
   hasMset_ = !!value_;
 }
 @synthesize mset;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.i = 0;
     self.s = @"";
@@ -4980,7 +4980,7 @@ static Aggregate* defaultAggregateInstance = nil;
 
 @implementation AggregateBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[Aggregate alloc] init];
   }
@@ -5223,7 +5223,7 @@ static Aggregate* defaultAggregateInstance = nil;
   hasFieldname_ = !!value_;
 }
 @synthesize fieldname;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.fieldname = 0;
   }
@@ -5329,7 +5329,7 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
 
 @implementation AggregateMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[AggregateMessage alloc] init];
   }
@@ -5415,7 +5415,7 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
 
 @implementation NestedOptionType
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -5524,7 +5524,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value) {
   hasNestedField_ = !!value_;
 }
 @synthesize nestedField;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.nestedField = 0;
   }
@@ -5630,7 +5630,7 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
 
 @implementation NestedOptionTypeNestedMessageBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[NestedOptionTypeNestedMessage alloc] init];
   }
@@ -5717,7 +5717,7 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
 
 @implementation NestedOptionTypeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[NestedOptionType alloc] init];
   }

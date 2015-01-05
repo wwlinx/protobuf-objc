@@ -80,7 +80,7 @@ static PBExtensionRegistry* extensionRegistry = nil;
   hasStringField_ = !!value_;
 }
 @synthesize stringField;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.i = 0;
     self.msg = [ForeignMessage defaultInstance];
@@ -254,7 +254,7 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
 
 @implementation TestOptimizedForSizeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestOptimizedForSize alloc] init];
   }
@@ -437,7 +437,7 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
   hasX_ = !!value_;
 }
 @synthesize x;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.x = 0;
   }
@@ -546,7 +546,7 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
 
 @implementation TestRequiredOptimizedForSizeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestRequiredOptimizedForSize alloc] init];
   }
@@ -640,7 +640,7 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
   hasO_ = !!value_;
 }
 @synthesize o;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.o = [TestRequiredOptimizedForSize defaultInstance];
   }
@@ -754,7 +754,7 @@ static TestOptionalOptimizedForSize* defaultTestOptionalOptimizedForSizeInstance
 
 @implementation TestOptionalOptimizedForSizeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestOptionalOptimizedForSize alloc] init];
   }

@@ -37,7 +37,7 @@ static PBExtensionRegistry* extensionRegistry = nil;
 @synthesize optionalMessage;
 @synthesize repeatedMessageArray;
 @dynamic repeatedMessage;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.optionalMessage = [TestOptimizedForSize defaultInstance];
   }
@@ -181,7 +181,7 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
 
 @implementation TestEmbedOptimizedForSizeBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestEmbedOptimizedForSize alloc] init];
   }

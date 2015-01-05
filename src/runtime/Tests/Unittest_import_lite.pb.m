@@ -44,7 +44,7 @@ BOOL ImportEnumLiteIsValidValue(ImportEnumLite value) {
   hasD_ = !!value_;
 }
 @synthesize d;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.d = 0;
   }
@@ -150,7 +150,7 @@ static ImportMessageLite* defaultImportMessageLiteInstance = nil;
 
 @implementation ImportMessageLiteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[ImportMessageLite alloc] init];
   }

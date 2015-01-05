@@ -34,7 +34,7 @@ static PBExtensionRegistry* extensionRegistry = nil;
   hasMessage_ = !!value_;
 }
 @synthesize message;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.message = [TestAllTypes defaultInstance];
   }
@@ -143,7 +143,7 @@ static TestLiteImportsNonlite* defaultTestLiteImportsNonliteInstance = nil;
 
 @implementation TestLiteImportsNonliteBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestLiteImportsNonlite alloc] init];
   }

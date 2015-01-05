@@ -335,7 +335,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         }
         
         printer->Print(
-                       "- (id) init {\n"
+                       "- (instancetype) init {\n"
                        "  if ((self = [super init])) {\n");
         printer->Indent();
         printer->Indent();
@@ -836,7 +836,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                        "classname", ClassName(descriptor_));
         
         printer->Print(
-                       "- (id) init {\n"
+                       "- (instancetype) init {\n"
                        "  if ((self = [super init])) {\n"
                        "    self.result = [[$classname$ alloc] init];\n"
                        "  }\n"

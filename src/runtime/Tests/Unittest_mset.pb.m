@@ -47,7 +47,7 @@ static PBExtensionRegistry* extensionRegistry = nil;
 
 @implementation TestMessageSet
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -152,7 +152,7 @@ static TestMessageSet* defaultTestMessageSetInstance = nil;
 
 @implementation TestMessageSetBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessageSet alloc] init];
   }
@@ -224,7 +224,7 @@ static TestMessageSet* defaultTestMessageSetInstance = nil;
   hasMessageSet_ = !!value_;
 }
 @synthesize messageSet;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.messageSet = [TestMessageSet defaultInstance];
   }
@@ -338,7 +338,7 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
 
 @implementation TestMessageSetContainerBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessageSetContainer alloc] init];
   }
@@ -451,7 +451,7 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
   hasI_ = !!value_;
 }
 @synthesize i;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.i = 0;
   }
@@ -560,7 +560,7 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
 
 @implementation TestMessageSetExtension1Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessageSetExtension1 alloc] init];
   }
@@ -654,7 +654,7 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
   hasStr_ = !!value_;
 }
 @synthesize str;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.str = @"";
   }
@@ -763,7 +763,7 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
 
 @implementation TestMessageSetExtension2Builder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[TestMessageSetExtension2 alloc] init];
   }
@@ -852,7 +852,7 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
 
 @synthesize itemArray;
 @dynamic item;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
   return self;
@@ -988,7 +988,7 @@ static RawMessageSet* defaultRawMessageSetInstance = nil;
   hasMessage_ = !!value_;
 }
 @synthesize message;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.typeId = 0;
     self.message = [NSData data];
@@ -1115,7 +1115,7 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
 
 @implementation RawMessageSetItemBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[RawMessageSetItem alloc] init];
   }
@@ -1225,7 +1225,7 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
 
 @implementation RawMessageSetBuilder
 @synthesize result;
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
     self.result = [[RawMessageSet alloc] init];
   }
