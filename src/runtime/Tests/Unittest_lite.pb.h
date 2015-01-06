@@ -498,7 +498,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestAllTypesLiteNestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesLiteNestedMessage* result;
+  TestAllTypesLiteNestedMessage* resultNestedMessage;
 }
 
 - (TestAllTypesLiteNestedMessage*) defaultInstance;
@@ -547,7 +547,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestAllTypesLiteOptionalGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesLiteOptionalGroup* result;
+  TestAllTypesLiteOptionalGroup* resultOptionalGroup;
 }
 
 - (TestAllTypesLiteOptionalGroup*) defaultInstance;
@@ -596,7 +596,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestAllTypesLiteRepeatedGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesLiteRepeatedGroup* result;
+  TestAllTypesLiteRepeatedGroup* resultRepeatedGroup;
 }
 
 - (TestAllTypesLiteRepeatedGroup*) defaultInstance;
@@ -619,7 +619,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestAllTypesLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesLite* result;
+  TestAllTypesLite* resultTestAllTypesLite;
 }
 
 - (TestAllTypesLite*) defaultInstance;
@@ -1093,7 +1093,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface ForeignMessageLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  ForeignMessageLite* result;
+  ForeignMessageLite* resultForeignMessageLite;
 }
 
 - (ForeignMessageLite*) defaultInstance;
@@ -1194,7 +1194,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestPackedTypesLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestPackedTypesLite* result;
+  TestPackedTypesLite* resultTestPackedTypesLite;
 }
 
 - (TestPackedTypesLite*) defaultInstance;
@@ -1332,7 +1332,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestAllExtensionsLiteBuilder : PBExtendableMessageBuilder {
 @private
-  TestAllExtensionsLite* result;
+  TestAllExtensionsLite* resultTestAllExtensionsLite;
 }
 
 - (TestAllExtensionsLite*) defaultInstance;
@@ -1376,7 +1376,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface OptionalGroup_extension_liteBuilder : PBGeneratedMessageBuilder {
 @private
-  OptionalGroup_extension_lite* result;
+  OptionalGroup_extension_lite* resultOptionalGroupExtensionLite;
 }
 
 - (OptionalGroup_extension_lite*) defaultInstance;
@@ -1425,7 +1425,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface RepeatedGroup_extension_liteBuilder : PBGeneratedMessageBuilder {
 @private
-  RepeatedGroup_extension_lite* result;
+  RepeatedGroup_extension_lite* resultRepeatedGroupExtensionLite;
 }
 
 - (RepeatedGroup_extension_lite*) defaultInstance;
@@ -1470,7 +1470,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestPackedExtensionsLiteBuilder : PBExtendableMessageBuilder {
 @private
-  TestPackedExtensionsLite* result;
+  TestPackedExtensionsLite* resultTestPackedExtensionsLite;
 }
 
 - (TestPackedExtensionsLite*) defaultInstance;
@@ -1511,7 +1511,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestNestedExtensionLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestNestedExtensionLite* result;
+  TestNestedExtensionLite* resultTestNestedExtensionLite;
 }
 
 - (TestNestedExtensionLite*) defaultInstance;
@@ -1555,7 +1555,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestDeprecatedLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDeprecatedLite* result;
+  TestDeprecatedLite* resultTestDeprecatedLite;
 }
 
 - (TestDeprecatedLite*) defaultInstance;
@@ -1689,7 +1689,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteRepeatedFieldsGeneratorGroup1Builder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeLiteRepeatedFieldsGeneratorGroup1* result;
+  TestParsingMergeLiteRepeatedFieldsGeneratorGroup1* resultGroup1;
 }
 
 - (TestParsingMergeLiteRepeatedFieldsGeneratorGroup1*) defaultInstance;
@@ -1740,7 +1740,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteRepeatedFieldsGeneratorGroup2Builder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* result;
+  TestParsingMergeLiteRepeatedFieldsGeneratorGroup2* resultGroup2;
 }
 
 - (TestParsingMergeLiteRepeatedFieldsGeneratorGroup2*) defaultInstance;
@@ -1765,7 +1765,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteRepeatedFieldsGeneratorBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeLiteRepeatedFieldsGenerator* result;
+  TestParsingMergeLiteRepeatedFieldsGenerator* resultRepeatedFieldsGenerator;
 }
 
 - (TestParsingMergeLiteRepeatedFieldsGenerator*) defaultInstance;
@@ -1851,7 +1851,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteOptionalGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeLiteOptionalGroup* result;
+  TestParsingMergeLiteOptionalGroup* resultOptionalGroup;
 }
 
 - (TestParsingMergeLiteOptionalGroup*) defaultInstance;
@@ -1902,7 +1902,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteRepeatedGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeLiteRepeatedGroup* result;
+  TestParsingMergeLiteRepeatedGroup* resultRepeatedGroup;
 }
 
 - (TestParsingMergeLiteRepeatedGroup*) defaultInstance;
@@ -1927,7 +1927,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestParsingMergeLiteBuilder : PBExtendableMessageBuilder {
 @private
-  TestParsingMergeLite* result;
+  TestParsingMergeLite* resultTestParsingMergeLite;
 }
 
 - (TestParsingMergeLite*) defaultInstance;
@@ -2000,7 +2000,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestEmptyMessageLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestEmptyMessageLite* result;
+  TestEmptyMessageLite* resultTestEmptyMessageLite;
 }
 
 - (TestEmptyMessageLite*) defaultInstance;
@@ -2040,7 +2040,7 @@ BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 
 @interface TestEmptyMessageWithExtensionsLiteBuilder : PBExtendableMessageBuilder {
 @private
-  TestEmptyMessageWithExtensionsLite* result;
+  TestEmptyMessageWithExtensionsLite* resultTestEmptyMessageWithExtensionsLite;
 }
 
 - (TestEmptyMessageWithExtensionsLite*) defaultInstance;

@@ -3,7 +3,6 @@ before_install:
 - brew update
 - brew unlink xctool
 - brew install xctool --HEAD
-- brew install automake
 - brew install protobuf
 - ./build.sh
 - ./travis/travis.sh

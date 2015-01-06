@@ -167,6 +167,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         vars["identifier"] = UniqueFileScopeIdentifier(descriptor_);
         vars["index"] = SimpleItoa(descriptor_->index());
         vars["classname"] = ClassName(descriptor_);
+        vars["classname_capitalized"] = UnderscoresToCapitalizedCamelCase(descriptor_);
         if (descriptor_->containing_type() != NULL) {
             vars["parent"] = UniqueFileScopeIdentifier(descriptor_->containing_type());
         }
@@ -182,6 +183,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         vars["identifier"] = UniqueFileScopeIdentifier(descriptor_);
         vars["index"] = SimpleItoa(descriptor_->index());
         vars["classname"] = ClassName(descriptor_);
+        vars["classname_capitalized"] = UnderscoresToCapitalizedCamelCase(descriptor_);
         if (descriptor_->containing_type() != NULL) {
             vars["parent"] = UniqueFileScopeIdentifier(descriptor_->containing_type());
         }
@@ -200,6 +202,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         vars["identifier"] = UniqueFileScopeIdentifier(descriptor_);
         vars["index"] = SimpleItoa(descriptor_->index());
         vars["classname"] = ClassName(descriptor_);
+        vars["classname_capitalized"] = UnderscoresToCapitalizedCamelCase(descriptor_);
         if (descriptor_->containing_type() != NULL) {
             vars["parent"] = UniqueFileScopeIdentifier(descriptor_->containing_type());
         }
@@ -466,8 +469,10 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         
         printer->Print(
                        "@private\n"
-                       "  $classname$* result;\n"
+                       "  $classname$* result$classname_capitalized$;\n"
                        "}\n",
+                       "classname_capitalized",
+                       UnderscoresToCapitalizedCamelCase(descriptor_),
                        "classname", ClassName(descriptor_));
         
         GenerateCommonBuilderMethodsHeader(printer);
@@ -827,21 +832,24 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
     void MessageGenerator::GenerateBuilderSource(io::Printer* printer) {
         printer->Print(
                        "@interface $classname$Builder()\n"
-                       "@property (strong) $classname$* result;\n"
+                       "@property (strong) $classname$* result$classname_capitalized$;\n"
                        "@end\n"
                        "\n"
                        "@implementation $classname$Builder\n"
-                       "@synthesize result;\n"
-                       ,
+                       "@synthesize result$classname_capitalized$;\n",
+                       "classname_capitalized",
+                       UnderscoresToCapitalizedCamelCase(descriptor_),
                        "classname", ClassName(descriptor_));
         
         printer->Print(
                        "- (instancetype) init {\n"
                        "  if ((self = [super init])) {\n"
-                       "    self.result = [[$classname$ alloc] init];\n"
+                       "    self.result$classname_capitalized$ = [[$classname$ alloc] init];\n"
                        "  }\n"
                        "  return self;\n"
                        "}\n",
+                       "classname_capitalized",
+                       UnderscoresToCapitalizedCamelCase(descriptor_),
                        "classname", ClassName(descriptor_));
         
         GenerateCommonBuilderMethodsSource(printer);
@@ -859,26 +867,32 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         if (descriptor_->extension_range_count() > 0) {
             printer->Print(
                            "- (PBExtendableMessage*) internalGetResult {\n"
-                           "  return result;\n"
-                           "}\n");
+                           "  return result$classname_capitalized$;\n"
+                           "}\n",
+                           "classname_capitalized",
+                           UnderscoresToCapitalizedCamelCase(descriptor_));
         } else {
             printer->Print(
                            "- (PBGeneratedMessage*) internalGetResult {\n"
-                           "  return result;\n"
-                           "}\n");
+                           "  return result$classname_capitalized$;\n"
+                           "}\n",
+                           "classname_capitalized",
+                           UnderscoresToCapitalizedCamelCase(descriptor_));
         }
         
         printer->Print(
                        "- ($classname$Builder*) clear {\n"
-                       "  self.result = [[$classname$ alloc] init];\n"
+                       "  self.result$classname_capitalized$ = [[$classname$ alloc] init];\n"
                        "  return self;\n"
                        "}\n"
                        "- ($classname$Builder*) clone {\n"
-                       "  return [$classname$ builderWithPrototype:result];\n"
+                       "  return [$classname$ builderWithPrototype:result$classname_capitalized$];\n"
                        "}\n"
                        "- ($classname$*) defaultInstance {\n"
                        "  return [$classname$ defaultInstance];\n"
                        "}\n",
+                       "classname_capitalized",
+                       UnderscoresToCapitalizedCamelCase(descriptor_),
                        "classname", ClassName(descriptor_));
         
         printer->Print(
@@ -896,10 +910,12 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         
         printer->Outdent();
         printer->Print(
-                       "  $classname$* returnMe = result;\n"
-                       "  self.result = nil;\n"
+                       "  $classname$* returnMe = result$classname_capitalized$;\n"
+                       "  self.result$classname_capitalized$ = nil;\n"
                        "  return returnMe;\n"
                        "}\n",
+                       "classname_capitalized",
+                       UnderscoresToCapitalizedCamelCase(descriptor_),
                        "classname", ClassName(descriptor_));
         
         printer->Print(

@@ -145,26 +145,26 @@ static ImportMessageLite* defaultImportMessageLiteInstance = nil;
 @end
 
 @interface ImportMessageLiteBuilder()
-@property (strong) ImportMessageLite* result;
+@property (strong) ImportMessageLite* resultImportMessageLite;
 @end
 
 @implementation ImportMessageLiteBuilder
-@synthesize result;
+@synthesize resultImportMessageLite;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ImportMessageLite alloc] init];
+    self.resultImportMessageLite = [[ImportMessageLite alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultImportMessageLite;
 }
 - (ImportMessageLiteBuilder*) clear {
-  self.result = [[ImportMessageLite alloc] init];
+  self.resultImportMessageLite = [[ImportMessageLite alloc] init];
   return self;
 }
 - (ImportMessageLiteBuilder*) clone {
-  return [ImportMessageLite builderWithPrototype:result];
+  return [ImportMessageLite builderWithPrototype:resultImportMessageLite];
 }
 - (ImportMessageLite*) defaultInstance {
   return [ImportMessageLite defaultInstance];
@@ -174,8 +174,8 @@ static ImportMessageLite* defaultImportMessageLiteInstance = nil;
   return [self buildPartial];
 }
 - (ImportMessageLite*) buildPartial {
-  ImportMessageLite* returnMe = result;
-  self.result = nil;
+  ImportMessageLite* returnMe = resultImportMessageLite;
+  self.resultImportMessageLite = nil;
   return returnMe;
 }
 - (ImportMessageLiteBuilder*) mergeFrom:(ImportMessageLite*) other {
@@ -214,19 +214,19 @@ static ImportMessageLite* defaultImportMessageLiteInstance = nil;
   }
 }
 - (BOOL) hasD {
-  return result.hasD;
+  return resultImportMessageLite.hasD;
 }
 - (SInt32) d {
-  return result.d;
+  return resultImportMessageLite.d;
 }
 - (ImportMessageLiteBuilder*) setD:(SInt32) value {
-  result.hasD = YES;
-  result.d = value;
+  resultImportMessageLite.hasD = YES;
+  resultImportMessageLite.d = value;
   return self;
 }
 - (ImportMessageLiteBuilder*) clearD {
-  result.hasD = NO;
-  result.d = 0;
+  resultImportMessageLite.hasD = NO;
+  resultImportMessageLite.d = 0;
   return self;
 }
 @end

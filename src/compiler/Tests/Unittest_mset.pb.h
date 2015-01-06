@@ -59,7 +59,7 @@
 
 @interface TestMessageSetBuilder : PBExtendableMessageBuilder {
 @private
-  TestMessageSet* result;
+  TestMessageSet* resultTestMessageSet;
 }
 
 - (TestMessageSet*) defaultInstance;
@@ -103,7 +103,7 @@
 
 @interface TestMessageSetContainerBuilder : PBGeneratedMessageBuilder {
 @private
-  TestMessageSetContainer* result;
+  TestMessageSetContainer* resultTestMessageSetContainer;
 }
 
 - (TestMessageSetContainer*) defaultInstance;
@@ -155,7 +155,7 @@
 
 @interface TestMessageSetExtension1Builder : PBGeneratedMessageBuilder {
 @private
-  TestMessageSetExtension1* result;
+  TestMessageSetExtension1* resultTestMessageSetExtension1;
 }
 
 - (TestMessageSetExtension1*) defaultInstance;
@@ -205,7 +205,7 @@
 
 @interface TestMessageSetExtension2Builder : PBGeneratedMessageBuilder {
 @private
-  TestMessageSetExtension2* result;
+  TestMessageSetExtension2* resultTestMessageSetExtension2;
 }
 
 - (TestMessageSetExtension2*) defaultInstance;
@@ -283,7 +283,7 @@
 
 @interface RawMessageSetItemBuilder : PBGeneratedMessageBuilder {
 @private
-  RawMessageSetItem* result;
+  RawMessageSetItem* resultItem;
 }
 
 - (RawMessageSetItem*) defaultInstance;
@@ -311,7 +311,7 @@
 
 @interface RawMessageSetBuilder : PBGeneratedMessageBuilder {
 @private
-  RawMessageSet* result;
+  RawMessageSet* resultRawMessageSet;
 }
 
 - (RawMessageSet*) defaultInstance;

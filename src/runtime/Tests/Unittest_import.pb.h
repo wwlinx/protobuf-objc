@@ -64,7 +64,7 @@ BOOL ImportEnumIsValidValue(ImportEnum value);
 
 @interface ImportMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  ImportMessage* result;
+  ImportMessage* resultImportMessage;
 }
 
 - (ImportMessage*) defaultInstance;

@@ -134,26 +134,26 @@ static PublicImportMessage* defaultPublicImportMessageInstance = nil;
 @end
 
 @interface PublicImportMessageBuilder()
-@property (strong) PublicImportMessage* result;
+@property (strong) PublicImportMessage* resultPublicImportMessage;
 @end
 
 @implementation PublicImportMessageBuilder
-@synthesize result;
+@synthesize resultPublicImportMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[PublicImportMessage alloc] init];
+    self.resultPublicImportMessage = [[PublicImportMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultPublicImportMessage;
 }
 - (PublicImportMessageBuilder*) clear {
-  self.result = [[PublicImportMessage alloc] init];
+  self.resultPublicImportMessage = [[PublicImportMessage alloc] init];
   return self;
 }
 - (PublicImportMessageBuilder*) clone {
-  return [PublicImportMessage builderWithPrototype:result];
+  return [PublicImportMessage builderWithPrototype:resultPublicImportMessage];
 }
 - (PublicImportMessage*) defaultInstance {
   return [PublicImportMessage defaultInstance];
@@ -163,8 +163,8 @@ static PublicImportMessage* defaultPublicImportMessageInstance = nil;
   return [self buildPartial];
 }
 - (PublicImportMessage*) buildPartial {
-  PublicImportMessage* returnMe = result;
-  self.result = nil;
+  PublicImportMessage* returnMe = resultPublicImportMessage;
+  self.resultPublicImportMessage = nil;
   return returnMe;
 }
 - (PublicImportMessageBuilder*) mergeFrom:(PublicImportMessage*) other {
@@ -203,19 +203,19 @@ static PublicImportMessage* defaultPublicImportMessageInstance = nil;
   }
 }
 - (BOOL) hasE {
-  return result.hasE;
+  return resultPublicImportMessage.hasE;
 }
 - (SInt32) e {
-  return result.e;
+  return resultPublicImportMessage.e;
 }
 - (PublicImportMessageBuilder*) setE:(SInt32) value {
-  result.hasE = YES;
-  result.e = value;
+  resultPublicImportMessage.hasE = YES;
+  resultPublicImportMessage.e = value;
   return self;
 }
 - (PublicImportMessageBuilder*) clearE {
-  result.hasE = NO;
-  result.e = 0;
+  resultPublicImportMessage.hasE = NO;
+  resultPublicImportMessage.e = 0;
   return self;
 }
 @end

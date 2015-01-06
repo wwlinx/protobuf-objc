@@ -138,26 +138,26 @@ static TestLiteImportsNonlite* defaultTestLiteImportsNonliteInstance = nil;
 @end
 
 @interface TestLiteImportsNonliteBuilder()
-@property (strong) TestLiteImportsNonlite* result;
+@property (strong) TestLiteImportsNonlite* resultTestLiteImportsNonlite;
 @end
 
 @implementation TestLiteImportsNonliteBuilder
-@synthesize result;
+@synthesize resultTestLiteImportsNonlite;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestLiteImportsNonlite alloc] init];
+    self.resultTestLiteImportsNonlite = [[TestLiteImportsNonlite alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestLiteImportsNonlite;
 }
 - (TestLiteImportsNonliteBuilder*) clear {
-  self.result = [[TestLiteImportsNonlite alloc] init];
+  self.resultTestLiteImportsNonlite = [[TestLiteImportsNonlite alloc] init];
   return self;
 }
 - (TestLiteImportsNonliteBuilder*) clone {
-  return [TestLiteImportsNonlite builderWithPrototype:result];
+  return [TestLiteImportsNonlite builderWithPrototype:resultTestLiteImportsNonlite];
 }
 - (TestLiteImportsNonlite*) defaultInstance {
   return [TestLiteImportsNonlite defaultInstance];
@@ -167,8 +167,8 @@ static TestLiteImportsNonlite* defaultTestLiteImportsNonliteInstance = nil;
   return [self buildPartial];
 }
 - (TestLiteImportsNonlite*) buildPartial {
-  TestLiteImportsNonlite* returnMe = result;
-  self.result = nil;
+  TestLiteImportsNonlite* returnMe = resultTestLiteImportsNonlite;
+  self.resultTestLiteImportsNonlite = nil;
   return returnMe;
 }
 - (TestLiteImportsNonliteBuilder*) mergeFrom:(TestLiteImportsNonlite*) other {
@@ -212,33 +212,33 @@ static TestLiteImportsNonlite* defaultTestLiteImportsNonliteInstance = nil;
   }
 }
 - (BOOL) hasMessage {
-  return result.hasMessage;
+  return resultTestLiteImportsNonlite.hasMessage;
 }
 - (TestAllTypes*) message {
-  return result.message;
+  return resultTestLiteImportsNonlite.message;
 }
 - (TestLiteImportsNonliteBuilder*) setMessage:(TestAllTypes*) value {
-  result.hasMessage = YES;
-  result.message = value;
+  resultTestLiteImportsNonlite.hasMessage = YES;
+  resultTestLiteImportsNonlite.message = value;
   return self;
 }
 - (TestLiteImportsNonliteBuilder*) setMessageBuilder:(TestAllTypesBuilder*) builderForValue {
   return [self setMessage:[builderForValue build]];
 }
 - (TestLiteImportsNonliteBuilder*) mergeMessage:(TestAllTypes*) value {
-  if (result.hasMessage &&
-      result.message != [TestAllTypes defaultInstance]) {
-    result.message =
-      [[[TestAllTypes builderWithPrototype:result.message] mergeFrom:value] buildPartial];
+  if (resultTestLiteImportsNonlite.hasMessage &&
+      resultTestLiteImportsNonlite.message != [TestAllTypes defaultInstance]) {
+    resultTestLiteImportsNonlite.message =
+      [[[TestAllTypes builderWithPrototype:resultTestLiteImportsNonlite.message] mergeFrom:value] buildPartial];
   } else {
-    result.message = value;
+    resultTestLiteImportsNonlite.message = value;
   }
-  result.hasMessage = YES;
+  resultTestLiteImportsNonlite.hasMessage = YES;
   return self;
 }
 - (TestLiteImportsNonliteBuilder*) clearMessage {
-  result.hasMessage = NO;
-  result.message = [TestAllTypes defaultInstance];
+  resultTestLiteImportsNonlite.hasMessage = NO;
+  resultTestLiteImportsNonlite.message = [TestAllTypes defaultInstance];
   return self;
 }
 @end

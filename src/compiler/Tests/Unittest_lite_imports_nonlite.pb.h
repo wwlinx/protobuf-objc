@@ -198,7 +198,7 @@
 
 @interface TestLiteImportsNonliteBuilder : PBGeneratedMessageBuilder {
 @private
-  TestLiteImportsNonlite* result;
+  TestLiteImportsNonlite* resultTestLiteImportsNonlite;
 }
 
 - (TestLiteImportsNonlite*) defaultInstance;

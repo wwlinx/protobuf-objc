@@ -145,26 +145,26 @@ static ImportMessage* defaultImportMessageInstance = nil;
 @end
 
 @interface ImportMessageBuilder()
-@property (strong) ImportMessage* result;
+@property (strong) ImportMessage* resultImportMessage;
 @end
 
 @implementation ImportMessageBuilder
-@synthesize result;
+@synthesize resultImportMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ImportMessage alloc] init];
+    self.resultImportMessage = [[ImportMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultImportMessage;
 }
 - (ImportMessageBuilder*) clear {
-  self.result = [[ImportMessage alloc] init];
+  self.resultImportMessage = [[ImportMessage alloc] init];
   return self;
 }
 - (ImportMessageBuilder*) clone {
-  return [ImportMessage builderWithPrototype:result];
+  return [ImportMessage builderWithPrototype:resultImportMessage];
 }
 - (ImportMessage*) defaultInstance {
   return [ImportMessage defaultInstance];
@@ -174,8 +174,8 @@ static ImportMessage* defaultImportMessageInstance = nil;
   return [self buildPartial];
 }
 - (ImportMessage*) buildPartial {
-  ImportMessage* returnMe = result;
-  self.result = nil;
+  ImportMessage* returnMe = resultImportMessage;
+  self.resultImportMessage = nil;
   return returnMe;
 }
 - (ImportMessageBuilder*) mergeFrom:(ImportMessage*) other {
@@ -214,19 +214,19 @@ static ImportMessage* defaultImportMessageInstance = nil;
   }
 }
 - (BOOL) hasD {
-  return result.hasD;
+  return resultImportMessage.hasD;
 }
 - (SInt32) d {
-  return result.d;
+  return resultImportMessage.d;
 }
 - (ImportMessageBuilder*) setD:(SInt32) value {
-  result.hasD = YES;
-  result.d = value;
+  resultImportMessage.hasD = YES;
+  resultImportMessage.d = value;
   return self;
 }
 - (ImportMessageBuilder*) clearD {
-  result.hasD = NO;
-  result.d = 0;
+  resultImportMessage.hasD = NO;
+  resultImportMessage.d = 0;
   return self;
 }
 @end

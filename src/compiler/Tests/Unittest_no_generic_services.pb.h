@@ -60,7 +60,7 @@ BOOL TestEnumIsValidValue(TestEnum value);
 
 @interface TestMessageBuilder : PBExtendableMessageBuilder {
 @private
-  TestMessage* result;
+  TestMessage* resultTestMessage;
 }
 
 - (TestMessage*) defaultInstance;

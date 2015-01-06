@@ -207,7 +207,7 @@
 
 @interface TestEmbedOptimizedForSizeBuilder : PBGeneratedMessageBuilder {
 @private
-  TestEmbedOptimizedForSize* result;
+  TestEmbedOptimizedForSize* resultTestEmbedOptimizedForSize;
 }
 
 - (TestEmbedOptimizedForSize*) defaultInstance;

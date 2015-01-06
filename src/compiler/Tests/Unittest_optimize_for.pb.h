@@ -216,7 +216,7 @@
 
 @interface TestOptimizedForSizeBuilder : PBExtendableMessageBuilder {
 @private
-  TestOptimizedForSize* result;
+  TestOptimizedForSize* resultTestOptimizedForSize;
 }
 
 - (TestOptimizedForSize*) defaultInstance;
@@ -282,7 +282,7 @@
 
 @interface TestRequiredOptimizedForSizeBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRequiredOptimizedForSize* result;
+  TestRequiredOptimizedForSize* resultTestRequiredOptimizedForSize;
 }
 
 - (TestRequiredOptimizedForSize*) defaultInstance;
@@ -331,7 +331,7 @@
 
 @interface TestOptionalOptimizedForSizeBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOptionalOptimizedForSize* result;
+  TestOptionalOptimizedForSize* resultTestOptionalOptimizedForSize;
 }
 
 - (TestOptionalOptimizedForSize*) defaultInstance;

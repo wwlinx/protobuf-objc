@@ -170,26 +170,26 @@ static TestMessage* defaultTestMessageInstance = nil;
 @end
 
 @interface TestMessageBuilder()
-@property (strong) TestMessage* result;
+@property (strong) TestMessage* resultTestMessage;
 @end
 
 @implementation TestMessageBuilder
-@synthesize result;
+@synthesize resultTestMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessage alloc] init];
+    self.resultTestMessage = [[TestMessage alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultTestMessage;
 }
 - (TestMessageBuilder*) clear {
-  self.result = [[TestMessage alloc] init];
+  self.resultTestMessage = [[TestMessage alloc] init];
   return self;
 }
 - (TestMessageBuilder*) clone {
-  return [TestMessage builderWithPrototype:result];
+  return [TestMessage builderWithPrototype:resultTestMessage];
 }
 - (TestMessage*) defaultInstance {
   return [TestMessage defaultInstance];
@@ -199,8 +199,8 @@ static TestMessage* defaultTestMessageInstance = nil;
   return [self buildPartial];
 }
 - (TestMessage*) buildPartial {
-  TestMessage* returnMe = result;
-  self.result = nil;
+  TestMessage* returnMe = resultTestMessage;
+  self.resultTestMessage = nil;
   return returnMe;
 }
 - (TestMessageBuilder*) mergeFrom:(TestMessage*) other {
@@ -240,19 +240,19 @@ static TestMessage* defaultTestMessageInstance = nil;
   }
 }
 - (BOOL) hasA {
-  return result.hasA;
+  return resultTestMessage.hasA;
 }
 - (SInt32) a {
-  return result.a;
+  return resultTestMessage.a;
 }
 - (TestMessageBuilder*) setA:(SInt32) value {
-  result.hasA = YES;
-  result.a = value;
+  resultTestMessage.hasA = YES;
+  resultTestMessage.a = value;
   return self;
 }
 - (TestMessageBuilder*) clearA {
-  result.hasA = NO;
-  result.a = 0;
+  resultTestMessage.hasA = NO;
+  resultTestMessage.a = 0;
   return self;
 }
 @end

@@ -146,6 +146,9 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         return UnderscoresToCapitalizedCamelCase(FieldName(field));
     }
     
+    string UnderscoresToCapitalizedCamelCase(const Descriptor* desc) {
+        return UnderscoresToCapitalizedCamelCase(desc->name());
+    }
     
     string UnderscoresToCamelCase(const MethodDescriptor* method) {
         return UnderscoresToCamelCase(method->name());

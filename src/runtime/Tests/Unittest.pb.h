@@ -651,7 +651,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestAllTypesNestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesNestedMessage* result;
+  TestAllTypesNestedMessage* resultNestedMessage;
 }
 
 - (TestAllTypesNestedMessage*) defaultInstance;
@@ -700,7 +700,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestAllTypesOptionalGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesOptionalGroup* result;
+  TestAllTypesOptionalGroup* resultOptionalGroup;
 }
 
 - (TestAllTypesOptionalGroup*) defaultInstance;
@@ -749,7 +749,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestAllTypesRepeatedGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypesRepeatedGroup* result;
+  TestAllTypesRepeatedGroup* resultRepeatedGroup;
 }
 
 - (TestAllTypesRepeatedGroup*) defaultInstance;
@@ -772,7 +772,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestAllTypesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestAllTypes* result;
+  TestAllTypes* resultTestAllTypes;
 }
 
 - (TestAllTypes*) defaultInstance;
@@ -1250,7 +1250,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface NestedTestAllTypesBuilder : PBGeneratedMessageBuilder {
 @private
-  NestedTestAllTypes* result;
+  NestedTestAllTypes* resultNestedTestAllTypes;
 }
 
 - (NestedTestAllTypes*) defaultInstance;
@@ -1308,7 +1308,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDeprecatedFieldsBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDeprecatedFields* result;
+  TestDeprecatedFields* resultTestDeprecatedFields;
 }
 
 - (TestDeprecatedFields*) defaultInstance;
@@ -1357,7 +1357,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface ForeignMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  ForeignMessage* result;
+  ForeignMessage* resultForeignMessage;
 }
 
 - (ForeignMessage*) defaultInstance;
@@ -1402,7 +1402,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestAllExtensionsBuilder : PBExtendableMessageBuilder {
 @private
-  TestAllExtensions* result;
+  TestAllExtensions* resultTestAllExtensions;
 }
 
 - (TestAllExtensions*) defaultInstance;
@@ -1446,7 +1446,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface OptionalGroup_extensionBuilder : PBGeneratedMessageBuilder {
 @private
-  OptionalGroup_extension* result;
+  OptionalGroup_extension* resultOptionalGroupExtension;
 }
 
 - (OptionalGroup_extension*) defaultInstance;
@@ -1495,7 +1495,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface RepeatedGroup_extensionBuilder : PBGeneratedMessageBuilder {
 @private
-  RepeatedGroup_extension* result;
+  RepeatedGroup_extension* resultRepeatedGroupExtension;
 }
 
 - (RepeatedGroup_extension*) defaultInstance;
@@ -1542,7 +1542,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestNestedExtensionBuilder : PBGeneratedMessageBuilder {
 @private
-  TestNestedExtension* result;
+  TestNestedExtension* resultTestNestedExtension;
 }
 
 - (TestNestedExtension*) defaultInstance;
@@ -1716,7 +1716,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRequiredBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRequired* result;
+  TestRequired* resultTestRequired;
 }
 
 - (TestRequired*) defaultInstance;
@@ -1932,7 +1932,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRequiredForeignBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRequiredForeign* result;
+  TestRequiredForeign* resultTestRequiredForeign;
 }
 
 - (TestRequiredForeign*) defaultInstance;
@@ -1994,7 +1994,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestForeignNestedBuilder : PBGeneratedMessageBuilder {
 @private
-  TestForeignNested* result;
+  TestForeignNested* resultTestForeignNested;
 }
 
 - (TestForeignNested*) defaultInstance;
@@ -2041,7 +2041,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestEmptyMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestEmptyMessage* result;
+  TestEmptyMessage* resultTestEmptyMessage;
 }
 
 - (TestEmptyMessage*) defaultInstance;
@@ -2081,7 +2081,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestEmptyMessageWithExtensionsBuilder : PBExtendableMessageBuilder {
 @private
-  TestEmptyMessageWithExtensions* result;
+  TestEmptyMessageWithExtensions* resultTestEmptyMessageWithExtensions;
 }
 
 - (TestEmptyMessageWithExtensions*) defaultInstance;
@@ -2121,7 +2121,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestMultipleExtensionRangesBuilder : PBExtendableMessageBuilder {
 @private
-  TestMultipleExtensionRanges* result;
+  TestMultipleExtensionRanges* resultTestMultipleExtensionRanges;
 }
 
 - (TestMultipleExtensionRanges*) defaultInstance;
@@ -2169,7 +2169,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestReallyLargeTagNumberBuilder : PBGeneratedMessageBuilder {
 @private
-  TestReallyLargeTagNumber* result;
+  TestReallyLargeTagNumber* resultTestReallyLargeTagNumber;
 }
 
 - (TestReallyLargeTagNumber*) defaultInstance;
@@ -2227,7 +2227,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRecursiveMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRecursiveMessage* result;
+  TestRecursiveMessage* resultTestRecursiveMessage;
 }
 
 - (TestRecursiveMessage*) defaultInstance;
@@ -2283,7 +2283,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestMutualRecursionABuilder : PBGeneratedMessageBuilder {
 @private
-  TestMutualRecursionA* result;
+  TestMutualRecursionA* resultTestMutualRecursionA;
 }
 
 - (TestMutualRecursionA*) defaultInstance;
@@ -2338,7 +2338,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestMutualRecursionBBuilder : PBGeneratedMessageBuilder {
 @private
-  TestMutualRecursionB* result;
+  TestMutualRecursionB* resultTestMutualRecursionB;
 }
 
 - (TestMutualRecursionB*) defaultInstance;
@@ -2428,7 +2428,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDupFieldNumberFooBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDupFieldNumberFoo* result;
+  TestDupFieldNumberFoo* resultFoo;
 }
 
 - (TestDupFieldNumberFoo*) defaultInstance;
@@ -2477,7 +2477,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDupFieldNumberBarBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDupFieldNumberBar* result;
+  TestDupFieldNumberBar* resultBar;
 }
 
 - (TestDupFieldNumberBar*) defaultInstance;
@@ -2500,7 +2500,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDupFieldNumberBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDupFieldNumber* result;
+  TestDupFieldNumber* resultTestDupFieldNumber;
 }
 
 - (TestDupFieldNumber*) defaultInstance;
@@ -2563,7 +2563,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestEagerMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestEagerMessage* result;
+  TestEagerMessage* resultTestEagerMessage;
 }
 
 - (TestEagerMessage*) defaultInstance;
@@ -2614,7 +2614,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestLazyMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestLazyMessage* result;
+  TestLazyMessage* resultTestLazyMessage;
 }
 
 - (TestLazyMessage*) defaultInstance;
@@ -2693,7 +2693,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestNestedMessageHasBitsNestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestNestedMessageHasBitsNestedMessage* result;
+  TestNestedMessageHasBitsNestedMessage* resultNestedMessage;
 }
 
 - (TestNestedMessageHasBitsNestedMessage*) defaultInstance;
@@ -2724,7 +2724,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestNestedMessageHasBitsBuilder : PBGeneratedMessageBuilder {
 @private
-  TestNestedMessageHasBits* result;
+  TestNestedMessageHasBits* resultTestNestedMessageHasBits;
 }
 
 - (TestNestedMessageHasBits*) defaultInstance;
@@ -2813,7 +2813,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestCamelCaseFieldNamesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestCamelCaseFieldNames* result;
+  TestCamelCaseFieldNames* resultTestCamelCaseFieldNames;
 }
 
 - (TestCamelCaseFieldNames*) defaultInstance;
@@ -2935,7 +2935,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestFieldOrderingsBuilder : PBExtendableMessageBuilder {
 @private
-  TestFieldOrderings* result;
+  TestFieldOrderings* resultTestFieldOrderings;
 }
 
 - (TestFieldOrderings*) defaultInstance;
@@ -3098,7 +3098,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestExtremeDefaultValuesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestExtremeDefaultValues* result;
+  TestExtremeDefaultValues* resultTestExtremeDefaultValues;
 }
 
 - (TestExtremeDefaultValues*) defaultInstance;
@@ -3277,7 +3277,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface SparseEnumMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  SparseEnumMessage* result;
+  SparseEnumMessage* resultSparseEnumMessage;
 }
 
 - (SparseEnumMessage*) defaultInstance;
@@ -3326,7 +3326,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface OneStringBuilder : PBGeneratedMessageBuilder {
 @private
-  OneString* result;
+  OneString* resultOneString;
 }
 
 - (OneString*) defaultInstance;
@@ -3374,7 +3374,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface MoreStringBuilder : PBGeneratedMessageBuilder {
 @private
-  MoreString* result;
+  MoreString* resultMoreString;
 }
 
 - (MoreString*) defaultInstance;
@@ -3424,7 +3424,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface OneBytesBuilder : PBGeneratedMessageBuilder {
 @private
-  OneBytes* result;
+  OneBytes* resultOneBytes;
 }
 
 - (OneBytes*) defaultInstance;
@@ -3472,7 +3472,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface MoreBytesBuilder : PBGeneratedMessageBuilder {
 @private
-  MoreBytes* result;
+  MoreBytes* resultMoreBytes;
 }
 
 - (MoreBytes*) defaultInstance;
@@ -3522,7 +3522,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface Int32MessageBuilder : PBGeneratedMessageBuilder {
 @private
-  Int32Message* result;
+  Int32Message* resultInt32Message;
 }
 
 - (Int32Message*) defaultInstance;
@@ -3571,7 +3571,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface Uint32MessageBuilder : PBGeneratedMessageBuilder {
 @private
-  Uint32Message* result;
+  Uint32Message* resultUint32Message;
 }
 
 - (Uint32Message*) defaultInstance;
@@ -3620,7 +3620,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface Int64MessageBuilder : PBGeneratedMessageBuilder {
 @private
-  Int64Message* result;
+  Int64Message* resultInt64Message;
 }
 
 - (Int64Message*) defaultInstance;
@@ -3669,7 +3669,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface Uint64MessageBuilder : PBGeneratedMessageBuilder {
 @private
-  Uint64Message* result;
+  Uint64Message* resultUint64Message;
 }
 
 - (Uint64Message*) defaultInstance;
@@ -3718,7 +3718,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface BoolMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  BoolMessage* result;
+  BoolMessage* resultBoolMessage;
 }
 
 - (BoolMessage*) defaultInstance;
@@ -3809,7 +3809,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneofFooGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneofFooGroup* result;
+  TestOneofFooGroup* resultFooGroup;
 }
 
 - (TestOneofFooGroup*) defaultInstance;
@@ -3837,7 +3837,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneofBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneof* result;
+  TestOneof* resultTestOneof;
 }
 
 - (TestOneof*) defaultInstance;
@@ -3947,7 +3947,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneofBackwardsCompatibleFooGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneofBackwardsCompatibleFooGroup* result;
+  TestOneofBackwardsCompatibleFooGroup* resultFooGroup;
 }
 
 - (TestOneofBackwardsCompatibleFooGroup*) defaultInstance;
@@ -3975,7 +3975,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneofBackwardsCompatibleBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneofBackwardsCompatible* result;
+  TestOneofBackwardsCompatible* resultTestOneofBackwardsCompatible;
 }
 
 - (TestOneofBackwardsCompatible*) defaultInstance;
@@ -4137,7 +4137,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneof2FooGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneof2FooGroup* result;
+  TestOneof2FooGroup* resultFooGroup;
 }
 
 - (TestOneof2FooGroup*) defaultInstance;
@@ -4194,7 +4194,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneof2NestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestOneof2NestedMessage* result;
+  TestOneof2NestedMessage* resultNestedMessage;
 }
 
 - (TestOneof2NestedMessage*) defaultInstance;
@@ -4224,7 +4224,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestOneof2Builder : PBGeneratedMessageBuilder {
 @private
-  TestOneof2* result;
+  TestOneof2* resultTestOneof2;
 }
 
 - (TestOneof2*) defaultInstance;
@@ -4393,7 +4393,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRequiredOneofNestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRequiredOneofNestedMessage* result;
+  TestRequiredOneofNestedMessage* resultNestedMessage;
 }
 
 - (TestRequiredOneofNestedMessage*) defaultInstance;
@@ -4416,7 +4416,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRequiredOneofBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRequiredOneof* result;
+  TestRequiredOneof* resultTestRequiredOneof;
 }
 
 - (TestRequiredOneof*) defaultInstance;
@@ -4529,7 +4529,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestPackedTypesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestPackedTypes* result;
+  TestPackedTypes* resultTestPackedTypes;
 }
 
 - (TestPackedTypes*) defaultInstance;
@@ -4709,7 +4709,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestUnpackedTypesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestUnpackedTypes* result;
+  TestUnpackedTypes* resultTestUnpackedTypes;
 }
 
 - (TestUnpackedTypes*) defaultInstance;
@@ -4847,7 +4847,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestPackedExtensionsBuilder : PBExtendableMessageBuilder {
 @private
-  TestPackedExtensions* result;
+  TestPackedExtensions* resultTestPackedExtensions;
 }
 
 - (TestPackedExtensions*) defaultInstance;
@@ -4887,7 +4887,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestUnpackedExtensionsBuilder : PBExtendableMessageBuilder {
 @private
-  TestUnpackedExtensions* result;
+  TestUnpackedExtensions* resultTestUnpackedExtensions;
 }
 
 - (TestUnpackedExtensions*) defaultInstance;
@@ -4980,7 +4980,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDynamicExtensionsDynamicMessageTypeBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDynamicExtensionsDynamicMessageType* result;
+  TestDynamicExtensionsDynamicMessageType* resultDynamicMessageType;
 }
 
 - (TestDynamicExtensionsDynamicMessageType*) defaultInstance;
@@ -5003,7 +5003,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestDynamicExtensionsBuilder : PBGeneratedMessageBuilder {
 @private
-  TestDynamicExtensions* result;
+  TestDynamicExtensions* resultTestDynamicExtensions;
 }
 
 - (TestDynamicExtensions*) defaultInstance;
@@ -5103,7 +5103,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestRepeatedScalarDifferentTagSizesBuilder : PBGeneratedMessageBuilder {
 @private
-  TestRepeatedScalarDifferentTagSizes* result;
+  TestRepeatedScalarDifferentTagSizes* resultTestRepeatedScalarDifferentTagSizes;
 }
 
 - (TestRepeatedScalarDifferentTagSizes*) defaultInstance;
@@ -5274,7 +5274,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeRepeatedFieldsGeneratorGroup1Builder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeRepeatedFieldsGeneratorGroup1* result;
+  TestParsingMergeRepeatedFieldsGeneratorGroup1* resultGroup1;
 }
 
 - (TestParsingMergeRepeatedFieldsGeneratorGroup1*) defaultInstance;
@@ -5325,7 +5325,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeRepeatedFieldsGeneratorGroup2Builder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeRepeatedFieldsGeneratorGroup2* result;
+  TestParsingMergeRepeatedFieldsGeneratorGroup2* resultGroup2;
 }
 
 - (TestParsingMergeRepeatedFieldsGeneratorGroup2*) defaultInstance;
@@ -5350,7 +5350,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeRepeatedFieldsGeneratorBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeRepeatedFieldsGenerator* result;
+  TestParsingMergeRepeatedFieldsGenerator* resultRepeatedFieldsGenerator;
 }
 
 - (TestParsingMergeRepeatedFieldsGenerator*) defaultInstance;
@@ -5436,7 +5436,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeOptionalGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeOptionalGroup* result;
+  TestParsingMergeOptionalGroup* resultOptionalGroup;
 }
 
 - (TestParsingMergeOptionalGroup*) defaultInstance;
@@ -5487,7 +5487,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeRepeatedGroupBuilder : PBGeneratedMessageBuilder {
 @private
-  TestParsingMergeRepeatedGroup* result;
+  TestParsingMergeRepeatedGroup* resultRepeatedGroup;
 }
 
 - (TestParsingMergeRepeatedGroup*) defaultInstance;
@@ -5512,7 +5512,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestParsingMergeBuilder : PBExtendableMessageBuilder {
 @private
-  TestParsingMerge* result;
+  TestParsingMerge* resultTestParsingMerge;
 }
 
 - (TestParsingMerge*) defaultInstance;
@@ -5589,7 +5589,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface TestCommentInjectionMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  TestCommentInjectionMessage* result;
+  TestCommentInjectionMessage* resultTestCommentInjectionMessage;
 }
 
 - (TestCommentInjectionMessage*) defaultInstance;
@@ -5634,7 +5634,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface FooRequestBuilder : PBGeneratedMessageBuilder {
 @private
-  FooRequest* result;
+  FooRequest* resultFooRequest;
 }
 
 - (FooRequest*) defaultInstance;
@@ -5674,7 +5674,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface FooResponseBuilder : PBGeneratedMessageBuilder {
 @private
-  FooResponse* result;
+  FooResponse* resultFooResponse;
 }
 
 - (FooResponse*) defaultInstance;
@@ -5714,7 +5714,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface FooClientMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  FooClientMessage* result;
+  FooClientMessage* resultFooClientMessage;
 }
 
 - (FooClientMessage*) defaultInstance;
@@ -5754,7 +5754,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface FooServerMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  FooServerMessage* result;
+  FooServerMessage* resultFooServerMessage;
 }
 
 - (FooServerMessage*) defaultInstance;
@@ -5794,7 +5794,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface BarRequestBuilder : PBGeneratedMessageBuilder {
 @private
-  BarRequest* result;
+  BarRequest* resultBarRequest;
 }
 
 - (BarRequest*) defaultInstance;
@@ -5834,7 +5834,7 @@ BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynam
 
 @interface BarResponseBuilder : PBGeneratedMessageBuilder {
 @private
-  BarResponse* result;
+  BarResponse* resultBarResponse;
 }
 
 - (BarResponse*) defaultInstance;

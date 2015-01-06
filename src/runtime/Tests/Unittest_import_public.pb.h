@@ -53,7 +53,7 @@
 
 @interface PublicImportMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  PublicImportMessage* result;
+  PublicImportMessage* resultPublicImportMessage;
 }
 
 - (PublicImportMessage*) defaultInstance;

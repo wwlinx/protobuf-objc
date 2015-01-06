@@ -217,7 +217,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface TestMessageWithCustomOptionsBuilder : PBGeneratedMessageBuilder {
 @private
-  TestMessageWithCustomOptions* result;
+  TestMessageWithCustomOptions* resultTestMessageWithCustomOptions;
 }
 
 - (TestMessageWithCustomOptions*) defaultInstance;
@@ -262,7 +262,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionFooRequestBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionFooRequest* result;
+  CustomOptionFooRequest* resultCustomOptionFooRequest;
 }
 
 - (CustomOptionFooRequest*) defaultInstance;
@@ -302,7 +302,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionFooResponseBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionFooResponse* result;
+  CustomOptionFooResponse* resultCustomOptionFooResponse;
 }
 
 - (CustomOptionFooResponse*) defaultInstance;
@@ -342,7 +342,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionFooClientMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionFooClientMessage* result;
+  CustomOptionFooClientMessage* resultCustomOptionFooClientMessage;
 }
 
 - (CustomOptionFooClientMessage*) defaultInstance;
@@ -382,7 +382,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionFooServerMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionFooServerMessage* result;
+  CustomOptionFooServerMessage* resultCustomOptionFooServerMessage;
 }
 
 - (CustomOptionFooServerMessage*) defaultInstance;
@@ -422,7 +422,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface DummyMessageContainingEnumBuilder : PBGeneratedMessageBuilder {
 @private
-  DummyMessageContainingEnum* result;
+  DummyMessageContainingEnum* resultDummyMessageContainingEnum;
 }
 
 - (DummyMessageContainingEnum*) defaultInstance;
@@ -462,7 +462,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface DummyMessageInvalidAsOptionTypeBuilder : PBGeneratedMessageBuilder {
 @private
-  DummyMessageInvalidAsOptionType* result;
+  DummyMessageInvalidAsOptionType* resultDummyMessageInvalidAsOptionType;
 }
 
 - (DummyMessageInvalidAsOptionType*) defaultInstance;
@@ -502,7 +502,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionMinIntegerValuesBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionMinIntegerValues* result;
+  CustomOptionMinIntegerValues* resultCustomOptionMinIntegerValues;
 }
 
 - (CustomOptionMinIntegerValues*) defaultInstance;
@@ -542,7 +542,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionMaxIntegerValuesBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionMaxIntegerValues* result;
+  CustomOptionMaxIntegerValues* resultCustomOptionMaxIntegerValues;
 }
 
 - (CustomOptionMaxIntegerValues*) defaultInstance;
@@ -582,7 +582,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface CustomOptionOtherValuesBuilder : PBGeneratedMessageBuilder {
 @private
-  CustomOptionOtherValues* result;
+  CustomOptionOtherValues* resultCustomOptionOtherValues;
 }
 
 - (CustomOptionOtherValues*) defaultInstance;
@@ -622,7 +622,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface SettingRealsFromPositiveIntsBuilder : PBGeneratedMessageBuilder {
 @private
-  SettingRealsFromPositiveInts* result;
+  SettingRealsFromPositiveInts* resultSettingRealsFromPositiveInts;
 }
 
 - (SettingRealsFromPositiveInts*) defaultInstance;
@@ -662,7 +662,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface SettingRealsFromNegativeIntsBuilder : PBGeneratedMessageBuilder {
 @private
-  SettingRealsFromNegativeInts* result;
+  SettingRealsFromNegativeInts* resultSettingRealsFromNegativeInts;
 }
 
 - (SettingRealsFromNegativeInts*) defaultInstance;
@@ -717,7 +717,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOptionType1Builder : PBExtendableMessageBuilder {
 @private
-  ComplexOptionType1* result;
+  ComplexOptionType1* resultComplexOptionType1;
 }
 
 - (ComplexOptionType1*) defaultInstance;
@@ -821,7 +821,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOptionType2ComplexOptionType4Builder : PBGeneratedMessageBuilder {
 @private
-  ComplexOptionType2ComplexOptionType4* result;
+  ComplexOptionType2ComplexOptionType4* resultComplexOptionType4;
 }
 
 - (ComplexOptionType2ComplexOptionType4*) defaultInstance;
@@ -844,7 +844,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOptionType2Builder : PBExtendableMessageBuilder {
 @private
-  ComplexOptionType2* result;
+  ComplexOptionType2* resultComplexOptionType2;
 }
 
 - (ComplexOptionType2*) defaultInstance;
@@ -943,7 +943,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOptionType3ComplexOptionType5Builder : PBGeneratedMessageBuilder {
 @private
-  ComplexOptionType3ComplexOptionType5* result;
+  ComplexOptionType3ComplexOptionType5* resultComplexOptionType5;
 }
 
 - (ComplexOptionType3ComplexOptionType5*) defaultInstance;
@@ -966,7 +966,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOptionType3Builder : PBGeneratedMessageBuilder {
 @private
-  ComplexOptionType3* result;
+  ComplexOptionType3* resultComplexOptionType3;
 }
 
 - (ComplexOptionType3*) defaultInstance;
@@ -1022,7 +1022,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface ComplexOpt6Builder : PBGeneratedMessageBuilder {
 @private
-  ComplexOpt6* result;
+  ComplexOpt6* resultComplexOpt6;
 }
 
 - (ComplexOpt6*) defaultInstance;
@@ -1067,7 +1067,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface VariousComplexOptionsBuilder : PBGeneratedMessageBuilder {
 @private
-  VariousComplexOptions* result;
+  VariousComplexOptions* resultVariousComplexOptions;
 }
 
 - (VariousComplexOptions*) defaultInstance;
@@ -1107,7 +1107,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface AggregateMessageSetBuilder : PBExtendableMessageBuilder {
 @private
-  AggregateMessageSet* result;
+  AggregateMessageSet* resultAggregateMessageSet;
 }
 
 - (AggregateMessageSet*) defaultInstance;
@@ -1152,7 +1152,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface AggregateMessageSetElementBuilder : PBGeneratedMessageBuilder {
 @private
-  AggregateMessageSetElement* result;
+  AggregateMessageSetElement* resultAggregateMessageSetElement;
 }
 
 - (AggregateMessageSetElement*) defaultInstance;
@@ -1218,7 +1218,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface AggregateBuilder : PBGeneratedMessageBuilder {
 @private
-  Aggregate* result;
+  Aggregate* resultAggregate;
 }
 
 - (Aggregate*) defaultInstance;
@@ -1293,7 +1293,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface AggregateMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  AggregateMessage* result;
+  AggregateMessage* resultAggregateMessage;
 }
 
 - (AggregateMessage*) defaultInstance;
@@ -1365,7 +1365,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface NestedOptionTypeNestedMessageBuilder : PBGeneratedMessageBuilder {
 @private
-  NestedOptionTypeNestedMessage* result;
+  NestedOptionTypeNestedMessage* resultNestedMessage;
 }
 
 - (NestedOptionTypeNestedMessage*) defaultInstance;
@@ -1388,7 +1388,7 @@ BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 
 @interface NestedOptionTypeBuilder : PBGeneratedMessageBuilder {
 @private
-  NestedOptionType* result;
+  NestedOptionType* resultNestedOptionType;
 }
 
 - (NestedOptionType*) defaultInstance;

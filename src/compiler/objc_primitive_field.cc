@@ -176,6 +176,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                                    map<string, string>* variables) {
             std::string name = UnderscoresToCamelCase(descriptor);
             (*variables)["classname"] = ClassName(descriptor->containing_type());
+            (*variables)["classname_capitalized"] = UnderscoresToCapitalizedCamelCase(descriptor->containing_type());
             (*variables)["name"] = name;
             (*variables)["capitalized_name"] = UnderscoresToCapitalizedCamelCase(descriptor);
             (*variables)["list_name"] = UnderscoresToCamelCase(descriptor) + "Array";
@@ -338,19 +339,19 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
     void PrimitiveFieldGenerator::GenerateBuilderMembersSource(io::Printer* printer) const {
         printer->Print(variables_,
                        "- (BOOL) has$capitalized_name$ {\n"
-                       "  return result.has$capitalized_name$;\n"
+                       "  return result$classname_capitalized$.has$capitalized_name$;\n"
                        "}\n"
                        "- ($storage_type$) $name$ {\n"
-                       "  return result.$name$;\n"
+                       "  return result$classname_capitalized$.$name$;\n"
                        "}\n"
                        "- ($classname$Builder*) set$capitalized_name$:($storage_type$) value {\n"
-                       "  result.has$capitalized_name$ = YES;\n"
-                       "  result.$name$ = value;\n"
+                       "  result$classname_capitalized$.has$capitalized_name$ = YES;\n"
+                       "  result$classname_capitalized$.$name$ = value;\n"
                        "  return self;\n"
                        "}\n"
                        "- ($classname$Builder*) clear$capitalized_name$ {\n"
-                       "  result.has$capitalized_name$ = NO;\n"
-                       "  result.$name$ = $default$;\n"
+                       "  result$classname_capitalized$.has$capitalized_name$ = NO;\n"
+                       "  result$classname_capitalized$.$name$ = $default$;\n"
                        "  return self;\n"
                        "}\n");
     }
@@ -555,24 +556,24 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         if(isObjectArray(descriptor_)){
             printer->Print(variables_,
                            "- (NSMutableArray *)$name$ {\n"
-                           "  return result.$list_name$;\n"
+                           "  return result$classname_capitalized$.$list_name$;\n"
                            "}\n"
                            "- ($storage_type$)$name$AtIndex:(NSUInteger)index {\n"
-                           "  return [result $name$AtIndex:index];\n"
+                           "  return [result$classname_capitalized$ $name$AtIndex:index];\n"
                            "}\n"
                            "- ($classname$Builder *)add$capitalized_name$:($storage_type$)value {\n"
-                           "  if (result.$list_name$ == nil) {\n"
-                           "    result.$list_name$ = [[NSMutableArray alloc]init];\n"
+                           "  if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                           "    result$classname_capitalized$.$list_name$ = [[NSMutableArray alloc]init];\n"
                            "  }\n"
-                           "  [result.$list_name$ addObject:value];\n"
+                           "  [result$classname_capitalized$.$list_name$ addObject:value];\n"
                            "  return self;\n"
                            "}\n"
                            "- ($classname$Builder *)set$capitalized_name$Array:(NSArray *)array {\n"
-                           "  result.$list_name$ = [[NSMutableArray alloc] initWithArray:array];\n"
+                           "  result$classname_capitalized$.$list_name$ = [[NSMutableArray alloc] initWithArray:array];\n"
                            "  return self;\n"
                            "}\n"
                            "- ($classname$Builder *)clear$capitalized_name$ {\n"
-                           "  result.$list_name$ = nil;\n"
+                           "  result$classname_capitalized$.$list_name$ = nil;\n"
                            "  return self;\n"
                            "}\n");
         }
@@ -580,28 +581,28 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         {
             printer->Print(variables_,
                            "- (PBAppendableArray *)$name$ {\n"
-                           "  return result.$list_name$;\n"
+                           "  return result$classname_capitalized$.$list_name$;\n"
                            "}\n"
                            "- ($storage_type$)$name$AtIndex:(NSUInteger)index {\n"
-                           "  return [result $name$AtIndex:index];\n"
+                           "  return [result$classname_capitalized$ $name$AtIndex:index];\n"
                            "}\n"
                            "- ($classname$Builder *)add$capitalized_name$:($storage_type$)value {\n"
-                           "  if (result.$list_name$ == nil) {\n"
-                           "    result.$list_name$ = [PBAppendableArray arrayWithValueType:$array_value_type$];\n"
+                           "  if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                           "    result$classname_capitalized$.$list_name$ = [PBAppendableArray arrayWithValueType:$array_value_type$];\n"
                            "  }\n"
-                           "  [result.$list_name$ add$array_value_type_name_cap$:value];\n"
+                           "  [result$classname_capitalized$.$list_name$ add$array_value_type_name_cap$:value];\n"
                            "  return self;\n"
                            "}\n"
                            "- ($classname$Builder *)set$capitalized_name$Array:(NSArray *)array {\n"
-                           "  result.$list_name$ = [PBAppendableArray arrayWithArray:array valueType:$array_value_type$];\n"
+                           "  result$classname_capitalized$.$list_name$ = [PBAppendableArray arrayWithArray:array valueType:$array_value_type$];\n"
                            "  return self;\n"
                            "}\n"
                            "- ($classname$Builder *)set$capitalized_name$Values:(const $storage_type$ *)values count:(NSUInteger)count {\n"
-                           "  result.$list_name$ = [PBAppendableArray arrayWithValues:values count:count valueType:$array_value_type$];\n"
+                           "  result$classname_capitalized$.$list_name$ = [PBAppendableArray arrayWithValues:values count:count valueType:$array_value_type$];\n"
                            "  return self;\n"
                            "}\n"
                            "- ($classname$Builder *)clear$capitalized_name$ {\n"
-                           "  result.$list_name$ = nil;\n"
+                           "  result$classname_capitalized$.$list_name$ = nil;\n"
                            "  return self;\n"
                            "}\n");
             
@@ -612,19 +613,19 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
         if(isObjectArray(descriptor_)){
             printer->Print(variables_,
                            "if (other.$list_name$.count > 0) {\n"
-                           "  if (result.$list_name$ == nil) {\n"
-                           "    result.$list_name$ = [[NSMutableArray alloc] initWithArray:other.$list_name$];\n"
+                           "  if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                           "    result$classname_capitalized$.$list_name$ = [[NSMutableArray alloc] initWithArray:other.$list_name$];\n"
                            "  } else {\n"
-                           "    [result.$list_name$ addObjectsFromArray:other.$list_name$];\n"
+                           "    [result$classname_capitalized$.$list_name$ addObjectsFromArray:other.$list_name$];\n"
                            "  }\n"
                            "}\n");
         }else{
             printer->Print(variables_,
                            "if (other.$list_name$.count > 0) {\n"
-                           "  if (result.$list_name$ == nil) {\n"
-                           "    result.$list_name$ = [other.$list_name$ copy];\n"
+                           "  if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                           "    result$classname_capitalized$.$list_name$ = [other.$list_name$ copy];\n"
                            "  } else {\n"
-                           "    [result.$list_name$ appendArray:other.$list_name$];\n"
+                           "    [result$classname_capitalized$.$list_name$ appendArray:other.$list_name$];\n"
                            "  }\n"
                            "}\n");
         }
@@ -643,11 +644,11 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                 printer->Print(variables_,
                                "SInt32 length = [input readRawVarint32];\n"
                                "SInt32 limit = [input pushLimit:length];\n"
-                               "if (result.$list_name$ == nil) {\n"
-                               "  result.$list_name$ = [[NSMutableArray alloc]init];\n"
+                               "if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                               "  result$classname_capitalized$.$list_name$ = [[NSMutableArray alloc]init];\n"
                                "}\n"
                                "while (input.bytesUntilLimit > 0) {\n"
-                               "  [result.$list_name$ addObject:[input read$capitalized_type$]];\n"
+                               "  [result$classname_capitalized$.$list_name$ addObject:[input read$capitalized_type$]];\n"
                                "}\n"
                                "[input popLimit:limit];\n");
             }
@@ -656,11 +657,11 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                 printer->Print(variables_,
                                "SInt32 length = [input readRawVarint32];\n"
                                "SInt32 limit = [input pushLimit:length];\n"
-                               "if (result.$list_name$ == nil) {\n"
-                               "  result.$list_name$ = [PBAppendableArray arrayWithValueType:$array_value_type$];\n"
+                               "if (result$classname_capitalized$.$list_name$ == nil) {\n"
+                               "  result$classname_capitalized$.$list_name$ = [PBAppendableArray arrayWithValueType:$array_value_type$];\n"
                                "}\n"
                                "while (input.bytesUntilLimit > 0) {\n"
-                               "  [result.$list_name$ add$array_value_type_name_cap$:[input read$capitalized_type$]];\n"
+                               "  [result$classname_capitalized$.$list_name$ add$array_value_type_name_cap$:[input read$capitalized_type$]];\n"
                                "}\n"
                                "[input popLimit:limit];\n");
             }

@@ -31,6 +31,7 @@ namespace google {
                 // "fooBarBaz" or "FooBarBaz", respectively.
                 string UnderscoresToCamelCase(const FieldDescriptor* field);
                 string UnderscoresToCapitalizedCamelCase(const FieldDescriptor* field);
+                string UnderscoresToCapitalizedCamelCase(const Descriptor* desc);
                 string UnderscoresToCapitalizedCamelCase(const string& name);
                 
                 // Similar, but for method names.  (Typically, this merely has the effect

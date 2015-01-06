@@ -134,26 +134,26 @@ static PublicImportMessageLite* defaultPublicImportMessageLiteInstance = nil;
 @end
 
 @interface PublicImportMessageLiteBuilder()
-@property (strong) PublicImportMessageLite* result;
+@property (strong) PublicImportMessageLite* resultPublicImportMessageLite;
 @end
 
 @implementation PublicImportMessageLiteBuilder
-@synthesize result;
+@synthesize resultPublicImportMessageLite;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[PublicImportMessageLite alloc] init];
+    self.resultPublicImportMessageLite = [[PublicImportMessageLite alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultPublicImportMessageLite;
 }
 - (PublicImportMessageLiteBuilder*) clear {
-  self.result = [[PublicImportMessageLite alloc] init];
+  self.resultPublicImportMessageLite = [[PublicImportMessageLite alloc] init];
   return self;
 }
 - (PublicImportMessageLiteBuilder*) clone {
-  return [PublicImportMessageLite builderWithPrototype:result];
+  return [PublicImportMessageLite builderWithPrototype:resultPublicImportMessageLite];
 }
 - (PublicImportMessageLite*) defaultInstance {
   return [PublicImportMessageLite defaultInstance];
@@ -163,8 +163,8 @@ static PublicImportMessageLite* defaultPublicImportMessageLiteInstance = nil;
   return [self buildPartial];
 }
 - (PublicImportMessageLite*) buildPartial {
-  PublicImportMessageLite* returnMe = result;
-  self.result = nil;
+  PublicImportMessageLite* returnMe = resultPublicImportMessageLite;
+  self.resultPublicImportMessageLite = nil;
   return returnMe;
 }
 - (PublicImportMessageLiteBuilder*) mergeFrom:(PublicImportMessageLite*) other {
@@ -203,19 +203,19 @@ static PublicImportMessageLite* defaultPublicImportMessageLiteInstance = nil;
   }
 }
 - (BOOL) hasE {
-  return result.hasE;
+  return resultPublicImportMessageLite.hasE;
 }
 - (SInt32) e {
-  return result.e;
+  return resultPublicImportMessageLite.e;
 }
 - (PublicImportMessageLiteBuilder*) setE:(SInt32) value {
-  result.hasE = YES;
-  result.e = value;
+  resultPublicImportMessageLite.hasE = YES;
+  resultPublicImportMessageLite.e = value;
   return self;
 }
 - (PublicImportMessageLiteBuilder*) clearE {
-  result.hasE = NO;
-  result.e = 0;
+  resultPublicImportMessageLite.hasE = NO;
+  resultPublicImportMessageLite.e = 0;
   return self;
 }
 @end

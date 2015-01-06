@@ -765,26 +765,26 @@ BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptions
   }
 }
 @interface TestMessageWithCustomOptionsBuilder()
-@property (strong) TestMessageWithCustomOptions* result;
+@property (strong) TestMessageWithCustomOptions* resultTestMessageWithCustomOptions;
 @end
 
 @implementation TestMessageWithCustomOptionsBuilder
-@synthesize result;
+@synthesize resultTestMessageWithCustomOptions;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessageWithCustomOptions alloc] init];
+    self.resultTestMessageWithCustomOptions = [[TestMessageWithCustomOptions alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestMessageWithCustomOptions;
 }
 - (TestMessageWithCustomOptionsBuilder*) clear {
-  self.result = [[TestMessageWithCustomOptions alloc] init];
+  self.resultTestMessageWithCustomOptions = [[TestMessageWithCustomOptions alloc] init];
   return self;
 }
 - (TestMessageWithCustomOptionsBuilder*) clone {
-  return [TestMessageWithCustomOptions builderWithPrototype:result];
+  return [TestMessageWithCustomOptions builderWithPrototype:resultTestMessageWithCustomOptions];
 }
 - (TestMessageWithCustomOptions*) defaultInstance {
   return [TestMessageWithCustomOptions defaultInstance];
@@ -794,8 +794,8 @@ BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptions
   return [self buildPartial];
 }
 - (TestMessageWithCustomOptions*) buildPartial {
-  TestMessageWithCustomOptions* returnMe = result;
-  self.result = nil;
+  TestMessageWithCustomOptions* returnMe = resultTestMessageWithCustomOptions;
+  self.resultTestMessageWithCustomOptions = nil;
   return returnMe;
 }
 - (TestMessageWithCustomOptionsBuilder*) mergeFrom:(TestMessageWithCustomOptions*) other {
@@ -834,19 +834,19 @@ BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptions
   }
 }
 - (BOOL) hasField1 {
-  return result.hasField1;
+  return resultTestMessageWithCustomOptions.hasField1;
 }
 - (NSString*) field1 {
-  return result.field1;
+  return resultTestMessageWithCustomOptions.field1;
 }
 - (TestMessageWithCustomOptionsBuilder*) setField1:(NSString*) value {
-  result.hasField1 = YES;
-  result.field1 = value;
+  resultTestMessageWithCustomOptions.hasField1 = YES;
+  resultTestMessageWithCustomOptions.field1 = value;
   return self;
 }
 - (TestMessageWithCustomOptionsBuilder*) clearField1 {
-  result.hasField1 = NO;
-  result.field1 = @"";
+  resultTestMessageWithCustomOptions.hasField1 = NO;
+  resultTestMessageWithCustomOptions.field1 = @"";
   return self;
 }
 @end
@@ -942,26 +942,26 @@ static CustomOptionFooRequest* defaultCustomOptionFooRequestInstance = nil;
 @end
 
 @interface CustomOptionFooRequestBuilder()
-@property (strong) CustomOptionFooRequest* result;
+@property (strong) CustomOptionFooRequest* resultCustomOptionFooRequest;
 @end
 
 @implementation CustomOptionFooRequestBuilder
-@synthesize result;
+@synthesize resultCustomOptionFooRequest;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionFooRequest alloc] init];
+    self.resultCustomOptionFooRequest = [[CustomOptionFooRequest alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionFooRequest;
 }
 - (CustomOptionFooRequestBuilder*) clear {
-  self.result = [[CustomOptionFooRequest alloc] init];
+  self.resultCustomOptionFooRequest = [[CustomOptionFooRequest alloc] init];
   return self;
 }
 - (CustomOptionFooRequestBuilder*) clone {
-  return [CustomOptionFooRequest builderWithPrototype:result];
+  return [CustomOptionFooRequest builderWithPrototype:resultCustomOptionFooRequest];
 }
 - (CustomOptionFooRequest*) defaultInstance {
   return [CustomOptionFooRequest defaultInstance];
@@ -971,8 +971,8 @@ static CustomOptionFooRequest* defaultCustomOptionFooRequestInstance = nil;
   return [self buildPartial];
 }
 - (CustomOptionFooRequest*) buildPartial {
-  CustomOptionFooRequest* returnMe = result;
-  self.result = nil;
+  CustomOptionFooRequest* returnMe = resultCustomOptionFooRequest;
+  self.resultCustomOptionFooRequest = nil;
   return returnMe;
 }
 - (CustomOptionFooRequestBuilder*) mergeFrom:(CustomOptionFooRequest*) other {
@@ -1096,26 +1096,26 @@ static CustomOptionFooResponse* defaultCustomOptionFooResponseInstance = nil;
 @end
 
 @interface CustomOptionFooResponseBuilder()
-@property (strong) CustomOptionFooResponse* result;
+@property (strong) CustomOptionFooResponse* resultCustomOptionFooResponse;
 @end
 
 @implementation CustomOptionFooResponseBuilder
-@synthesize result;
+@synthesize resultCustomOptionFooResponse;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionFooResponse alloc] init];
+    self.resultCustomOptionFooResponse = [[CustomOptionFooResponse alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionFooResponse;
 }
 - (CustomOptionFooResponseBuilder*) clear {
-  self.result = [[CustomOptionFooResponse alloc] init];
+  self.resultCustomOptionFooResponse = [[CustomOptionFooResponse alloc] init];
   return self;
 }
 - (CustomOptionFooResponseBuilder*) clone {
-  return [CustomOptionFooResponse builderWithPrototype:result];
+  return [CustomOptionFooResponse builderWithPrototype:resultCustomOptionFooResponse];
 }
 - (CustomOptionFooResponse*) defaultInstance {
   return [CustomOptionFooResponse defaultInstance];
@@ -1125,8 +1125,8 @@ static CustomOptionFooResponse* defaultCustomOptionFooResponseInstance = nil;
   return [self buildPartial];
 }
 - (CustomOptionFooResponse*) buildPartial {
-  CustomOptionFooResponse* returnMe = result;
-  self.result = nil;
+  CustomOptionFooResponse* returnMe = resultCustomOptionFooResponse;
+  self.resultCustomOptionFooResponse = nil;
   return returnMe;
 }
 - (CustomOptionFooResponseBuilder*) mergeFrom:(CustomOptionFooResponse*) other {
@@ -1250,26 +1250,26 @@ static CustomOptionFooClientMessage* defaultCustomOptionFooClientMessageInstance
 @end
 
 @interface CustomOptionFooClientMessageBuilder()
-@property (strong) CustomOptionFooClientMessage* result;
+@property (strong) CustomOptionFooClientMessage* resultCustomOptionFooClientMessage;
 @end
 
 @implementation CustomOptionFooClientMessageBuilder
-@synthesize result;
+@synthesize resultCustomOptionFooClientMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionFooClientMessage alloc] init];
+    self.resultCustomOptionFooClientMessage = [[CustomOptionFooClientMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionFooClientMessage;
 }
 - (CustomOptionFooClientMessageBuilder*) clear {
-  self.result = [[CustomOptionFooClientMessage alloc] init];
+  self.resultCustomOptionFooClientMessage = [[CustomOptionFooClientMessage alloc] init];
   return self;
 }
 - (CustomOptionFooClientMessageBuilder*) clone {
-  return [CustomOptionFooClientMessage builderWithPrototype:result];
+  return [CustomOptionFooClientMessage builderWithPrototype:resultCustomOptionFooClientMessage];
 }
 - (CustomOptionFooClientMessage*) defaultInstance {
   return [CustomOptionFooClientMessage defaultInstance];
@@ -1279,8 +1279,8 @@ static CustomOptionFooClientMessage* defaultCustomOptionFooClientMessageInstance
   return [self buildPartial];
 }
 - (CustomOptionFooClientMessage*) buildPartial {
-  CustomOptionFooClientMessage* returnMe = result;
-  self.result = nil;
+  CustomOptionFooClientMessage* returnMe = resultCustomOptionFooClientMessage;
+  self.resultCustomOptionFooClientMessage = nil;
   return returnMe;
 }
 - (CustomOptionFooClientMessageBuilder*) mergeFrom:(CustomOptionFooClientMessage*) other {
@@ -1404,26 +1404,26 @@ static CustomOptionFooServerMessage* defaultCustomOptionFooServerMessageInstance
 @end
 
 @interface CustomOptionFooServerMessageBuilder()
-@property (strong) CustomOptionFooServerMessage* result;
+@property (strong) CustomOptionFooServerMessage* resultCustomOptionFooServerMessage;
 @end
 
 @implementation CustomOptionFooServerMessageBuilder
-@synthesize result;
+@synthesize resultCustomOptionFooServerMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionFooServerMessage alloc] init];
+    self.resultCustomOptionFooServerMessage = [[CustomOptionFooServerMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionFooServerMessage;
 }
 - (CustomOptionFooServerMessageBuilder*) clear {
-  self.result = [[CustomOptionFooServerMessage alloc] init];
+  self.resultCustomOptionFooServerMessage = [[CustomOptionFooServerMessage alloc] init];
   return self;
 }
 - (CustomOptionFooServerMessageBuilder*) clone {
-  return [CustomOptionFooServerMessage builderWithPrototype:result];
+  return [CustomOptionFooServerMessage builderWithPrototype:resultCustomOptionFooServerMessage];
 }
 - (CustomOptionFooServerMessage*) defaultInstance {
   return [CustomOptionFooServerMessage defaultInstance];
@@ -1433,8 +1433,8 @@ static CustomOptionFooServerMessage* defaultCustomOptionFooServerMessageInstance
   return [self buildPartial];
 }
 - (CustomOptionFooServerMessage*) buildPartial {
-  CustomOptionFooServerMessage* returnMe = result;
-  self.result = nil;
+  CustomOptionFooServerMessage* returnMe = resultCustomOptionFooServerMessage;
+  self.resultCustomOptionFooServerMessage = nil;
   return returnMe;
 }
 - (CustomOptionFooServerMessageBuilder*) mergeFrom:(CustomOptionFooServerMessage*) other {
@@ -1567,26 +1567,26 @@ BOOL DummyMessageContainingEnumTestEnumTypeIsValidValue(DummyMessageContainingEn
   }
 }
 @interface DummyMessageContainingEnumBuilder()
-@property (strong) DummyMessageContainingEnum* result;
+@property (strong) DummyMessageContainingEnum* resultDummyMessageContainingEnum;
 @end
 
 @implementation DummyMessageContainingEnumBuilder
-@synthesize result;
+@synthesize resultDummyMessageContainingEnum;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[DummyMessageContainingEnum alloc] init];
+    self.resultDummyMessageContainingEnum = [[DummyMessageContainingEnum alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultDummyMessageContainingEnum;
 }
 - (DummyMessageContainingEnumBuilder*) clear {
-  self.result = [[DummyMessageContainingEnum alloc] init];
+  self.resultDummyMessageContainingEnum = [[DummyMessageContainingEnum alloc] init];
   return self;
 }
 - (DummyMessageContainingEnumBuilder*) clone {
-  return [DummyMessageContainingEnum builderWithPrototype:result];
+  return [DummyMessageContainingEnum builderWithPrototype:resultDummyMessageContainingEnum];
 }
 - (DummyMessageContainingEnum*) defaultInstance {
   return [DummyMessageContainingEnum defaultInstance];
@@ -1596,8 +1596,8 @@ BOOL DummyMessageContainingEnumTestEnumTypeIsValidValue(DummyMessageContainingEn
   return [self buildPartial];
 }
 - (DummyMessageContainingEnum*) buildPartial {
-  DummyMessageContainingEnum* returnMe = result;
-  self.result = nil;
+  DummyMessageContainingEnum* returnMe = resultDummyMessageContainingEnum;
+  self.resultDummyMessageContainingEnum = nil;
   return returnMe;
 }
 - (DummyMessageContainingEnumBuilder*) mergeFrom:(DummyMessageContainingEnum*) other {
@@ -1721,26 +1721,26 @@ static DummyMessageInvalidAsOptionType* defaultDummyMessageInvalidAsOptionTypeIn
 @end
 
 @interface DummyMessageInvalidAsOptionTypeBuilder()
-@property (strong) DummyMessageInvalidAsOptionType* result;
+@property (strong) DummyMessageInvalidAsOptionType* resultDummyMessageInvalidAsOptionType;
 @end
 
 @implementation DummyMessageInvalidAsOptionTypeBuilder
-@synthesize result;
+@synthesize resultDummyMessageInvalidAsOptionType;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[DummyMessageInvalidAsOptionType alloc] init];
+    self.resultDummyMessageInvalidAsOptionType = [[DummyMessageInvalidAsOptionType alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultDummyMessageInvalidAsOptionType;
 }
 - (DummyMessageInvalidAsOptionTypeBuilder*) clear {
-  self.result = [[DummyMessageInvalidAsOptionType alloc] init];
+  self.resultDummyMessageInvalidAsOptionType = [[DummyMessageInvalidAsOptionType alloc] init];
   return self;
 }
 - (DummyMessageInvalidAsOptionTypeBuilder*) clone {
-  return [DummyMessageInvalidAsOptionType builderWithPrototype:result];
+  return [DummyMessageInvalidAsOptionType builderWithPrototype:resultDummyMessageInvalidAsOptionType];
 }
 - (DummyMessageInvalidAsOptionType*) defaultInstance {
   return [DummyMessageInvalidAsOptionType defaultInstance];
@@ -1750,8 +1750,8 @@ static DummyMessageInvalidAsOptionType* defaultDummyMessageInvalidAsOptionTypeIn
   return [self buildPartial];
 }
 - (DummyMessageInvalidAsOptionType*) buildPartial {
-  DummyMessageInvalidAsOptionType* returnMe = result;
-  self.result = nil;
+  DummyMessageInvalidAsOptionType* returnMe = resultDummyMessageInvalidAsOptionType;
+  self.resultDummyMessageInvalidAsOptionType = nil;
   return returnMe;
 }
 - (DummyMessageInvalidAsOptionTypeBuilder*) mergeFrom:(DummyMessageInvalidAsOptionType*) other {
@@ -1875,26 +1875,26 @@ static CustomOptionMinIntegerValues* defaultCustomOptionMinIntegerValuesInstance
 @end
 
 @interface CustomOptionMinIntegerValuesBuilder()
-@property (strong) CustomOptionMinIntegerValues* result;
+@property (strong) CustomOptionMinIntegerValues* resultCustomOptionMinIntegerValues;
 @end
 
 @implementation CustomOptionMinIntegerValuesBuilder
-@synthesize result;
+@synthesize resultCustomOptionMinIntegerValues;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionMinIntegerValues alloc] init];
+    self.resultCustomOptionMinIntegerValues = [[CustomOptionMinIntegerValues alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionMinIntegerValues;
 }
 - (CustomOptionMinIntegerValuesBuilder*) clear {
-  self.result = [[CustomOptionMinIntegerValues alloc] init];
+  self.resultCustomOptionMinIntegerValues = [[CustomOptionMinIntegerValues alloc] init];
   return self;
 }
 - (CustomOptionMinIntegerValuesBuilder*) clone {
-  return [CustomOptionMinIntegerValues builderWithPrototype:result];
+  return [CustomOptionMinIntegerValues builderWithPrototype:resultCustomOptionMinIntegerValues];
 }
 - (CustomOptionMinIntegerValues*) defaultInstance {
   return [CustomOptionMinIntegerValues defaultInstance];
@@ -1904,8 +1904,8 @@ static CustomOptionMinIntegerValues* defaultCustomOptionMinIntegerValuesInstance
   return [self buildPartial];
 }
 - (CustomOptionMinIntegerValues*) buildPartial {
-  CustomOptionMinIntegerValues* returnMe = result;
-  self.result = nil;
+  CustomOptionMinIntegerValues* returnMe = resultCustomOptionMinIntegerValues;
+  self.resultCustomOptionMinIntegerValues = nil;
   return returnMe;
 }
 - (CustomOptionMinIntegerValuesBuilder*) mergeFrom:(CustomOptionMinIntegerValues*) other {
@@ -2029,26 +2029,26 @@ static CustomOptionMaxIntegerValues* defaultCustomOptionMaxIntegerValuesInstance
 @end
 
 @interface CustomOptionMaxIntegerValuesBuilder()
-@property (strong) CustomOptionMaxIntegerValues* result;
+@property (strong) CustomOptionMaxIntegerValues* resultCustomOptionMaxIntegerValues;
 @end
 
 @implementation CustomOptionMaxIntegerValuesBuilder
-@synthesize result;
+@synthesize resultCustomOptionMaxIntegerValues;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionMaxIntegerValues alloc] init];
+    self.resultCustomOptionMaxIntegerValues = [[CustomOptionMaxIntegerValues alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionMaxIntegerValues;
 }
 - (CustomOptionMaxIntegerValuesBuilder*) clear {
-  self.result = [[CustomOptionMaxIntegerValues alloc] init];
+  self.resultCustomOptionMaxIntegerValues = [[CustomOptionMaxIntegerValues alloc] init];
   return self;
 }
 - (CustomOptionMaxIntegerValuesBuilder*) clone {
-  return [CustomOptionMaxIntegerValues builderWithPrototype:result];
+  return [CustomOptionMaxIntegerValues builderWithPrototype:resultCustomOptionMaxIntegerValues];
 }
 - (CustomOptionMaxIntegerValues*) defaultInstance {
   return [CustomOptionMaxIntegerValues defaultInstance];
@@ -2058,8 +2058,8 @@ static CustomOptionMaxIntegerValues* defaultCustomOptionMaxIntegerValuesInstance
   return [self buildPartial];
 }
 - (CustomOptionMaxIntegerValues*) buildPartial {
-  CustomOptionMaxIntegerValues* returnMe = result;
-  self.result = nil;
+  CustomOptionMaxIntegerValues* returnMe = resultCustomOptionMaxIntegerValues;
+  self.resultCustomOptionMaxIntegerValues = nil;
   return returnMe;
 }
 - (CustomOptionMaxIntegerValuesBuilder*) mergeFrom:(CustomOptionMaxIntegerValues*) other {
@@ -2183,26 +2183,26 @@ static CustomOptionOtherValues* defaultCustomOptionOtherValuesInstance = nil;
 @end
 
 @interface CustomOptionOtherValuesBuilder()
-@property (strong) CustomOptionOtherValues* result;
+@property (strong) CustomOptionOtherValues* resultCustomOptionOtherValues;
 @end
 
 @implementation CustomOptionOtherValuesBuilder
-@synthesize result;
+@synthesize resultCustomOptionOtherValues;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[CustomOptionOtherValues alloc] init];
+    self.resultCustomOptionOtherValues = [[CustomOptionOtherValues alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultCustomOptionOtherValues;
 }
 - (CustomOptionOtherValuesBuilder*) clear {
-  self.result = [[CustomOptionOtherValues alloc] init];
+  self.resultCustomOptionOtherValues = [[CustomOptionOtherValues alloc] init];
   return self;
 }
 - (CustomOptionOtherValuesBuilder*) clone {
-  return [CustomOptionOtherValues builderWithPrototype:result];
+  return [CustomOptionOtherValues builderWithPrototype:resultCustomOptionOtherValues];
 }
 - (CustomOptionOtherValues*) defaultInstance {
   return [CustomOptionOtherValues defaultInstance];
@@ -2212,8 +2212,8 @@ static CustomOptionOtherValues* defaultCustomOptionOtherValuesInstance = nil;
   return [self buildPartial];
 }
 - (CustomOptionOtherValues*) buildPartial {
-  CustomOptionOtherValues* returnMe = result;
-  self.result = nil;
+  CustomOptionOtherValues* returnMe = resultCustomOptionOtherValues;
+  self.resultCustomOptionOtherValues = nil;
   return returnMe;
 }
 - (CustomOptionOtherValuesBuilder*) mergeFrom:(CustomOptionOtherValues*) other {
@@ -2337,26 +2337,26 @@ static SettingRealsFromPositiveInts* defaultSettingRealsFromPositiveIntsInstance
 @end
 
 @interface SettingRealsFromPositiveIntsBuilder()
-@property (strong) SettingRealsFromPositiveInts* result;
+@property (strong) SettingRealsFromPositiveInts* resultSettingRealsFromPositiveInts;
 @end
 
 @implementation SettingRealsFromPositiveIntsBuilder
-@synthesize result;
+@synthesize resultSettingRealsFromPositiveInts;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[SettingRealsFromPositiveInts alloc] init];
+    self.resultSettingRealsFromPositiveInts = [[SettingRealsFromPositiveInts alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultSettingRealsFromPositiveInts;
 }
 - (SettingRealsFromPositiveIntsBuilder*) clear {
-  self.result = [[SettingRealsFromPositiveInts alloc] init];
+  self.resultSettingRealsFromPositiveInts = [[SettingRealsFromPositiveInts alloc] init];
   return self;
 }
 - (SettingRealsFromPositiveIntsBuilder*) clone {
-  return [SettingRealsFromPositiveInts builderWithPrototype:result];
+  return [SettingRealsFromPositiveInts builderWithPrototype:resultSettingRealsFromPositiveInts];
 }
 - (SettingRealsFromPositiveInts*) defaultInstance {
   return [SettingRealsFromPositiveInts defaultInstance];
@@ -2366,8 +2366,8 @@ static SettingRealsFromPositiveInts* defaultSettingRealsFromPositiveIntsInstance
   return [self buildPartial];
 }
 - (SettingRealsFromPositiveInts*) buildPartial {
-  SettingRealsFromPositiveInts* returnMe = result;
-  self.result = nil;
+  SettingRealsFromPositiveInts* returnMe = resultSettingRealsFromPositiveInts;
+  self.resultSettingRealsFromPositiveInts = nil;
   return returnMe;
 }
 - (SettingRealsFromPositiveIntsBuilder*) mergeFrom:(SettingRealsFromPositiveInts*) other {
@@ -2491,26 +2491,26 @@ static SettingRealsFromNegativeInts* defaultSettingRealsFromNegativeIntsInstance
 @end
 
 @interface SettingRealsFromNegativeIntsBuilder()
-@property (strong) SettingRealsFromNegativeInts* result;
+@property (strong) SettingRealsFromNegativeInts* resultSettingRealsFromNegativeInts;
 @end
 
 @implementation SettingRealsFromNegativeIntsBuilder
-@synthesize result;
+@synthesize resultSettingRealsFromNegativeInts;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[SettingRealsFromNegativeInts alloc] init];
+    self.resultSettingRealsFromNegativeInts = [[SettingRealsFromNegativeInts alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultSettingRealsFromNegativeInts;
 }
 - (SettingRealsFromNegativeIntsBuilder*) clear {
-  self.result = [[SettingRealsFromNegativeInts alloc] init];
+  self.resultSettingRealsFromNegativeInts = [[SettingRealsFromNegativeInts alloc] init];
   return self;
 }
 - (SettingRealsFromNegativeIntsBuilder*) clone {
-  return [SettingRealsFromNegativeInts builderWithPrototype:result];
+  return [SettingRealsFromNegativeInts builderWithPrototype:resultSettingRealsFromNegativeInts];
 }
 - (SettingRealsFromNegativeInts*) defaultInstance {
   return [SettingRealsFromNegativeInts defaultInstance];
@@ -2520,8 +2520,8 @@ static SettingRealsFromNegativeInts* defaultSettingRealsFromNegativeIntsInstance
   return [self buildPartial];
 }
 - (SettingRealsFromNegativeInts*) buildPartial {
-  SettingRealsFromNegativeInts* returnMe = result;
-  self.result = nil;
+  SettingRealsFromNegativeInts* returnMe = resultSettingRealsFromNegativeInts;
+  self.resultSettingRealsFromNegativeInts = nil;
   return returnMe;
 }
 - (SettingRealsFromNegativeIntsBuilder*) mergeFrom:(SettingRealsFromNegativeInts*) other {
@@ -2761,26 +2761,26 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
 @end
 
 @interface ComplexOptionType1Builder()
-@property (strong) ComplexOptionType1* result;
+@property (strong) ComplexOptionType1* resultComplexOptionType1;
 @end
 
 @implementation ComplexOptionType1Builder
-@synthesize result;
+@synthesize resultComplexOptionType1;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOptionType1 alloc] init];
+    self.resultComplexOptionType1 = [[ComplexOptionType1 alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultComplexOptionType1;
 }
 - (ComplexOptionType1Builder*) clear {
-  self.result = [[ComplexOptionType1 alloc] init];
+  self.resultComplexOptionType1 = [[ComplexOptionType1 alloc] init];
   return self;
 }
 - (ComplexOptionType1Builder*) clone {
-  return [ComplexOptionType1 builderWithPrototype:result];
+  return [ComplexOptionType1 builderWithPrototype:resultComplexOptionType1];
 }
 - (ComplexOptionType1*) defaultInstance {
   return [ComplexOptionType1 defaultInstance];
@@ -2790,8 +2790,8 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
   return [self buildPartial];
 }
 - (ComplexOptionType1*) buildPartial {
-  ComplexOptionType1* returnMe = result;
-  self.result = nil;
+  ComplexOptionType1* returnMe = resultComplexOptionType1;
+  self.resultComplexOptionType1 = nil;
   return returnMe;
 }
 - (ComplexOptionType1Builder*) mergeFrom:(ComplexOptionType1*) other {
@@ -2808,10 +2808,10 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
     [self setFoo3:other.foo3];
   }
   if (other.foo4Array.count > 0) {
-    if (result.foo4Array == nil) {
-      result.foo4Array = [other.foo4Array copy];
+    if (resultComplexOptionType1.foo4Array == nil) {
+      resultComplexOptionType1.foo4Array = [other.foo4Array copy];
     } else {
-      [result.foo4Array appendArray:other.foo4Array];
+      [resultComplexOptionType1.foo4Array appendArray:other.foo4Array];
     }
   }
   [self mergeExtensionFields:other];
@@ -2856,76 +2856,76 @@ static ComplexOptionType1* defaultComplexOptionType1Instance = nil;
   }
 }
 - (BOOL) hasFoo {
-  return result.hasFoo;
+  return resultComplexOptionType1.hasFoo;
 }
 - (SInt32) foo {
-  return result.foo;
+  return resultComplexOptionType1.foo;
 }
 - (ComplexOptionType1Builder*) setFoo:(SInt32) value {
-  result.hasFoo = YES;
-  result.foo = value;
+  resultComplexOptionType1.hasFoo = YES;
+  resultComplexOptionType1.foo = value;
   return self;
 }
 - (ComplexOptionType1Builder*) clearFoo {
-  result.hasFoo = NO;
-  result.foo = 0;
+  resultComplexOptionType1.hasFoo = NO;
+  resultComplexOptionType1.foo = 0;
   return self;
 }
 - (BOOL) hasFoo2 {
-  return result.hasFoo2;
+  return resultComplexOptionType1.hasFoo2;
 }
 - (SInt32) foo2 {
-  return result.foo2;
+  return resultComplexOptionType1.foo2;
 }
 - (ComplexOptionType1Builder*) setFoo2:(SInt32) value {
-  result.hasFoo2 = YES;
-  result.foo2 = value;
+  resultComplexOptionType1.hasFoo2 = YES;
+  resultComplexOptionType1.foo2 = value;
   return self;
 }
 - (ComplexOptionType1Builder*) clearFoo2 {
-  result.hasFoo2 = NO;
-  result.foo2 = 0;
+  resultComplexOptionType1.hasFoo2 = NO;
+  resultComplexOptionType1.foo2 = 0;
   return self;
 }
 - (BOOL) hasFoo3 {
-  return result.hasFoo3;
+  return resultComplexOptionType1.hasFoo3;
 }
 - (SInt32) foo3 {
-  return result.foo3;
+  return resultComplexOptionType1.foo3;
 }
 - (ComplexOptionType1Builder*) setFoo3:(SInt32) value {
-  result.hasFoo3 = YES;
-  result.foo3 = value;
+  resultComplexOptionType1.hasFoo3 = YES;
+  resultComplexOptionType1.foo3 = value;
   return self;
 }
 - (ComplexOptionType1Builder*) clearFoo3 {
-  result.hasFoo3 = NO;
-  result.foo3 = 0;
+  resultComplexOptionType1.hasFoo3 = NO;
+  resultComplexOptionType1.foo3 = 0;
   return self;
 }
 - (PBAppendableArray *)foo4 {
-  return result.foo4Array;
+  return resultComplexOptionType1.foo4Array;
 }
 - (SInt32)foo4AtIndex:(NSUInteger)index {
-  return [result foo4AtIndex:index];
+  return [resultComplexOptionType1 foo4AtIndex:index];
 }
 - (ComplexOptionType1Builder *)addFoo4:(SInt32)value {
-  if (result.foo4Array == nil) {
-    result.foo4Array = [PBAppendableArray arrayWithValueType:PBArrayValueTypeInt32];
+  if (resultComplexOptionType1.foo4Array == nil) {
+    resultComplexOptionType1.foo4Array = [PBAppendableArray arrayWithValueType:PBArrayValueTypeInt32];
   }
-  [result.foo4Array addInt32:value];
+  [resultComplexOptionType1.foo4Array addInt32:value];
   return self;
 }
 - (ComplexOptionType1Builder *)setFoo4Array:(NSArray *)array {
-  result.foo4Array = [PBAppendableArray arrayWithArray:array valueType:PBArrayValueTypeInt32];
+  resultComplexOptionType1.foo4Array = [PBAppendableArray arrayWithArray:array valueType:PBArrayValueTypeInt32];
   return self;
 }
 - (ComplexOptionType1Builder *)setFoo4Values:(const SInt32 *)values count:(NSUInteger)count {
-  result.foo4Array = [PBAppendableArray arrayWithValues:values count:count valueType:PBArrayValueTypeInt32];
+  resultComplexOptionType1.foo4Array = [PBAppendableArray arrayWithValues:values count:count valueType:PBArrayValueTypeInt32];
   return self;
 }
 - (ComplexOptionType1Builder *)clearFoo4 {
-  result.foo4Array = nil;
+  resultComplexOptionType1.foo4Array = nil;
   return self;
 }
 @end
@@ -3256,26 +3256,26 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
 @end
 
 @interface ComplexOptionType2ComplexOptionType4Builder()
-@property (strong) ComplexOptionType2ComplexOptionType4* result;
+@property (strong) ComplexOptionType2ComplexOptionType4* resultComplexOptionType4;
 @end
 
 @implementation ComplexOptionType2ComplexOptionType4Builder
-@synthesize result;
+@synthesize resultComplexOptionType4;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOptionType2ComplexOptionType4 alloc] init];
+    self.resultComplexOptionType4 = [[ComplexOptionType2ComplexOptionType4 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultComplexOptionType4;
 }
 - (ComplexOptionType2ComplexOptionType4Builder*) clear {
-  self.result = [[ComplexOptionType2ComplexOptionType4 alloc] init];
+  self.resultComplexOptionType4 = [[ComplexOptionType2ComplexOptionType4 alloc] init];
   return self;
 }
 - (ComplexOptionType2ComplexOptionType4Builder*) clone {
-  return [ComplexOptionType2ComplexOptionType4 builderWithPrototype:result];
+  return [ComplexOptionType2ComplexOptionType4 builderWithPrototype:resultComplexOptionType4];
 }
 - (ComplexOptionType2ComplexOptionType4*) defaultInstance {
   return [ComplexOptionType2ComplexOptionType4 defaultInstance];
@@ -3285,8 +3285,8 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
   return [self buildPartial];
 }
 - (ComplexOptionType2ComplexOptionType4*) buildPartial {
-  ComplexOptionType2ComplexOptionType4* returnMe = result;
-  self.result = nil;
+  ComplexOptionType2ComplexOptionType4* returnMe = resultComplexOptionType4;
+  self.resultComplexOptionType4 = nil;
   return returnMe;
 }
 - (ComplexOptionType2ComplexOptionType4Builder*) mergeFrom:(ComplexOptionType2ComplexOptionType4*) other {
@@ -3325,44 +3325,44 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
   }
 }
 - (BOOL) hasWaldo {
-  return result.hasWaldo;
+  return resultComplexOptionType4.hasWaldo;
 }
 - (SInt32) waldo {
-  return result.waldo;
+  return resultComplexOptionType4.waldo;
 }
 - (ComplexOptionType2ComplexOptionType4Builder*) setWaldo:(SInt32) value {
-  result.hasWaldo = YES;
-  result.waldo = value;
+  resultComplexOptionType4.hasWaldo = YES;
+  resultComplexOptionType4.waldo = value;
   return self;
 }
 - (ComplexOptionType2ComplexOptionType4Builder*) clearWaldo {
-  result.hasWaldo = NO;
-  result.waldo = 0;
+  resultComplexOptionType4.hasWaldo = NO;
+  resultComplexOptionType4.waldo = 0;
   return self;
 }
 @end
 
 @interface ComplexOptionType2Builder()
-@property (strong) ComplexOptionType2* result;
+@property (strong) ComplexOptionType2* resultComplexOptionType2;
 @end
 
 @implementation ComplexOptionType2Builder
-@synthesize result;
+@synthesize resultComplexOptionType2;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOptionType2 alloc] init];
+    self.resultComplexOptionType2 = [[ComplexOptionType2 alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultComplexOptionType2;
 }
 - (ComplexOptionType2Builder*) clear {
-  self.result = [[ComplexOptionType2 alloc] init];
+  self.resultComplexOptionType2 = [[ComplexOptionType2 alloc] init];
   return self;
 }
 - (ComplexOptionType2Builder*) clone {
-  return [ComplexOptionType2 builderWithPrototype:result];
+  return [ComplexOptionType2 builderWithPrototype:resultComplexOptionType2];
 }
 - (ComplexOptionType2*) defaultInstance {
   return [ComplexOptionType2 defaultInstance];
@@ -3372,8 +3372,8 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
   return [self buildPartial];
 }
 - (ComplexOptionType2*) buildPartial {
-  ComplexOptionType2* returnMe = result;
-  self.result = nil;
+  ComplexOptionType2* returnMe = resultComplexOptionType2;
+  self.resultComplexOptionType2 = nil;
   return returnMe;
 }
 - (ComplexOptionType2Builder*) mergeFrom:(ComplexOptionType2*) other {
@@ -3390,10 +3390,10 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
     [self mergeFred:other.fred];
   }
   if (other.barneyArray.count > 0) {
-    if (result.barneyArray == nil) {
-      result.barneyArray = [[NSMutableArray alloc] initWithArray:other.barneyArray];
+    if (resultComplexOptionType2.barneyArray == nil) {
+      resultComplexOptionType2.barneyArray = [[NSMutableArray alloc] initWithArray:other.barneyArray];
     } else {
-      [result.barneyArray addObjectsFromArray:other.barneyArray];
+      [resultComplexOptionType2.barneyArray addObjectsFromArray:other.barneyArray];
     }
   }
   [self mergeExtensionFields:other];
@@ -3450,100 +3450,100 @@ static ComplexOptionType2ComplexOptionType4* defaultComplexOptionType2ComplexOpt
   }
 }
 - (BOOL) hasBar {
-  return result.hasBar;
+  return resultComplexOptionType2.hasBar;
 }
 - (ComplexOptionType1*) bar {
-  return result.bar;
+  return resultComplexOptionType2.bar;
 }
 - (ComplexOptionType2Builder*) setBar:(ComplexOptionType1*) value {
-  result.hasBar = YES;
-  result.bar = value;
+  resultComplexOptionType2.hasBar = YES;
+  resultComplexOptionType2.bar = value;
   return self;
 }
 - (ComplexOptionType2Builder*) setBarBuilder:(ComplexOptionType1Builder*) builderForValue {
   return [self setBar:[builderForValue build]];
 }
 - (ComplexOptionType2Builder*) mergeBar:(ComplexOptionType1*) value {
-  if (result.hasBar &&
-      result.bar != [ComplexOptionType1 defaultInstance]) {
-    result.bar =
-      [[[ComplexOptionType1 builderWithPrototype:result.bar] mergeFrom:value] buildPartial];
+  if (resultComplexOptionType2.hasBar &&
+      resultComplexOptionType2.bar != [ComplexOptionType1 defaultInstance]) {
+    resultComplexOptionType2.bar =
+      [[[ComplexOptionType1 builderWithPrototype:resultComplexOptionType2.bar] mergeFrom:value] buildPartial];
   } else {
-    result.bar = value;
+    resultComplexOptionType2.bar = value;
   }
-  result.hasBar = YES;
+  resultComplexOptionType2.hasBar = YES;
   return self;
 }
 - (ComplexOptionType2Builder*) clearBar {
-  result.hasBar = NO;
-  result.bar = [ComplexOptionType1 defaultInstance];
+  resultComplexOptionType2.hasBar = NO;
+  resultComplexOptionType2.bar = [ComplexOptionType1 defaultInstance];
   return self;
 }
 - (BOOL) hasBaz {
-  return result.hasBaz;
+  return resultComplexOptionType2.hasBaz;
 }
 - (SInt32) baz {
-  return result.baz;
+  return resultComplexOptionType2.baz;
 }
 - (ComplexOptionType2Builder*) setBaz:(SInt32) value {
-  result.hasBaz = YES;
-  result.baz = value;
+  resultComplexOptionType2.hasBaz = YES;
+  resultComplexOptionType2.baz = value;
   return self;
 }
 - (ComplexOptionType2Builder*) clearBaz {
-  result.hasBaz = NO;
-  result.baz = 0;
+  resultComplexOptionType2.hasBaz = NO;
+  resultComplexOptionType2.baz = 0;
   return self;
 }
 - (BOOL) hasFred {
-  return result.hasFred;
+  return resultComplexOptionType2.hasFred;
 }
 - (ComplexOptionType2ComplexOptionType4*) fred {
-  return result.fred;
+  return resultComplexOptionType2.fred;
 }
 - (ComplexOptionType2Builder*) setFred:(ComplexOptionType2ComplexOptionType4*) value {
-  result.hasFred = YES;
-  result.fred = value;
+  resultComplexOptionType2.hasFred = YES;
+  resultComplexOptionType2.fred = value;
   return self;
 }
 - (ComplexOptionType2Builder*) setFredBuilder:(ComplexOptionType2ComplexOptionType4Builder*) builderForValue {
   return [self setFred:[builderForValue build]];
 }
 - (ComplexOptionType2Builder*) mergeFred:(ComplexOptionType2ComplexOptionType4*) value {
-  if (result.hasFred &&
-      result.fred != [ComplexOptionType2ComplexOptionType4 defaultInstance]) {
-    result.fred =
-      [[[ComplexOptionType2ComplexOptionType4 builderWithPrototype:result.fred] mergeFrom:value] buildPartial];
+  if (resultComplexOptionType2.hasFred &&
+      resultComplexOptionType2.fred != [ComplexOptionType2ComplexOptionType4 defaultInstance]) {
+    resultComplexOptionType2.fred =
+      [[[ComplexOptionType2ComplexOptionType4 builderWithPrototype:resultComplexOptionType2.fred] mergeFrom:value] buildPartial];
   } else {
-    result.fred = value;
+    resultComplexOptionType2.fred = value;
   }
-  result.hasFred = YES;
+  resultComplexOptionType2.hasFred = YES;
   return self;
 }
 - (ComplexOptionType2Builder*) clearFred {
-  result.hasFred = NO;
-  result.fred = [ComplexOptionType2ComplexOptionType4 defaultInstance];
+  resultComplexOptionType2.hasFred = NO;
+  resultComplexOptionType2.fred = [ComplexOptionType2ComplexOptionType4 defaultInstance];
   return self;
 }
 - (NSMutableArray *)barney {
-  return result.barneyArray;
+  return resultComplexOptionType2.barneyArray;
 }
 - (ComplexOptionType2ComplexOptionType4*)barneyAtIndex:(NSUInteger)index {
-  return [result barneyAtIndex:index];
+  return [resultComplexOptionType2 barneyAtIndex:index];
 }
 - (ComplexOptionType2Builder *)addBarney:(ComplexOptionType2ComplexOptionType4*)value {
-  if (result.barneyArray == nil) {
-    result.barneyArray = [[NSMutableArray alloc]init];
+  if (resultComplexOptionType2.barneyArray == nil) {
+    resultComplexOptionType2.barneyArray = [[NSMutableArray alloc]init];
   }
-  [result.barneyArray addObject:value];
+  [resultComplexOptionType2.barneyArray addObject:value];
   return self;
 }
 - (ComplexOptionType2Builder *)setBarneyArray:(NSArray *)array {
-  result.barneyArray = [[NSMutableArray alloc]initWithArray:array];
+  resultComplexOptionType2.barneyArray = [[NSMutableArray alloc]initWithArray:array];
   return self;
 }
 - (ComplexOptionType2Builder *)clearBarney {
-  result.barneyArray = nil;
+  resultComplexOptionType2.barneyArray = nil;
   return self;
 }
 @end
@@ -3801,26 +3801,26 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
 @end
 
 @interface ComplexOptionType3ComplexOptionType5Builder()
-@property (strong) ComplexOptionType3ComplexOptionType5* result;
+@property (strong) ComplexOptionType3ComplexOptionType5* resultComplexOptionType5;
 @end
 
 @implementation ComplexOptionType3ComplexOptionType5Builder
-@synthesize result;
+@synthesize resultComplexOptionType5;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOptionType3ComplexOptionType5 alloc] init];
+    self.resultComplexOptionType5 = [[ComplexOptionType3ComplexOptionType5 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultComplexOptionType5;
 }
 - (ComplexOptionType3ComplexOptionType5Builder*) clear {
-  self.result = [[ComplexOptionType3ComplexOptionType5 alloc] init];
+  self.resultComplexOptionType5 = [[ComplexOptionType3ComplexOptionType5 alloc] init];
   return self;
 }
 - (ComplexOptionType3ComplexOptionType5Builder*) clone {
-  return [ComplexOptionType3ComplexOptionType5 builderWithPrototype:result];
+  return [ComplexOptionType3ComplexOptionType5 builderWithPrototype:resultComplexOptionType5];
 }
 - (ComplexOptionType3ComplexOptionType5*) defaultInstance {
   return [ComplexOptionType3ComplexOptionType5 defaultInstance];
@@ -3830,8 +3830,8 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
   return [self buildPartial];
 }
 - (ComplexOptionType3ComplexOptionType5*) buildPartial {
-  ComplexOptionType3ComplexOptionType5* returnMe = result;
-  self.result = nil;
+  ComplexOptionType3ComplexOptionType5* returnMe = resultComplexOptionType5;
+  self.resultComplexOptionType5 = nil;
   return returnMe;
 }
 - (ComplexOptionType3ComplexOptionType5Builder*) mergeFrom:(ComplexOptionType3ComplexOptionType5*) other {
@@ -3870,44 +3870,44 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
   }
 }
 - (BOOL) hasPlugh {
-  return result.hasPlugh;
+  return resultComplexOptionType5.hasPlugh;
 }
 - (SInt32) plugh {
-  return result.plugh;
+  return resultComplexOptionType5.plugh;
 }
 - (ComplexOptionType3ComplexOptionType5Builder*) setPlugh:(SInt32) value {
-  result.hasPlugh = YES;
-  result.plugh = value;
+  resultComplexOptionType5.hasPlugh = YES;
+  resultComplexOptionType5.plugh = value;
   return self;
 }
 - (ComplexOptionType3ComplexOptionType5Builder*) clearPlugh {
-  result.hasPlugh = NO;
-  result.plugh = 0;
+  resultComplexOptionType5.hasPlugh = NO;
+  resultComplexOptionType5.plugh = 0;
   return self;
 }
 @end
 
 @interface ComplexOptionType3Builder()
-@property (strong) ComplexOptionType3* result;
+@property (strong) ComplexOptionType3* resultComplexOptionType3;
 @end
 
 @implementation ComplexOptionType3Builder
-@synthesize result;
+@synthesize resultComplexOptionType3;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOptionType3 alloc] init];
+    self.resultComplexOptionType3 = [[ComplexOptionType3 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultComplexOptionType3;
 }
 - (ComplexOptionType3Builder*) clear {
-  self.result = [[ComplexOptionType3 alloc] init];
+  self.resultComplexOptionType3 = [[ComplexOptionType3 alloc] init];
   return self;
 }
 - (ComplexOptionType3Builder*) clone {
-  return [ComplexOptionType3 builderWithPrototype:result];
+  return [ComplexOptionType3 builderWithPrototype:resultComplexOptionType3];
 }
 - (ComplexOptionType3*) defaultInstance {
   return [ComplexOptionType3 defaultInstance];
@@ -3917,8 +3917,8 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
   return [self buildPartial];
 }
 - (ComplexOptionType3*) buildPartial {
-  ComplexOptionType3* returnMe = result;
-  self.result = nil;
+  ComplexOptionType3* returnMe = resultComplexOptionType3;
+  self.resultComplexOptionType3 = nil;
   return returnMe;
 }
 - (ComplexOptionType3Builder*) mergeFrom:(ComplexOptionType3*) other {
@@ -3969,49 +3969,49 @@ static ComplexOptionType3ComplexOptionType5* defaultComplexOptionType3ComplexOpt
   }
 }
 - (BOOL) hasQux {
-  return result.hasQux;
+  return resultComplexOptionType3.hasQux;
 }
 - (SInt32) qux {
-  return result.qux;
+  return resultComplexOptionType3.qux;
 }
 - (ComplexOptionType3Builder*) setQux:(SInt32) value {
-  result.hasQux = YES;
-  result.qux = value;
+  resultComplexOptionType3.hasQux = YES;
+  resultComplexOptionType3.qux = value;
   return self;
 }
 - (ComplexOptionType3Builder*) clearQux {
-  result.hasQux = NO;
-  result.qux = 0;
+  resultComplexOptionType3.hasQux = NO;
+  resultComplexOptionType3.qux = 0;
   return self;
 }
 - (BOOL) hasComplexOptionType5 {
-  return result.hasComplexOptionType5;
+  return resultComplexOptionType3.hasComplexOptionType5;
 }
 - (ComplexOptionType3ComplexOptionType5*) complexOptionType5 {
-  return result.complexOptionType5;
+  return resultComplexOptionType3.complexOptionType5;
 }
 - (ComplexOptionType3Builder*) setComplexOptionType5:(ComplexOptionType3ComplexOptionType5*) value {
-  result.hasComplexOptionType5 = YES;
-  result.complexOptionType5 = value;
+  resultComplexOptionType3.hasComplexOptionType5 = YES;
+  resultComplexOptionType3.complexOptionType5 = value;
   return self;
 }
 - (ComplexOptionType3Builder*) setComplexOptionType5Builder:(ComplexOptionType3ComplexOptionType5Builder*) builderForValue {
   return [self setComplexOptionType5:[builderForValue build]];
 }
 - (ComplexOptionType3Builder*) mergeComplexOptionType5:(ComplexOptionType3ComplexOptionType5*) value {
-  if (result.hasComplexOptionType5 &&
-      result.complexOptionType5 != [ComplexOptionType3ComplexOptionType5 defaultInstance]) {
-    result.complexOptionType5 =
-      [[[ComplexOptionType3ComplexOptionType5 builderWithPrototype:result.complexOptionType5] mergeFrom:value] buildPartial];
+  if (resultComplexOptionType3.hasComplexOptionType5 &&
+      resultComplexOptionType3.complexOptionType5 != [ComplexOptionType3ComplexOptionType5 defaultInstance]) {
+    resultComplexOptionType3.complexOptionType5 =
+      [[[ComplexOptionType3ComplexOptionType5 builderWithPrototype:resultComplexOptionType3.complexOptionType5] mergeFrom:value] buildPartial];
   } else {
-    result.complexOptionType5 = value;
+    resultComplexOptionType3.complexOptionType5 = value;
   }
-  result.hasComplexOptionType5 = YES;
+  resultComplexOptionType3.hasComplexOptionType5 = YES;
   return self;
 }
 - (ComplexOptionType3Builder*) clearComplexOptionType5 {
-  result.hasComplexOptionType5 = NO;
-  result.complexOptionType5 = [ComplexOptionType3ComplexOptionType5 defaultInstance];
+  resultComplexOptionType3.hasComplexOptionType5 = NO;
+  resultComplexOptionType3.complexOptionType5 = [ComplexOptionType3ComplexOptionType5 defaultInstance];
   return self;
 }
 @end
@@ -4130,26 +4130,26 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
 @end
 
 @interface ComplexOpt6Builder()
-@property (strong) ComplexOpt6* result;
+@property (strong) ComplexOpt6* resultComplexOpt6;
 @end
 
 @implementation ComplexOpt6Builder
-@synthesize result;
+@synthesize resultComplexOpt6;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[ComplexOpt6 alloc] init];
+    self.resultComplexOpt6 = [[ComplexOpt6 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultComplexOpt6;
 }
 - (ComplexOpt6Builder*) clear {
-  self.result = [[ComplexOpt6 alloc] init];
+  self.resultComplexOpt6 = [[ComplexOpt6 alloc] init];
   return self;
 }
 - (ComplexOpt6Builder*) clone {
-  return [ComplexOpt6 builderWithPrototype:result];
+  return [ComplexOpt6 builderWithPrototype:resultComplexOpt6];
 }
 - (ComplexOpt6*) defaultInstance {
   return [ComplexOpt6 defaultInstance];
@@ -4159,8 +4159,8 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
   return [self buildPartial];
 }
 - (ComplexOpt6*) buildPartial {
-  ComplexOpt6* returnMe = result;
-  self.result = nil;
+  ComplexOpt6* returnMe = resultComplexOpt6;
+  self.resultComplexOpt6 = nil;
   return returnMe;
 }
 - (ComplexOpt6Builder*) mergeFrom:(ComplexOpt6*) other {
@@ -4199,19 +4199,19 @@ static ComplexOpt6* defaultComplexOpt6Instance = nil;
   }
 }
 - (BOOL) hasXyzzy {
-  return result.hasXyzzy;
+  return resultComplexOpt6.hasXyzzy;
 }
 - (SInt32) xyzzy {
-  return result.xyzzy;
+  return resultComplexOpt6.xyzzy;
 }
 - (ComplexOpt6Builder*) setXyzzy:(SInt32) value {
-  result.hasXyzzy = YES;
-  result.xyzzy = value;
+  resultComplexOpt6.hasXyzzy = YES;
+  resultComplexOpt6.xyzzy = value;
   return self;
 }
 - (ComplexOpt6Builder*) clearXyzzy {
-  result.hasXyzzy = NO;
-  result.xyzzy = 0;
+  resultComplexOpt6.hasXyzzy = NO;
+  resultComplexOpt6.xyzzy = 0;
   return self;
 }
 @end
@@ -4307,26 +4307,26 @@ static VariousComplexOptions* defaultVariousComplexOptionsInstance = nil;
 @end
 
 @interface VariousComplexOptionsBuilder()
-@property (strong) VariousComplexOptions* result;
+@property (strong) VariousComplexOptions* resultVariousComplexOptions;
 @end
 
 @implementation VariousComplexOptionsBuilder
-@synthesize result;
+@synthesize resultVariousComplexOptions;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[VariousComplexOptions alloc] init];
+    self.resultVariousComplexOptions = [[VariousComplexOptions alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultVariousComplexOptions;
 }
 - (VariousComplexOptionsBuilder*) clear {
-  self.result = [[VariousComplexOptions alloc] init];
+  self.resultVariousComplexOptions = [[VariousComplexOptions alloc] init];
   return self;
 }
 - (VariousComplexOptionsBuilder*) clone {
-  return [VariousComplexOptions builderWithPrototype:result];
+  return [VariousComplexOptions builderWithPrototype:resultVariousComplexOptions];
 }
 - (VariousComplexOptions*) defaultInstance {
   return [VariousComplexOptions defaultInstance];
@@ -4336,8 +4336,8 @@ static VariousComplexOptions* defaultVariousComplexOptionsInstance = nil;
   return [self buildPartial];
 }
 - (VariousComplexOptions*) buildPartial {
-  VariousComplexOptions* returnMe = result;
-  self.result = nil;
+  VariousComplexOptions* returnMe = resultVariousComplexOptions;
+  self.resultVariousComplexOptions = nil;
   return returnMe;
 }
 - (VariousComplexOptionsBuilder*) mergeFrom:(VariousComplexOptions*) other {
@@ -4475,26 +4475,26 @@ static AggregateMessageSet* defaultAggregateMessageSetInstance = nil;
 @end
 
 @interface AggregateMessageSetBuilder()
-@property (strong) AggregateMessageSet* result;
+@property (strong) AggregateMessageSet* resultAggregateMessageSet;
 @end
 
 @implementation AggregateMessageSetBuilder
-@synthesize result;
+@synthesize resultAggregateMessageSet;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[AggregateMessageSet alloc] init];
+    self.resultAggregateMessageSet = [[AggregateMessageSet alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultAggregateMessageSet;
 }
 - (AggregateMessageSetBuilder*) clear {
-  self.result = [[AggregateMessageSet alloc] init];
+  self.resultAggregateMessageSet = [[AggregateMessageSet alloc] init];
   return self;
 }
 - (AggregateMessageSetBuilder*) clone {
-  return [AggregateMessageSet builderWithPrototype:result];
+  return [AggregateMessageSet builderWithPrototype:resultAggregateMessageSet];
 }
 - (AggregateMessageSet*) defaultInstance {
   return [AggregateMessageSet defaultInstance];
@@ -4504,8 +4504,8 @@ static AggregateMessageSet* defaultAggregateMessageSetInstance = nil;
   return [self buildPartial];
 }
 - (AggregateMessageSet*) buildPartial {
-  AggregateMessageSet* returnMe = result;
-  self.result = nil;
+  AggregateMessageSet* returnMe = resultAggregateMessageSet;
+  self.resultAggregateMessageSet = nil;
   return returnMe;
 }
 - (AggregateMessageSetBuilder*) mergeFrom:(AggregateMessageSet*) other {
@@ -4656,26 +4656,26 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
 @end
 
 @interface AggregateMessageSetElementBuilder()
-@property (strong) AggregateMessageSetElement* result;
+@property (strong) AggregateMessageSetElement* resultAggregateMessageSetElement;
 @end
 
 @implementation AggregateMessageSetElementBuilder
-@synthesize result;
+@synthesize resultAggregateMessageSetElement;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[AggregateMessageSetElement alloc] init];
+    self.resultAggregateMessageSetElement = [[AggregateMessageSetElement alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultAggregateMessageSetElement;
 }
 - (AggregateMessageSetElementBuilder*) clear {
-  self.result = [[AggregateMessageSetElement alloc] init];
+  self.resultAggregateMessageSetElement = [[AggregateMessageSetElement alloc] init];
   return self;
 }
 - (AggregateMessageSetElementBuilder*) clone {
-  return [AggregateMessageSetElement builderWithPrototype:result];
+  return [AggregateMessageSetElement builderWithPrototype:resultAggregateMessageSetElement];
 }
 - (AggregateMessageSetElement*) defaultInstance {
   return [AggregateMessageSetElement defaultInstance];
@@ -4685,8 +4685,8 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
   return [self buildPartial];
 }
 - (AggregateMessageSetElement*) buildPartial {
-  AggregateMessageSetElement* returnMe = result;
-  self.result = nil;
+  AggregateMessageSetElement* returnMe = resultAggregateMessageSetElement;
+  self.resultAggregateMessageSetElement = nil;
   return returnMe;
 }
 - (AggregateMessageSetElementBuilder*) mergeFrom:(AggregateMessageSetElement*) other {
@@ -4725,19 +4725,19 @@ static AggregateMessageSetElement* defaultAggregateMessageSetElementInstance = n
   }
 }
 - (BOOL) hasS {
-  return result.hasS;
+  return resultAggregateMessageSetElement.hasS;
 }
 - (NSString*) s {
-  return result.s;
+  return resultAggregateMessageSetElement.s;
 }
 - (AggregateMessageSetElementBuilder*) setS:(NSString*) value {
-  result.hasS = YES;
-  result.s = value;
+  resultAggregateMessageSetElement.hasS = YES;
+  resultAggregateMessageSetElement.s = value;
   return self;
 }
 - (AggregateMessageSetElementBuilder*) clearS {
-  result.hasS = NO;
-  result.s = @"";
+  resultAggregateMessageSetElement.hasS = NO;
+  resultAggregateMessageSetElement.s = @"";
   return self;
 }
 @end
@@ -4975,26 +4975,26 @@ static Aggregate* defaultAggregateInstance = nil;
 @end
 
 @interface AggregateBuilder()
-@property (strong) Aggregate* result;
+@property (strong) Aggregate* resultAggregate;
 @end
 
 @implementation AggregateBuilder
-@synthesize result;
+@synthesize resultAggregate;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[Aggregate alloc] init];
+    self.resultAggregate = [[Aggregate alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultAggregate;
 }
 - (AggregateBuilder*) clear {
-  self.result = [[Aggregate alloc] init];
+  self.resultAggregate = [[Aggregate alloc] init];
   return self;
 }
 - (AggregateBuilder*) clone {
-  return [Aggregate builderWithPrototype:result];
+  return [Aggregate builderWithPrototype:resultAggregate];
 }
 - (Aggregate*) defaultInstance {
   return [Aggregate defaultInstance];
@@ -5004,8 +5004,8 @@ static Aggregate* defaultAggregateInstance = nil;
   return [self buildPartial];
 }
 - (Aggregate*) buildPartial {
-  Aggregate* returnMe = result;
-  self.result = nil;
+  Aggregate* returnMe = resultAggregate;
+  self.resultAggregate = nil;
   return returnMe;
 }
 - (AggregateBuilder*) mergeFrom:(Aggregate*) other {
@@ -5087,125 +5087,125 @@ static Aggregate* defaultAggregateInstance = nil;
   }
 }
 - (BOOL) hasI {
-  return result.hasI;
+  return resultAggregate.hasI;
 }
 - (SInt32) i {
-  return result.i;
+  return resultAggregate.i;
 }
 - (AggregateBuilder*) setI:(SInt32) value {
-  result.hasI = YES;
-  result.i = value;
+  resultAggregate.hasI = YES;
+  resultAggregate.i = value;
   return self;
 }
 - (AggregateBuilder*) clearI {
-  result.hasI = NO;
-  result.i = 0;
+  resultAggregate.hasI = NO;
+  resultAggregate.i = 0;
   return self;
 }
 - (BOOL) hasS {
-  return result.hasS;
+  return resultAggregate.hasS;
 }
 - (NSString*) s {
-  return result.s;
+  return resultAggregate.s;
 }
 - (AggregateBuilder*) setS:(NSString*) value {
-  result.hasS = YES;
-  result.s = value;
+  resultAggregate.hasS = YES;
+  resultAggregate.s = value;
   return self;
 }
 - (AggregateBuilder*) clearS {
-  result.hasS = NO;
-  result.s = @"";
+  resultAggregate.hasS = NO;
+  resultAggregate.s = @"";
   return self;
 }
 - (BOOL) hasSub {
-  return result.hasSub;
+  return resultAggregate.hasSub;
 }
 - (Aggregate*) sub {
-  return result.sub;
+  return resultAggregate.sub;
 }
 - (AggregateBuilder*) setSub:(Aggregate*) value {
-  result.hasSub = YES;
-  result.sub = value;
+  resultAggregate.hasSub = YES;
+  resultAggregate.sub = value;
   return self;
 }
 - (AggregateBuilder*) setSubBuilder:(AggregateBuilder*) builderForValue {
   return [self setSub:[builderForValue build]];
 }
 - (AggregateBuilder*) mergeSub:(Aggregate*) value {
-  if (result.hasSub &&
-      result.sub != [Aggregate defaultInstance]) {
-    result.sub =
-      [[[Aggregate builderWithPrototype:result.sub] mergeFrom:value] buildPartial];
+  if (resultAggregate.hasSub &&
+      resultAggregate.sub != [Aggregate defaultInstance]) {
+    resultAggregate.sub =
+      [[[Aggregate builderWithPrototype:resultAggregate.sub] mergeFrom:value] buildPartial];
   } else {
-    result.sub = value;
+    resultAggregate.sub = value;
   }
-  result.hasSub = YES;
+  resultAggregate.hasSub = YES;
   return self;
 }
 - (AggregateBuilder*) clearSub {
-  result.hasSub = NO;
-  result.sub = [Aggregate defaultInstance];
+  resultAggregate.hasSub = NO;
+  resultAggregate.sub = [Aggregate defaultInstance];
   return self;
 }
 - (BOOL) hasFile {
-  return result.hasFile;
+  return resultAggregate.hasFile;
 }
 - (PBFileOptions*) file {
-  return result.file;
+  return resultAggregate.file;
 }
 - (AggregateBuilder*) setFile:(PBFileOptions*) value {
-  result.hasFile = YES;
-  result.file = value;
+  resultAggregate.hasFile = YES;
+  resultAggregate.file = value;
   return self;
 }
 - (AggregateBuilder*) setFileBuilder:(PBFileOptionsBuilder*) builderForValue {
   return [self setFile:[builderForValue build]];
 }
 - (AggregateBuilder*) mergeFile:(PBFileOptions*) value {
-  if (result.hasFile &&
-      result.file != [PBFileOptions defaultInstance]) {
-    result.file =
-      [[[PBFileOptions builderWithPrototype:result.file] mergeFrom:value] buildPartial];
+  if (resultAggregate.hasFile &&
+      resultAggregate.file != [PBFileOptions defaultInstance]) {
+    resultAggregate.file =
+      [[[PBFileOptions builderWithPrototype:resultAggregate.file] mergeFrom:value] buildPartial];
   } else {
-    result.file = value;
+    resultAggregate.file = value;
   }
-  result.hasFile = YES;
+  resultAggregate.hasFile = YES;
   return self;
 }
 - (AggregateBuilder*) clearFile {
-  result.hasFile = NO;
-  result.file = [PBFileOptions defaultInstance];
+  resultAggregate.hasFile = NO;
+  resultAggregate.file = [PBFileOptions defaultInstance];
   return self;
 }
 - (BOOL) hasMset {
-  return result.hasMset;
+  return resultAggregate.hasMset;
 }
 - (AggregateMessageSet*) mset {
-  return result.mset;
+  return resultAggregate.mset;
 }
 - (AggregateBuilder*) setMset:(AggregateMessageSet*) value {
-  result.hasMset = YES;
-  result.mset = value;
+  resultAggregate.hasMset = YES;
+  resultAggregate.mset = value;
   return self;
 }
 - (AggregateBuilder*) setMsetBuilder:(AggregateMessageSetBuilder*) builderForValue {
   return [self setMset:[builderForValue build]];
 }
 - (AggregateBuilder*) mergeMset:(AggregateMessageSet*) value {
-  if (result.hasMset &&
-      result.mset != [AggregateMessageSet defaultInstance]) {
-    result.mset =
-      [[[AggregateMessageSet builderWithPrototype:result.mset] mergeFrom:value] buildPartial];
+  if (resultAggregate.hasMset &&
+      resultAggregate.mset != [AggregateMessageSet defaultInstance]) {
+    resultAggregate.mset =
+      [[[AggregateMessageSet builderWithPrototype:resultAggregate.mset] mergeFrom:value] buildPartial];
   } else {
-    result.mset = value;
+    resultAggregate.mset = value;
   }
-  result.hasMset = YES;
+  resultAggregate.hasMset = YES;
   return self;
 }
 - (AggregateBuilder*) clearMset {
-  result.hasMset = NO;
-  result.mset = [AggregateMessageSet defaultInstance];
+  resultAggregate.hasMset = NO;
+  resultAggregate.mset = [AggregateMessageSet defaultInstance];
   return self;
 }
 @end
@@ -5324,26 +5324,26 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
 @end
 
 @interface AggregateMessageBuilder()
-@property (strong) AggregateMessage* result;
+@property (strong) AggregateMessage* resultAggregateMessage;
 @end
 
 @implementation AggregateMessageBuilder
-@synthesize result;
+@synthesize resultAggregateMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[AggregateMessage alloc] init];
+    self.resultAggregateMessage = [[AggregateMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultAggregateMessage;
 }
 - (AggregateMessageBuilder*) clear {
-  self.result = [[AggregateMessage alloc] init];
+  self.resultAggregateMessage = [[AggregateMessage alloc] init];
   return self;
 }
 - (AggregateMessageBuilder*) clone {
-  return [AggregateMessage builderWithPrototype:result];
+  return [AggregateMessage builderWithPrototype:resultAggregateMessage];
 }
 - (AggregateMessage*) defaultInstance {
   return [AggregateMessage defaultInstance];
@@ -5353,8 +5353,8 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
   return [self buildPartial];
 }
 - (AggregateMessage*) buildPartial {
-  AggregateMessage* returnMe = result;
-  self.result = nil;
+  AggregateMessage* returnMe = resultAggregateMessage;
+  self.resultAggregateMessage = nil;
   return returnMe;
 }
 - (AggregateMessageBuilder*) mergeFrom:(AggregateMessage*) other {
@@ -5393,19 +5393,19 @@ static AggregateMessage* defaultAggregateMessageInstance = nil;
   }
 }
 - (BOOL) hasFieldname {
-  return result.hasFieldname;
+  return resultAggregateMessage.hasFieldname;
 }
 - (SInt32) fieldname {
-  return result.fieldname;
+  return resultAggregateMessage.fieldname;
 }
 - (AggregateMessageBuilder*) setFieldname:(SInt32) value {
-  result.hasFieldname = YES;
-  result.fieldname = value;
+  resultAggregateMessage.hasFieldname = YES;
+  resultAggregateMessage.fieldname = value;
   return self;
 }
 - (AggregateMessageBuilder*) clearFieldname {
-  result.hasFieldname = NO;
-  result.fieldname = 0;
+  resultAggregateMessage.hasFieldname = NO;
+  resultAggregateMessage.fieldname = 0;
   return self;
 }
 @end
@@ -5625,26 +5625,26 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
 @end
 
 @interface NestedOptionTypeNestedMessageBuilder()
-@property (strong) NestedOptionTypeNestedMessage* result;
+@property (strong) NestedOptionTypeNestedMessage* resultNestedMessage;
 @end
 
 @implementation NestedOptionTypeNestedMessageBuilder
-@synthesize result;
+@synthesize resultNestedMessage;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[NestedOptionTypeNestedMessage alloc] init];
+    self.resultNestedMessage = [[NestedOptionTypeNestedMessage alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultNestedMessage;
 }
 - (NestedOptionTypeNestedMessageBuilder*) clear {
-  self.result = [[NestedOptionTypeNestedMessage alloc] init];
+  self.resultNestedMessage = [[NestedOptionTypeNestedMessage alloc] init];
   return self;
 }
 - (NestedOptionTypeNestedMessageBuilder*) clone {
-  return [NestedOptionTypeNestedMessage builderWithPrototype:result];
+  return [NestedOptionTypeNestedMessage builderWithPrototype:resultNestedMessage];
 }
 - (NestedOptionTypeNestedMessage*) defaultInstance {
   return [NestedOptionTypeNestedMessage defaultInstance];
@@ -5654,8 +5654,8 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
   return [self buildPartial];
 }
 - (NestedOptionTypeNestedMessage*) buildPartial {
-  NestedOptionTypeNestedMessage* returnMe = result;
-  self.result = nil;
+  NestedOptionTypeNestedMessage* returnMe = resultNestedMessage;
+  self.resultNestedMessage = nil;
   return returnMe;
 }
 - (NestedOptionTypeNestedMessageBuilder*) mergeFrom:(NestedOptionTypeNestedMessage*) other {
@@ -5694,44 +5694,44 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
   }
 }
 - (BOOL) hasNestedField {
-  return result.hasNestedField;
+  return resultNestedMessage.hasNestedField;
 }
 - (SInt32) nestedField {
-  return result.nestedField;
+  return resultNestedMessage.nestedField;
 }
 - (NestedOptionTypeNestedMessageBuilder*) setNestedField:(SInt32) value {
-  result.hasNestedField = YES;
-  result.nestedField = value;
+  resultNestedMessage.hasNestedField = YES;
+  resultNestedMessage.nestedField = value;
   return self;
 }
 - (NestedOptionTypeNestedMessageBuilder*) clearNestedField {
-  result.hasNestedField = NO;
-  result.nestedField = 0;
+  resultNestedMessage.hasNestedField = NO;
+  resultNestedMessage.nestedField = 0;
   return self;
 }
 @end
 
 @interface NestedOptionTypeBuilder()
-@property (strong) NestedOptionType* result;
+@property (strong) NestedOptionType* resultNestedOptionType;
 @end
 
 @implementation NestedOptionTypeBuilder
-@synthesize result;
+@synthesize resultNestedOptionType;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[NestedOptionType alloc] init];
+    self.resultNestedOptionType = [[NestedOptionType alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultNestedOptionType;
 }
 - (NestedOptionTypeBuilder*) clear {
-  self.result = [[NestedOptionType alloc] init];
+  self.resultNestedOptionType = [[NestedOptionType alloc] init];
   return self;
 }
 - (NestedOptionTypeBuilder*) clone {
-  return [NestedOptionType builderWithPrototype:result];
+  return [NestedOptionType builderWithPrototype:resultNestedOptionType];
 }
 - (NestedOptionType*) defaultInstance {
   return [NestedOptionType defaultInstance];
@@ -5741,8 +5741,8 @@ static NestedOptionTypeNestedMessage* defaultNestedOptionTypeNestedMessageInstan
   return [self buildPartial];
 }
 - (NestedOptionType*) buildPartial {
-  NestedOptionType* returnMe = result;
-  self.result = nil;
+  NestedOptionType* returnMe = resultNestedOptionType;
+  self.resultNestedOptionType = nil;
   return returnMe;
 }
 - (NestedOptionTypeBuilder*) mergeFrom:(NestedOptionType*) other {

@@ -4049,7 +4049,7 @@
 
 @interface TestEnormousDescriptorBuilder : PBGeneratedMessageBuilder {
 @private
-  TestEnormousDescriptor* result;
+  TestEnormousDescriptor* resultTestEnormousDescriptor;
 }
 
 - (TestEnormousDescriptor*) defaultInstance;

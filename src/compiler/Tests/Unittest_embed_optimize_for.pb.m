@@ -176,26 +176,26 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
 @end
 
 @interface TestEmbedOptimizedForSizeBuilder()
-@property (strong) TestEmbedOptimizedForSize* result;
+@property (strong) TestEmbedOptimizedForSize* resultTestEmbedOptimizedForSize;
 @end
 
 @implementation TestEmbedOptimizedForSizeBuilder
-@synthesize result;
+@synthesize resultTestEmbedOptimizedForSize;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestEmbedOptimizedForSize alloc] init];
+    self.resultTestEmbedOptimizedForSize = [[TestEmbedOptimizedForSize alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestEmbedOptimizedForSize;
 }
 - (TestEmbedOptimizedForSizeBuilder*) clear {
-  self.result = [[TestEmbedOptimizedForSize alloc] init];
+  self.resultTestEmbedOptimizedForSize = [[TestEmbedOptimizedForSize alloc] init];
   return self;
 }
 - (TestEmbedOptimizedForSizeBuilder*) clone {
-  return [TestEmbedOptimizedForSize builderWithPrototype:result];
+  return [TestEmbedOptimizedForSize builderWithPrototype:resultTestEmbedOptimizedForSize];
 }
 - (TestEmbedOptimizedForSize*) defaultInstance {
   return [TestEmbedOptimizedForSize defaultInstance];
@@ -205,8 +205,8 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
   return [self buildPartial];
 }
 - (TestEmbedOptimizedForSize*) buildPartial {
-  TestEmbedOptimizedForSize* returnMe = result;
-  self.result = nil;
+  TestEmbedOptimizedForSize* returnMe = resultTestEmbedOptimizedForSize;
+  self.resultTestEmbedOptimizedForSize = nil;
   return returnMe;
 }
 - (TestEmbedOptimizedForSizeBuilder*) mergeFrom:(TestEmbedOptimizedForSize*) other {
@@ -217,10 +217,10 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
     [self mergeOptionalMessage:other.optionalMessage];
   }
   if (other.repeatedMessageArray.count > 0) {
-    if (result.repeatedMessageArray == nil) {
-      result.repeatedMessageArray = [[NSMutableArray alloc] initWithArray:other.repeatedMessageArray];
+    if (resultTestEmbedOptimizedForSize.repeatedMessageArray == nil) {
+      resultTestEmbedOptimizedForSize.repeatedMessageArray = [[NSMutableArray alloc] initWithArray:other.repeatedMessageArray];
     } else {
-      [result.repeatedMessageArray addObjectsFromArray:other.repeatedMessageArray];
+      [resultTestEmbedOptimizedForSize.repeatedMessageArray addObjectsFromArray:other.repeatedMessageArray];
     }
   }
   [self mergeUnknownFields:other.unknownFields];
@@ -263,54 +263,54 @@ static TestEmbedOptimizedForSize* defaultTestEmbedOptimizedForSizeInstance = nil
   }
 }
 - (BOOL) hasOptionalMessage {
-  return result.hasOptionalMessage;
+  return resultTestEmbedOptimizedForSize.hasOptionalMessage;
 }
 - (TestOptimizedForSize*) optionalMessage {
-  return result.optionalMessage;
+  return resultTestEmbedOptimizedForSize.optionalMessage;
 }
 - (TestEmbedOptimizedForSizeBuilder*) setOptionalMessage:(TestOptimizedForSize*) value {
-  result.hasOptionalMessage = YES;
-  result.optionalMessage = value;
+  resultTestEmbedOptimizedForSize.hasOptionalMessage = YES;
+  resultTestEmbedOptimizedForSize.optionalMessage = value;
   return self;
 }
 - (TestEmbedOptimizedForSizeBuilder*) setOptionalMessageBuilder:(TestOptimizedForSizeBuilder*) builderForValue {
   return [self setOptionalMessage:[builderForValue build]];
 }
 - (TestEmbedOptimizedForSizeBuilder*) mergeOptionalMessage:(TestOptimizedForSize*) value {
-  if (result.hasOptionalMessage &&
-      result.optionalMessage != [TestOptimizedForSize defaultInstance]) {
-    result.optionalMessage =
-      [[[TestOptimizedForSize builderWithPrototype:result.optionalMessage] mergeFrom:value] buildPartial];
+  if (resultTestEmbedOptimizedForSize.hasOptionalMessage &&
+      resultTestEmbedOptimizedForSize.optionalMessage != [TestOptimizedForSize defaultInstance]) {
+    resultTestEmbedOptimizedForSize.optionalMessage =
+      [[[TestOptimizedForSize builderWithPrototype:resultTestEmbedOptimizedForSize.optionalMessage] mergeFrom:value] buildPartial];
   } else {
-    result.optionalMessage = value;
+    resultTestEmbedOptimizedForSize.optionalMessage = value;
   }
-  result.hasOptionalMessage = YES;
+  resultTestEmbedOptimizedForSize.hasOptionalMessage = YES;
   return self;
 }
 - (TestEmbedOptimizedForSizeBuilder*) clearOptionalMessage {
-  result.hasOptionalMessage = NO;
-  result.optionalMessage = [TestOptimizedForSize defaultInstance];
+  resultTestEmbedOptimizedForSize.hasOptionalMessage = NO;
+  resultTestEmbedOptimizedForSize.optionalMessage = [TestOptimizedForSize defaultInstance];
   return self;
 }
 - (NSMutableArray *)repeatedMessage {
-  return result.repeatedMessageArray;
+  return resultTestEmbedOptimizedForSize.repeatedMessageArray;
 }
 - (TestOptimizedForSize*)repeatedMessageAtIndex:(NSUInteger)index {
-  return [result repeatedMessageAtIndex:index];
+  return [resultTestEmbedOptimizedForSize repeatedMessageAtIndex:index];
 }
 - (TestEmbedOptimizedForSizeBuilder *)addRepeatedMessage:(TestOptimizedForSize*)value {
-  if (result.repeatedMessageArray == nil) {
-    result.repeatedMessageArray = [[NSMutableArray alloc]init];
+  if (resultTestEmbedOptimizedForSize.repeatedMessageArray == nil) {
+    resultTestEmbedOptimizedForSize.repeatedMessageArray = [[NSMutableArray alloc]init];
   }
-  [result.repeatedMessageArray addObject:value];
+  [resultTestEmbedOptimizedForSize.repeatedMessageArray addObject:value];
   return self;
 }
 - (TestEmbedOptimizedForSizeBuilder *)setRepeatedMessageArray:(NSArray *)array {
-  result.repeatedMessageArray = [[NSMutableArray alloc]initWithArray:array];
+  resultTestEmbedOptimizedForSize.repeatedMessageArray = [[NSMutableArray alloc]initWithArray:array];
   return self;
 }
 - (TestEmbedOptimizedForSizeBuilder *)clearRepeatedMessage {
-  result.repeatedMessageArray = nil;
+  resultTestEmbedOptimizedForSize.repeatedMessageArray = nil;
   return self;
 }
 @end

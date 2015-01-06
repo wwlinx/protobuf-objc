@@ -249,26 +249,26 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
 @end
 
 @interface TestOptimizedForSizeBuilder()
-@property (strong) TestOptimizedForSize* result;
+@property (strong) TestOptimizedForSize* resultTestOptimizedForSize;
 @end
 
 @implementation TestOptimizedForSizeBuilder
-@synthesize result;
+@synthesize resultTestOptimizedForSize;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestOptimizedForSize alloc] init];
+    self.resultTestOptimizedForSize = [[TestOptimizedForSize alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultTestOptimizedForSize;
 }
 - (TestOptimizedForSizeBuilder*) clear {
-  self.result = [[TestOptimizedForSize alloc] init];
+  self.resultTestOptimizedForSize = [[TestOptimizedForSize alloc] init];
   return self;
 }
 - (TestOptimizedForSizeBuilder*) clone {
-  return [TestOptimizedForSize builderWithPrototype:result];
+  return [TestOptimizedForSize builderWithPrototype:resultTestOptimizedForSize];
 }
 - (TestOptimizedForSize*) defaultInstance {
   return [TestOptimizedForSize defaultInstance];
@@ -278,8 +278,8 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
   return [self buildPartial];
 }
 - (TestOptimizedForSize*) buildPartial {
-  TestOptimizedForSize* returnMe = result;
-  self.result = nil;
+  TestOptimizedForSize* returnMe = resultTestOptimizedForSize;
+  self.resultTestOptimizedForSize = nil;
   return returnMe;
 }
 - (TestOptimizedForSizeBuilder*) mergeFrom:(TestOptimizedForSize*) other {
@@ -345,81 +345,81 @@ static TestOptimizedForSize* defaultTestOptimizedForSizeInstance = nil;
   }
 }
 - (BOOL) hasI {
-  return result.hasI;
+  return resultTestOptimizedForSize.hasI;
 }
 - (SInt32) i {
-  return result.i;
+  return resultTestOptimizedForSize.i;
 }
 - (TestOptimizedForSizeBuilder*) setI:(SInt32) value {
-  result.hasI = YES;
-  result.i = value;
+  resultTestOptimizedForSize.hasI = YES;
+  resultTestOptimizedForSize.i = value;
   return self;
 }
 - (TestOptimizedForSizeBuilder*) clearI {
-  result.hasI = NO;
-  result.i = 0;
+  resultTestOptimizedForSize.hasI = NO;
+  resultTestOptimizedForSize.i = 0;
   return self;
 }
 - (BOOL) hasMsg {
-  return result.hasMsg;
+  return resultTestOptimizedForSize.hasMsg;
 }
 - (ForeignMessage*) msg {
-  return result.msg;
+  return resultTestOptimizedForSize.msg;
 }
 - (TestOptimizedForSizeBuilder*) setMsg:(ForeignMessage*) value {
-  result.hasMsg = YES;
-  result.msg = value;
+  resultTestOptimizedForSize.hasMsg = YES;
+  resultTestOptimizedForSize.msg = value;
   return self;
 }
 - (TestOptimizedForSizeBuilder*) setMsgBuilder:(ForeignMessageBuilder*) builderForValue {
   return [self setMsg:[builderForValue build]];
 }
 - (TestOptimizedForSizeBuilder*) mergeMsg:(ForeignMessage*) value {
-  if (result.hasMsg &&
-      result.msg != [ForeignMessage defaultInstance]) {
-    result.msg =
-      [[[ForeignMessage builderWithPrototype:result.msg] mergeFrom:value] buildPartial];
+  if (resultTestOptimizedForSize.hasMsg &&
+      resultTestOptimizedForSize.msg != [ForeignMessage defaultInstance]) {
+    resultTestOptimizedForSize.msg =
+      [[[ForeignMessage builderWithPrototype:resultTestOptimizedForSize.msg] mergeFrom:value] buildPartial];
   } else {
-    result.msg = value;
+    resultTestOptimizedForSize.msg = value;
   }
-  result.hasMsg = YES;
+  resultTestOptimizedForSize.hasMsg = YES;
   return self;
 }
 - (TestOptimizedForSizeBuilder*) clearMsg {
-  result.hasMsg = NO;
-  result.msg = [ForeignMessage defaultInstance];
+  resultTestOptimizedForSize.hasMsg = NO;
+  resultTestOptimizedForSize.msg = [ForeignMessage defaultInstance];
   return self;
 }
 - (BOOL) hasIntegerField {
-  return result.hasIntegerField;
+  return resultTestOptimizedForSize.hasIntegerField;
 }
 - (SInt32) integerField {
-  return result.integerField;
+  return resultTestOptimizedForSize.integerField;
 }
 - (TestOptimizedForSizeBuilder*) setIntegerField:(SInt32) value {
-  result.hasIntegerField = YES;
-  result.integerField = value;
+  resultTestOptimizedForSize.hasIntegerField = YES;
+  resultTestOptimizedForSize.integerField = value;
   return self;
 }
 - (TestOptimizedForSizeBuilder*) clearIntegerField {
-  result.hasIntegerField = NO;
-  result.integerField = 0;
+  resultTestOptimizedForSize.hasIntegerField = NO;
+  resultTestOptimizedForSize.integerField = 0;
   return self;
 }
 - (BOOL) hasStringField {
-  return result.hasStringField;
+  return resultTestOptimizedForSize.hasStringField;
 }
 - (NSString*) stringField {
-  return result.stringField;
+  return resultTestOptimizedForSize.stringField;
 }
 - (TestOptimizedForSizeBuilder*) setStringField:(NSString*) value {
-  result.hasStringField = YES;
-  result.stringField = value;
+  resultTestOptimizedForSize.hasStringField = YES;
+  resultTestOptimizedForSize.stringField = value;
   return self;
 }
 - (TestOptimizedForSizeBuilder*) clearStringField {
-  result.hasStringField = NO;
-  result.stringField = @"";
+  resultTestOptimizedForSize.hasStringField = NO;
+  resultTestOptimizedForSize.stringField = @"";
   return self;
 }
 @end
@@ -541,26 +541,26 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
 @end
 
 @interface TestRequiredOptimizedForSizeBuilder()
-@property (strong) TestRequiredOptimizedForSize* result;
+@property (strong) TestRequiredOptimizedForSize* resultTestRequiredOptimizedForSize;
 @end
 
 @implementation TestRequiredOptimizedForSizeBuilder
-@synthesize result;
+@synthesize resultTestRequiredOptimizedForSize;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestRequiredOptimizedForSize alloc] init];
+    self.resultTestRequiredOptimizedForSize = [[TestRequiredOptimizedForSize alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestRequiredOptimizedForSize;
 }
 - (TestRequiredOptimizedForSizeBuilder*) clear {
-  self.result = [[TestRequiredOptimizedForSize alloc] init];
+  self.resultTestRequiredOptimizedForSize = [[TestRequiredOptimizedForSize alloc] init];
   return self;
 }
 - (TestRequiredOptimizedForSizeBuilder*) clone {
-  return [TestRequiredOptimizedForSize builderWithPrototype:result];
+  return [TestRequiredOptimizedForSize builderWithPrototype:resultTestRequiredOptimizedForSize];
 }
 - (TestRequiredOptimizedForSize*) defaultInstance {
   return [TestRequiredOptimizedForSize defaultInstance];
@@ -570,8 +570,8 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
   return [self buildPartial];
 }
 - (TestRequiredOptimizedForSize*) buildPartial {
-  TestRequiredOptimizedForSize* returnMe = result;
-  self.result = nil;
+  TestRequiredOptimizedForSize* returnMe = resultTestRequiredOptimizedForSize;
+  self.resultTestRequiredOptimizedForSize = nil;
   return returnMe;
 }
 - (TestRequiredOptimizedForSizeBuilder*) mergeFrom:(TestRequiredOptimizedForSize*) other {
@@ -610,19 +610,19 @@ static TestRequiredOptimizedForSize* defaultTestRequiredOptimizedForSizeInstance
   }
 }
 - (BOOL) hasX {
-  return result.hasX;
+  return resultTestRequiredOptimizedForSize.hasX;
 }
 - (SInt32) x {
-  return result.x;
+  return resultTestRequiredOptimizedForSize.x;
 }
 - (TestRequiredOptimizedForSizeBuilder*) setX:(SInt32) value {
-  result.hasX = YES;
-  result.x = value;
+  resultTestRequiredOptimizedForSize.hasX = YES;
+  resultTestRequiredOptimizedForSize.x = value;
   return self;
 }
 - (TestRequiredOptimizedForSizeBuilder*) clearX {
-  result.hasX = NO;
-  result.x = 0;
+  resultTestRequiredOptimizedForSize.hasX = NO;
+  resultTestRequiredOptimizedForSize.x = 0;
   return self;
 }
 @end
@@ -749,26 +749,26 @@ static TestOptionalOptimizedForSize* defaultTestOptionalOptimizedForSizeInstance
 @end
 
 @interface TestOptionalOptimizedForSizeBuilder()
-@property (strong) TestOptionalOptimizedForSize* result;
+@property (strong) TestOptionalOptimizedForSize* resultTestOptionalOptimizedForSize;
 @end
 
 @implementation TestOptionalOptimizedForSizeBuilder
-@synthesize result;
+@synthesize resultTestOptionalOptimizedForSize;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestOptionalOptimizedForSize alloc] init];
+    self.resultTestOptionalOptimizedForSize = [[TestOptionalOptimizedForSize alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestOptionalOptimizedForSize;
 }
 - (TestOptionalOptimizedForSizeBuilder*) clear {
-  self.result = [[TestOptionalOptimizedForSize alloc] init];
+  self.resultTestOptionalOptimizedForSize = [[TestOptionalOptimizedForSize alloc] init];
   return self;
 }
 - (TestOptionalOptimizedForSizeBuilder*) clone {
-  return [TestOptionalOptimizedForSize builderWithPrototype:result];
+  return [TestOptionalOptimizedForSize builderWithPrototype:resultTestOptionalOptimizedForSize];
 }
 - (TestOptionalOptimizedForSize*) defaultInstance {
   return [TestOptionalOptimizedForSize defaultInstance];
@@ -778,8 +778,8 @@ static TestOptionalOptimizedForSize* defaultTestOptionalOptimizedForSizeInstance
   return [self buildPartial];
 }
 - (TestOptionalOptimizedForSize*) buildPartial {
-  TestOptionalOptimizedForSize* returnMe = result;
-  self.result = nil;
+  TestOptionalOptimizedForSize* returnMe = resultTestOptionalOptimizedForSize;
+  self.resultTestOptionalOptimizedForSize = nil;
   return returnMe;
 }
 - (TestOptionalOptimizedForSizeBuilder*) mergeFrom:(TestOptionalOptimizedForSize*) other {
@@ -823,33 +823,33 @@ static TestOptionalOptimizedForSize* defaultTestOptionalOptimizedForSizeInstance
   }
 }
 - (BOOL) hasO {
-  return result.hasO;
+  return resultTestOptionalOptimizedForSize.hasO;
 }
 - (TestRequiredOptimizedForSize*) o {
-  return result.o;
+  return resultTestOptionalOptimizedForSize.o;
 }
 - (TestOptionalOptimizedForSizeBuilder*) setO:(TestRequiredOptimizedForSize*) value {
-  result.hasO = YES;
-  result.o = value;
+  resultTestOptionalOptimizedForSize.hasO = YES;
+  resultTestOptionalOptimizedForSize.o = value;
   return self;
 }
 - (TestOptionalOptimizedForSizeBuilder*) setOBuilder:(TestRequiredOptimizedForSizeBuilder*) builderForValue {
   return [self setO:[builderForValue build]];
 }
 - (TestOptionalOptimizedForSizeBuilder*) mergeO:(TestRequiredOptimizedForSize*) value {
-  if (result.hasO &&
-      result.o != [TestRequiredOptimizedForSize defaultInstance]) {
-    result.o =
-      [[[TestRequiredOptimizedForSize builderWithPrototype:result.o] mergeFrom:value] buildPartial];
+  if (resultTestOptionalOptimizedForSize.hasO &&
+      resultTestOptionalOptimizedForSize.o != [TestRequiredOptimizedForSize defaultInstance]) {
+    resultTestOptionalOptimizedForSize.o =
+      [[[TestRequiredOptimizedForSize builderWithPrototype:resultTestOptionalOptimizedForSize.o] mergeFrom:value] buildPartial];
   } else {
-    result.o = value;
+    resultTestOptionalOptimizedForSize.o = value;
   }
-  result.hasO = YES;
+  resultTestOptionalOptimizedForSize.hasO = YES;
   return self;
 }
 - (TestOptionalOptimizedForSizeBuilder*) clearO {
-  result.hasO = NO;
-  result.o = [TestRequiredOptimizedForSize defaultInstance];
+  resultTestOptionalOptimizedForSize.hasO = NO;
+  resultTestOptionalOptimizedForSize.o = [TestRequiredOptimizedForSize defaultInstance];
   return self;
 }
 @end

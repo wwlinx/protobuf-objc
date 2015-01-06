@@ -64,7 +64,7 @@ BOOL ImportEnumLiteIsValidValue(ImportEnumLite value);
 
 @interface ImportMessageLiteBuilder : PBGeneratedMessageBuilder {
 @private
-  ImportMessageLite* result;
+  ImportMessageLite* resultImportMessageLite;
 }
 
 - (ImportMessageLite*) defaultInstance;

@@ -147,26 +147,26 @@ static TestMessageSet* defaultTestMessageSetInstance = nil;
 @end
 
 @interface TestMessageSetBuilder()
-@property (strong) TestMessageSet* result;
+@property (strong) TestMessageSet* resultTestMessageSet;
 @end
 
 @implementation TestMessageSetBuilder
-@synthesize result;
+@synthesize resultTestMessageSet;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessageSet alloc] init];
+    self.resultTestMessageSet = [[TestMessageSet alloc] init];
   }
   return self;
 }
 - (PBExtendableMessage*) internalGetResult {
-  return result;
+  return resultTestMessageSet;
 }
 - (TestMessageSetBuilder*) clear {
-  self.result = [[TestMessageSet alloc] init];
+  self.resultTestMessageSet = [[TestMessageSet alloc] init];
   return self;
 }
 - (TestMessageSetBuilder*) clone {
-  return [TestMessageSet builderWithPrototype:result];
+  return [TestMessageSet builderWithPrototype:resultTestMessageSet];
 }
 - (TestMessageSet*) defaultInstance {
   return [TestMessageSet defaultInstance];
@@ -176,8 +176,8 @@ static TestMessageSet* defaultTestMessageSetInstance = nil;
   return [self buildPartial];
 }
 - (TestMessageSet*) buildPartial {
-  TestMessageSet* returnMe = result;
-  self.result = nil;
+  TestMessageSet* returnMe = resultTestMessageSet;
+  self.resultTestMessageSet = nil;
   return returnMe;
 }
 - (TestMessageSetBuilder*) mergeFrom:(TestMessageSet*) other {
@@ -333,26 +333,26 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
 @end
 
 @interface TestMessageSetContainerBuilder()
-@property (strong) TestMessageSetContainer* result;
+@property (strong) TestMessageSetContainer* resultTestMessageSetContainer;
 @end
 
 @implementation TestMessageSetContainerBuilder
-@synthesize result;
+@synthesize resultTestMessageSetContainer;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessageSetContainer alloc] init];
+    self.resultTestMessageSetContainer = [[TestMessageSetContainer alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestMessageSetContainer;
 }
 - (TestMessageSetContainerBuilder*) clear {
-  self.result = [[TestMessageSetContainer alloc] init];
+  self.resultTestMessageSetContainer = [[TestMessageSetContainer alloc] init];
   return self;
 }
 - (TestMessageSetContainerBuilder*) clone {
-  return [TestMessageSetContainer builderWithPrototype:result];
+  return [TestMessageSetContainer builderWithPrototype:resultTestMessageSetContainer];
 }
 - (TestMessageSetContainer*) defaultInstance {
   return [TestMessageSetContainer defaultInstance];
@@ -362,8 +362,8 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
   return [self buildPartial];
 }
 - (TestMessageSetContainer*) buildPartial {
-  TestMessageSetContainer* returnMe = result;
-  self.result = nil;
+  TestMessageSetContainer* returnMe = resultTestMessageSetContainer;
+  self.resultTestMessageSetContainer = nil;
   return returnMe;
 }
 - (TestMessageSetContainerBuilder*) mergeFrom:(TestMessageSetContainer*) other {
@@ -407,33 +407,33 @@ static TestMessageSetContainer* defaultTestMessageSetContainerInstance = nil;
   }
 }
 - (BOOL) hasMessageSet {
-  return result.hasMessageSet;
+  return resultTestMessageSetContainer.hasMessageSet;
 }
 - (TestMessageSet*) messageSet {
-  return result.messageSet;
+  return resultTestMessageSetContainer.messageSet;
 }
 - (TestMessageSetContainerBuilder*) setMessageSet:(TestMessageSet*) value {
-  result.hasMessageSet = YES;
-  result.messageSet = value;
+  resultTestMessageSetContainer.hasMessageSet = YES;
+  resultTestMessageSetContainer.messageSet = value;
   return self;
 }
 - (TestMessageSetContainerBuilder*) setMessageSetBuilder:(TestMessageSetBuilder*) builderForValue {
   return [self setMessageSet:[builderForValue build]];
 }
 - (TestMessageSetContainerBuilder*) mergeMessageSet:(TestMessageSet*) value {
-  if (result.hasMessageSet &&
-      result.messageSet != [TestMessageSet defaultInstance]) {
-    result.messageSet =
-      [[[TestMessageSet builderWithPrototype:result.messageSet] mergeFrom:value] buildPartial];
+  if (resultTestMessageSetContainer.hasMessageSet &&
+      resultTestMessageSetContainer.messageSet != [TestMessageSet defaultInstance]) {
+    resultTestMessageSetContainer.messageSet =
+      [[[TestMessageSet builderWithPrototype:resultTestMessageSetContainer.messageSet] mergeFrom:value] buildPartial];
   } else {
-    result.messageSet = value;
+    resultTestMessageSetContainer.messageSet = value;
   }
-  result.hasMessageSet = YES;
+  resultTestMessageSetContainer.hasMessageSet = YES;
   return self;
 }
 - (TestMessageSetContainerBuilder*) clearMessageSet {
-  result.hasMessageSet = NO;
-  result.messageSet = [TestMessageSet defaultInstance];
+  resultTestMessageSetContainer.hasMessageSet = NO;
+  resultTestMessageSetContainer.messageSet = [TestMessageSet defaultInstance];
   return self;
 }
 @end
@@ -555,26 +555,26 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
 @end
 
 @interface TestMessageSetExtension1Builder()
-@property (strong) TestMessageSetExtension1* result;
+@property (strong) TestMessageSetExtension1* resultTestMessageSetExtension1;
 @end
 
 @implementation TestMessageSetExtension1Builder
-@synthesize result;
+@synthesize resultTestMessageSetExtension1;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessageSetExtension1 alloc] init];
+    self.resultTestMessageSetExtension1 = [[TestMessageSetExtension1 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestMessageSetExtension1;
 }
 - (TestMessageSetExtension1Builder*) clear {
-  self.result = [[TestMessageSetExtension1 alloc] init];
+  self.resultTestMessageSetExtension1 = [[TestMessageSetExtension1 alloc] init];
   return self;
 }
 - (TestMessageSetExtension1Builder*) clone {
-  return [TestMessageSetExtension1 builderWithPrototype:result];
+  return [TestMessageSetExtension1 builderWithPrototype:resultTestMessageSetExtension1];
 }
 - (TestMessageSetExtension1*) defaultInstance {
   return [TestMessageSetExtension1 defaultInstance];
@@ -584,8 +584,8 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
   return [self buildPartial];
 }
 - (TestMessageSetExtension1*) buildPartial {
-  TestMessageSetExtension1* returnMe = result;
-  self.result = nil;
+  TestMessageSetExtension1* returnMe = resultTestMessageSetExtension1;
+  self.resultTestMessageSetExtension1 = nil;
   return returnMe;
 }
 - (TestMessageSetExtension1Builder*) mergeFrom:(TestMessageSetExtension1*) other {
@@ -624,19 +624,19 @@ static TestMessageSetExtension1* defaultTestMessageSetExtension1Instance = nil;
   }
 }
 - (BOOL) hasI {
-  return result.hasI;
+  return resultTestMessageSetExtension1.hasI;
 }
 - (SInt32) i {
-  return result.i;
+  return resultTestMessageSetExtension1.i;
 }
 - (TestMessageSetExtension1Builder*) setI:(SInt32) value {
-  result.hasI = YES;
-  result.i = value;
+  resultTestMessageSetExtension1.hasI = YES;
+  resultTestMessageSetExtension1.i = value;
   return self;
 }
 - (TestMessageSetExtension1Builder*) clearI {
-  result.hasI = NO;
-  result.i = 0;
+  resultTestMessageSetExtension1.hasI = NO;
+  resultTestMessageSetExtension1.i = 0;
   return self;
 }
 @end
@@ -758,26 +758,26 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
 @end
 
 @interface TestMessageSetExtension2Builder()
-@property (strong) TestMessageSetExtension2* result;
+@property (strong) TestMessageSetExtension2* resultTestMessageSetExtension2;
 @end
 
 @implementation TestMessageSetExtension2Builder
-@synthesize result;
+@synthesize resultTestMessageSetExtension2;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[TestMessageSetExtension2 alloc] init];
+    self.resultTestMessageSetExtension2 = [[TestMessageSetExtension2 alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultTestMessageSetExtension2;
 }
 - (TestMessageSetExtension2Builder*) clear {
-  self.result = [[TestMessageSetExtension2 alloc] init];
+  self.resultTestMessageSetExtension2 = [[TestMessageSetExtension2 alloc] init];
   return self;
 }
 - (TestMessageSetExtension2Builder*) clone {
-  return [TestMessageSetExtension2 builderWithPrototype:result];
+  return [TestMessageSetExtension2 builderWithPrototype:resultTestMessageSetExtension2];
 }
 - (TestMessageSetExtension2*) defaultInstance {
   return [TestMessageSetExtension2 defaultInstance];
@@ -787,8 +787,8 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
   return [self buildPartial];
 }
 - (TestMessageSetExtension2*) buildPartial {
-  TestMessageSetExtension2* returnMe = result;
-  self.result = nil;
+  TestMessageSetExtension2* returnMe = resultTestMessageSetExtension2;
+  self.resultTestMessageSetExtension2 = nil;
   return returnMe;
 }
 - (TestMessageSetExtension2Builder*) mergeFrom:(TestMessageSetExtension2*) other {
@@ -827,19 +827,19 @@ static TestMessageSetExtension2* defaultTestMessageSetExtension2Instance = nil;
   }
 }
 - (BOOL) hasStr {
-  return result.hasStr;
+  return resultTestMessageSetExtension2.hasStr;
 }
 - (NSString*) str {
-  return result.str;
+  return resultTestMessageSetExtension2.str;
 }
 - (TestMessageSetExtension2Builder*) setStr:(NSString*) value {
-  result.hasStr = YES;
-  result.str = value;
+  resultTestMessageSetExtension2.hasStr = YES;
+  resultTestMessageSetExtension2.str = value;
   return self;
 }
 - (TestMessageSetExtension2Builder*) clearStr {
-  result.hasStr = NO;
-  result.str = @"";
+  resultTestMessageSetExtension2.hasStr = NO;
+  resultTestMessageSetExtension2.str = @"";
   return self;
 }
 @end
@@ -1110,26 +1110,26 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
 @end
 
 @interface RawMessageSetItemBuilder()
-@property (strong) RawMessageSetItem* result;
+@property (strong) RawMessageSetItem* resultItem;
 @end
 
 @implementation RawMessageSetItemBuilder
-@synthesize result;
+@synthesize resultItem;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[RawMessageSetItem alloc] init];
+    self.resultItem = [[RawMessageSetItem alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultItem;
 }
 - (RawMessageSetItemBuilder*) clear {
-  self.result = [[RawMessageSetItem alloc] init];
+  self.resultItem = [[RawMessageSetItem alloc] init];
   return self;
 }
 - (RawMessageSetItemBuilder*) clone {
-  return [RawMessageSetItem builderWithPrototype:result];
+  return [RawMessageSetItem builderWithPrototype:resultItem];
 }
 - (RawMessageSetItem*) defaultInstance {
   return [RawMessageSetItem defaultInstance];
@@ -1139,8 +1139,8 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
   return [self buildPartial];
 }
 - (RawMessageSetItem*) buildPartial {
-  RawMessageSetItem* returnMe = result;
-  self.result = nil;
+  RawMessageSetItem* returnMe = resultItem;
+  self.resultItem = nil;
   return returnMe;
 }
 - (RawMessageSetItemBuilder*) mergeFrom:(RawMessageSetItem*) other {
@@ -1186,60 +1186,60 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
   }
 }
 - (BOOL) hasTypeId {
-  return result.hasTypeId;
+  return resultItem.hasTypeId;
 }
 - (SInt32) typeId {
-  return result.typeId;
+  return resultItem.typeId;
 }
 - (RawMessageSetItemBuilder*) setTypeId:(SInt32) value {
-  result.hasTypeId = YES;
-  result.typeId = value;
+  resultItem.hasTypeId = YES;
+  resultItem.typeId = value;
   return self;
 }
 - (RawMessageSetItemBuilder*) clearTypeId {
-  result.hasTypeId = NO;
-  result.typeId = 0;
+  resultItem.hasTypeId = NO;
+  resultItem.typeId = 0;
   return self;
 }
 - (BOOL) hasMessage {
-  return result.hasMessage;
+  return resultItem.hasMessage;
 }
 - (NSData*) message {
-  return result.message;
+  return resultItem.message;
 }
 - (RawMessageSetItemBuilder*) setMessage:(NSData*) value {
-  result.hasMessage = YES;
-  result.message = value;
+  resultItem.hasMessage = YES;
+  resultItem.message = value;
   return self;
 }
 - (RawMessageSetItemBuilder*) clearMessage {
-  result.hasMessage = NO;
-  result.message = [NSData data];
+  resultItem.hasMessage = NO;
+  resultItem.message = [NSData data];
   return self;
 }
 @end
 
 @interface RawMessageSetBuilder()
-@property (strong) RawMessageSet* result;
+@property (strong) RawMessageSet* resultRawMessageSet;
 @end
 
 @implementation RawMessageSetBuilder
-@synthesize result;
+@synthesize resultRawMessageSet;
 - (instancetype) init {
   if ((self = [super init])) {
-    self.result = [[RawMessageSet alloc] init];
+    self.resultRawMessageSet = [[RawMessageSet alloc] init];
   }
   return self;
 }
 - (PBGeneratedMessage*) internalGetResult {
-  return result;
+  return resultRawMessageSet;
 }
 - (RawMessageSetBuilder*) clear {
-  self.result = [[RawMessageSet alloc] init];
+  self.resultRawMessageSet = [[RawMessageSet alloc] init];
   return self;
 }
 - (RawMessageSetBuilder*) clone {
-  return [RawMessageSet builderWithPrototype:result];
+  return [RawMessageSet builderWithPrototype:resultRawMessageSet];
 }
 - (RawMessageSet*) defaultInstance {
   return [RawMessageSet defaultInstance];
@@ -1249,8 +1249,8 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
   return [self buildPartial];
 }
 - (RawMessageSet*) buildPartial {
-  RawMessageSet* returnMe = result;
-  self.result = nil;
+  RawMessageSet* returnMe = resultRawMessageSet;
+  self.resultRawMessageSet = nil;
   return returnMe;
 }
 - (RawMessageSetBuilder*) mergeFrom:(RawMessageSet*) other {
@@ -1258,10 +1258,10 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
     return self;
   }
   if (other.itemArray.count > 0) {
-    if (result.itemArray == nil) {
-      result.itemArray = [[NSMutableArray alloc] initWithArray:other.itemArray];
+    if (resultRawMessageSet.itemArray == nil) {
+      resultRawMessageSet.itemArray = [[NSMutableArray alloc] initWithArray:other.itemArray];
     } else {
-      [result.itemArray addObjectsFromArray:other.itemArray];
+      [resultRawMessageSet.itemArray addObjectsFromArray:other.itemArray];
     }
   }
   [self mergeUnknownFields:other.unknownFields];
@@ -1295,24 +1295,24 @@ static RawMessageSetItem* defaultRawMessageSetItemInstance = nil;
   }
 }
 - (NSMutableArray *)item {
-  return result.itemArray;
+  return resultRawMessageSet.itemArray;
 }
 - (RawMessageSetItem*)itemAtIndex:(NSUInteger)index {
-  return [result itemAtIndex:index];
+  return [resultRawMessageSet itemAtIndex:index];
 }
 - (RawMessageSetBuilder *)addItem:(RawMessageSetItem*)value {
-  if (result.itemArray == nil) {
-    result.itemArray = [[NSMutableArray alloc]init];
+  if (resultRawMessageSet.itemArray == nil) {
+    resultRawMessageSet.itemArray = [[NSMutableArray alloc]init];
   }
-  [result.itemArray addObject:value];
+  [resultRawMessageSet.itemArray addObject:value];
   return self;
 }
 - (RawMessageSetBuilder *)setItemArray:(NSArray *)array {
-  result.itemArray = [[NSMutableArray alloc]initWithArray:array];
+  resultRawMessageSet.itemArray = [[NSMutableArray alloc]initWithArray:array];
   return self;
 }
 - (RawMessageSetBuilder *)clearItem {
-  result.itemArray = nil;
+  resultRawMessageSet.itemArray = nil;
   return self;
 }
 @end
