@@ -52,9 +52,12 @@ namespace google { namespace protobuf { namespace compiler {namespace objectivec
 //        }
         
         for (int i = 0; i < file_->dependency_count(); i++) {
-            printer->Print(
+            // Don't insert headers for deps that are compiler-only.
+            if (!CompilerOnlyDependency(file_->dependency(i))) {
+                printer->Print(
                            "#import \"$header$.pb.h\"\n",
                            "header", FilePath(file_->dependency(i)));
+            }
         }
         
         printer->Print(
@@ -126,7 +129,9 @@ namespace google { namespace protobuf { namespace compiler {namespace objectivec
         seen_files->insert(file->name());
         
         for (int i = 0; i < file->dependency_count(); i++) {
-            DetermineDependenciesWorker(dependencies, seen_files, file->dependency(i));
+            if (!CompilerOnlyDependency(file->dependency(i))) {
+                DetermineDependenciesWorker(dependencies, seen_files, file->dependency(i));
+            }
         }
         for (int i = 0; i < file->message_type_count(); i++) {
             MessageGenerator(file->message_type(i)).DetermineDependencies(dependencies);
@@ -190,9 +195,11 @@ namespace google { namespace protobuf { namespace compiler {namespace objectivec
                        "[self registerAllExtensions:registry];\n");
         
         for (int i = 0; i < file_->dependency_count(); i++) {
-            printer->Print(
+            if (!CompilerOnlyDependency(file_->dependency(i))) {
+                printer->Print(
                            "[$dependency$ registerAllExtensions:registry];\n",
                            "dependency", FileClassName(file_->dependency(i)));
+            }
         }
         
         printer->Print(

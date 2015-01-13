@@ -113,7 +113,10 @@ namespace google {
                 
                 // Escape C++ trigraphs by escaping question marks to \?
                 string EscapeTrigraphs(const string& to_escape);
-                
+
+                // Is file a dependency only for the compiler, not runtime?
+                bool CompilerOnlyDependency(const FileDescriptor* file);
+
                 // Do message classes in this file keep track of unknown fields?
                 inline bool HasUnknownFields(const FileDescriptor *file) {
                     return file->options().optimize_for() != FileOptions::LITE_RUNTIME;

@@ -573,6 +573,11 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
     string EscapeTrigraphs(const string& to_escape) {
         return StringReplace(to_escape, "?", "\\?", true);
     }
+
+    bool CompilerOnlyDependency(const FileDescriptor* file) {
+        // These files don't need to be runtime dependencies of generated code.
+        return file->name().substr(0, 16) == "google/protobuf/";
+    }
     
 }  // namespace objectivec
 }  // namespace compiler
