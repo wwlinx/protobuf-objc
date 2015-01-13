@@ -442,6 +442,9 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                        "+ ($classname$*) parseFromCodedInputStream:(PBCodedInputStream*) input;\n"
                        "+ ($classname$*) parseFromCodedInputStream:(PBCodedInputStream*) input extensionRegistry:(PBExtensionRegistry*) extensionRegistry;\n",
                        "classname", ClassName(descriptor_));
+        printer->Print(
+                       "\n// @@protoc_insertion_point($classname$)\n\n",
+                       "classname", ClassName(descriptor_));
     }
     
     
@@ -763,6 +766,9 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
                        "+ ($classname$*) parseFromCodedInputStream:(PBCodedInputStream*) input extensionRegistry:(PBExtensionRegistry*) extensionRegistry {\n"
                        "  return ($classname$*)[[[$classname$ builder] mergeFromCodedInputStream:input extensionRegistry:extensionRegistry] build];\n"
                        "}\n",
+                       "classname", ClassName(descriptor_));
+        printer->Print(
+                       "\n// @@protoc_insertion_point($classname$)\n\n",
                        "classname", ClassName(descriptor_));
     }
     
